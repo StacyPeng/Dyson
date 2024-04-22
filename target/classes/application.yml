@@ -1,0 +1,36 @@
+
+server:
+    port: 8089
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.147.20.20:3306/management_system
+    username: Hengqian
+    password: 123456
+  thymeleaf:
+    cache: false
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:/mappers/*
+  type-aliases-package: team11.chengyu.domian
+
+logging:
+  level:
+    root: info #debug #warn
+  pattern:
+    console: '%d{yyyy-MM-dd} [%thread] %-5level %logger- %msg%n'
+
+#mybatis plus配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      #配置mybatis plus 在更新时只更新非空和非NULL的字段
+      update-strategy: not_empty
+  mapper-locations: classpath:resources/mapper/*.xml
+  type-aliases-package: com.dyson.institute.web.mapper
