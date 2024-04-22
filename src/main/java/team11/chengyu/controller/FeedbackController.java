@@ -1,0 +1,19 @@
+package team11.chengyu.controller;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import team11.chengyu.domian.Feedback;
+import team11.chengyu.domian.Student;
+import team11.chengyu.service.FeedbackService;
+
+@RestController
+@RequestMapping("/feedbacks")
+public class FeedbackController {
+
+    @Autowired
+    private FeedbackService feedbackService;
+}

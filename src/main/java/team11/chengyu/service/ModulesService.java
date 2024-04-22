@@ -1,0 +1,22 @@
+package team11.chengyu.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import team11.chengyu.domian.Modules;
+import team11.chengyu.domian.Student;
+
+import java.util.List;
+
+
+/**
+ * @author Chengyu Peng
+ * @student ID:230045675
+ */
+@Transactional
+@Service
+public interface ModulesService {
+    public Modules getById(int modId);
+
+    public List<Modules> getAll();
+}
