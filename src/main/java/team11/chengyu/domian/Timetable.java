@@ -4,6 +4,10 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.time.LocalDateTime;
 
+/**
+ * @author Chengyu Peng
+ * @student ID:230045675
+ */
 public class Timetable {
     private Integer class_id;
     private String class_name;
@@ -12,26 +16,18 @@ public class Timetable {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime end_time;
     private String room;
-    private String coursework_name;
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime coursework_deadline;
-    private String coursework_description;
     private String staff_email_address;
     private Integer mod_Id;
-
 
     public Timetable() {
     }
 
-    public Timetable(Integer class_id, String class_name, LocalDateTime class_time, LocalDateTime end_time, String room, String coursework_name, LocalDateTime coursework_deadline, String coursework_description, String staff_email_address, Integer mod_Id) {
+    public Timetable(Integer class_id, String class_name, LocalDateTime class_time, LocalDateTime end_time, String room, String staff_email_address, Integer mod_Id) {
         this.class_id = class_id;
         this.class_name = class_name;
         this.class_time = class_time;
         this.end_time = end_time;
         this.room = room;
-        this.coursework_name = coursework_name;
-        this.coursework_deadline = coursework_deadline;
-        this.coursework_description = coursework_description;
         this.staff_email_address = staff_email_address;
         this.mod_Id = mod_Id;
     }
@@ -118,54 +114,6 @@ public class Timetable {
 
     /**
      * 获取
-     * @return coursework_name
-     */
-    public String getCoursework_name() {
-        return coursework_name;
-    }
-
-    /**
-     * 设置
-     * @param coursework_name
-     */
-    public void setCoursework_name(String coursework_name) {
-        this.coursework_name = coursework_name;
-    }
-
-    /**
-     * 获取
-     * @return coursework_deadline
-     */
-    public LocalDateTime getCoursework_deadline() {
-        return coursework_deadline;
-    }
-
-    /**
-     * 设置
-     * @param coursework_deadline
-     */
-    public void setCoursework_deadline(LocalDateTime coursework_deadline) {
-        this.coursework_deadline = coursework_deadline;
-    }
-
-    /**
-     * 获取
-     * @return coursework_description
-     */
-    public String getCoursework_description() {
-        return coursework_description;
-    }
-
-    /**
-     * 设置
-     * @param coursework_description
-     */
-    public void setCoursework_description(String coursework_description) {
-        this.coursework_description = coursework_description;
-    }
-
-    /**
-     * 获取
      * @return staff_email_address
      */
     public String getStaff_email_address() {
@@ -197,6 +145,6 @@ public class Timetable {
     }
 
     public String toString() {
-        return "ClassesPeng{class_id = " + class_id + ", class_name = " + class_name + ", class_time = " + class_time + ", end_time = " + end_time + ", room = " + room + ", coursework_name = " + coursework_name + ", coursework_deadline = " + coursework_deadline + ", coursework_description = " + coursework_description + ", staff_email_address = " + staff_email_address + ", mod_Id = " + mod_Id + "}";
+        return "Timetable{class_id = " + class_id + ", class_name = " + class_name + ", class_time = " + class_time + ", end_time = " + end_time + ", room = " + room + ", staff_email_address = " + staff_email_address + ", mod_Id = " + mod_Id + "}";
     }
 }

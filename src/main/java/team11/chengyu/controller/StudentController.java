@@ -7,6 +7,8 @@ import team11.chengyu.domian.Result;
 import team11.chengyu.domian.Student;
 import team11.chengyu.service.impl.StudentServiceImpl;
 
+import java.util.List;
+
 /**
  * @author Chengyu Peng
  * @student ID:230045675
@@ -54,11 +56,11 @@ public class StudentController {
         return new Result(code,student,massage);
     }*/
 
-    /*@GetMapping
+    @GetMapping
     public Result getAll() {
         List<Student> studentList = studentService.getAll();
         Integer code = studentList !=null?Code.GET_OK:Code.GET_ERR;
         String massage = studentList != null?"":"fail to search, please input again";
         return new Result(code,studentList,massage);
-    }*/
+    }
 }

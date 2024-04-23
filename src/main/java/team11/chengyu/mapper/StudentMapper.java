@@ -13,10 +13,10 @@ import java.util.stream.BaseStream;
  * @author Chengyu Peng
  * @student ID:230045675
  */
-//TODO 添加Mapper
 @Mapper
 @Repository
 public interface StudentMapper extends BaseMapper<Student> {
+    @Result(property = "staff_email_address", column = "staff_email_address")
 
     @Select("select * from student where student_email_address=#{student_email_address} and password=#{password}")
     public Student login(String student_email_address, String password);
