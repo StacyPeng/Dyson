@@ -13,7 +13,7 @@ public class FeedbackServiceImpl implements FeedbackService {
     private FeedbackMapper feedbackMapper;
 
     @Override
-    public Feedback upload(Feedback feedback) {
+    public boolean upload(Feedback feedback) {
         return feedbackMapper.upload(feedback);
     }
 }

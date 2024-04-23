@@ -6,5 +6,5 @@ import team11.chengyu.domian.Feedback;
 @Service
 public interface FeedbackService {
 
-    public Feedback upload(Feedback feedback);
+    public boolean upload(Feedback feedback);
 }

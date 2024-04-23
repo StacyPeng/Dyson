@@ -30,7 +30,7 @@ public class LoginController {
             return "dashboard";//跳转到dashboard页面
         }
         else {
-            model.addAttribute("msg", "用户名或者密码错误");//显示错误信息
+            model.addAttribute("msg", "User name or password is incorrect");//显示错误信息
             return "index";//跳转到首页
         }
     }

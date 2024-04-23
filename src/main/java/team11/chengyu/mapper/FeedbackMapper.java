@@ -14,5 +14,5 @@ import team11.chengyu.domian.Feedback;
 public interface FeedbackMapper {
 
     @Insert("insert into feedback values (#{student_email_address},#{content})")
-    public Feedback upload(Feedback feedback);
+    public boolean upload(Feedback feedback);
 }
