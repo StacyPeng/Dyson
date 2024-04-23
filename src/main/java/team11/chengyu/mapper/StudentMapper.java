@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 import team11.chengyu.domian.Student;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.BaseStream;
 
@@ -16,7 +17,6 @@ import java.util.stream.BaseStream;
 @Mapper
 @Repository
 public interface StudentMapper extends BaseMapper<Student> {
-    @Result(property = "staff_email_address", column = "staff_email_address")
 
     @Select("select * from student where student_email_address=#{student_email_address} and password=#{password}")
     public Student login(String student_email_address, String password);
@@ -35,6 +35,9 @@ public interface StudentMapper extends BaseMapper<Student> {
     /*@Delete("delete from student where student_email_address=#{student_email_address}")
     public void delete(String emailAddress);*/
 
+    @Results(id = "studentResultMap", value = {
+            @Result(property = "student_email_address", column = "student_email_address"),
+    })
     @Select("select * from student")
     public List<Student> getAll();
 }

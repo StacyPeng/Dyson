@@ -2,6 +2,7 @@ package team11.chengyu.domian;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 /**
@@ -12,17 +13,18 @@ public class Timetable {
     private Integer class_id;
     private String class_name;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime class_time;
+    private Timestamp class_time;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime end_time;
+    private Timestamp end_time;
     private String room;
     private String staff_email_address;
     private Integer mod_Id;
 
+
     public Timetable() {
     }
 
-    public Timetable(Integer class_id, String class_name, LocalDateTime class_time, LocalDateTime end_time, String room, String staff_email_address, Integer mod_Id) {
+    public Timetable(Integer class_id, String class_name, Timestamp class_time, Timestamp end_time, String room, String staff_email_address, Integer mod_Id) {
         this.class_id = class_id;
         this.class_name = class_name;
         this.class_time = class_time;
@@ -68,7 +70,7 @@ public class Timetable {
      * 获取
      * @return class_time
      */
-    public LocalDateTime getClass_time() {
+    public Timestamp getClass_time() {
         return class_time;
     }
 
@@ -76,7 +78,7 @@ public class Timetable {
      * 设置
      * @param class_time
      */
-    public void setClass_time(LocalDateTime class_time) {
+    public void setClass_time(Timestamp class_time) {
         this.class_time = class_time;
     }
 
@@ -84,7 +86,7 @@ public class Timetable {
      * 获取
      * @return end_time
      */
-    public LocalDateTime getEnd_time() {
+    public Timestamp getEnd_time() {
         return end_time;
     }
 
@@ -92,7 +94,7 @@ public class Timetable {
      * 设置
      * @param end_time
      */
-    public void setEnd_time(LocalDateTime end_time) {
+    public void setEnd_time(Timestamp end_time) {
         this.end_time = end_time;
     }
 

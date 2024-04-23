@@ -21,8 +21,8 @@ public interface TimetableMapper {
     @Results(id = "timetableResultMap", value = {
             @Result(property = "class_id", column = "class_id"),
             @Result(property = "class_name", column = "class_name"),
-            @Result(property = "class_time", column = "class_time", javaType = LocalDateTime.class),
-            @Result(property = "end_time", column = "end_time", javaType = LocalDateTime.class),
+            @Result(property = "class_time", column = "class_time"),
+            @Result(property = "end_time", column = "end_time"),
             @Result(property = "room", column = "room"),
             @Result(property = "staff_email_address", column = "staff_email_address"),
             @Result(property = "mod_Id", column = "mod_Id")

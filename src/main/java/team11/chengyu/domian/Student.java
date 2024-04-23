@@ -1,5 +1,6 @@
 package team11.chengyu.domian;
 
+import jakarta.persistence.Column;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
