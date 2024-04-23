@@ -8,6 +8,7 @@ import team11.chengyu.domian.StuClass;
 import java.time.LocalDateTime;
 import java.util.Date;
 
+/*@author: Dechun Meng*/
 @Mapper
 public interface StuClassMapper extends BaseMapper<StuClass> {
 

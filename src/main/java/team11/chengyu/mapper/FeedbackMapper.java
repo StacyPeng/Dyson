@@ -5,6 +5,10 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 import team11.chengyu.domian.Feedback;
 
+/**
+ * @author Chengyu Peng
+ * @student ID:230045675
+ */
 @Mapper
 @Repository
 public interface FeedbackMapper {

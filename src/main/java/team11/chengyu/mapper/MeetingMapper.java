@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import team11.chengyu.domian.Meeting;
 
+/*@author: Dechun Meng*/
 @Mapper
 public interface MeetingMapper extends BaseMapper<Meeting> {
 

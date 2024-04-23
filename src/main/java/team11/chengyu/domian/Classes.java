@@ -9,6 +9,7 @@ import lombok.Data;
 import java.util.Date;
 
 /**
+ * @author: Dechun Meng
  * @ClassName: Classes
  * @Description: Description of the class file
  */
@@ -17,10 +18,10 @@ import java.util.Date;
 public class Classes {
     private Long classId;
     private String className;
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date classTime;
     private String room;
     private String courseworkName;
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date courseworkDeadline;
 }

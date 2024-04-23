@@ -13,10 +13,10 @@ import java.util.List;
  */
 @Mapper
 @Repository
-public interface CourseMapper {
-    @Select("select * from Classes where classId = #{classId}")
+public interface CourseworkMapper {
+    @Select("select * from classes where class_id = #{classId}")
     public Coursework getById(int classId);
 
-    @Select("select * from Classes")
+    @Select("select * from classes")
     public List<Coursework> getAll();
 }

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 /**
+ * @author: Dechun Meng
  * @ClassName: SignIn
  * @Description: Description of the class file
  */

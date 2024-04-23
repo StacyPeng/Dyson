@@ -10,6 +10,7 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 /**
+ * @author: Dechun Meng
  * @ClassName: Meeting
  * @Description: Description of the class file
  */

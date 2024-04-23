@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import team11.chengyu.domian.Meeting;
 
 /**
+ * @author: Dechun Meng
  * @InterfaceName: MeetingService
  * @Description: Description of the interface file
  */
