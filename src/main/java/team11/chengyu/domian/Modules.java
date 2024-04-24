@@ -5,7 +5,8 @@ package team11.chengyu.domian;
  * @student ID:230045675
  */
 
-public class Modules {
+public class
+Modules {
     private Integer modId;
     private String modName;
     private Integer proId;

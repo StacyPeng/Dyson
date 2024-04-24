@@ -1,4 +1,3 @@
-/*
 //Auther：Hengqian Mao
 package team11.chengyu.controller;
 
@@ -30,4 +29,3 @@ public class CourseController {
         return courseService.findAllCourses();
     }
 }
-*/

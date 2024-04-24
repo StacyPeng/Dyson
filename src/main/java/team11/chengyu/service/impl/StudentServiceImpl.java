@@ -52,7 +52,7 @@ public class StudentServiceImpl implements StudentService {
     public String register(Student student) {
         if ("".equals(student.getPassword())) {
             return "please input password";
-        } else if ("".equals(student.getStudent_email_address())) {
+        } else if ("".equals(student.getStudentEmailAddress())) {
             return "please input email address";
         } else {
             studentMapper.register(student);

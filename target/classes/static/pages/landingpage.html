@@ -25,7 +25,7 @@
         <div class="app-header header-shadow">
             <div class="app-header__logo">
                 <div class="logo-src">
-                    <a href="landingpage.html"></a>
+                    <a href="landingpage.html?name=studentName"></a>
                 </div>
                 <div class="header__pane ml-auto">
                     <div>
@@ -1478,7 +1478,7 @@
                             </div>
                             <div class="divider"></div>
                             <div class="jumbotron" data-step="1" data-intro="This is a tooltip!">
-                                <h1 class="display-4">Hello, (Student Name)!</h1>
+                                <h1 class="display-4"></h1>
                                 <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
                                     calling extra
                                     attention to featured content or information.</p>
@@ -2735,10 +2735,17 @@
      * @student ID:230045675
      */
     document.addEventListener('DOMContentLoaded', function() {
-        const queryParams = new URLSearchParams(window.location.search);
-        const studentName = queryParams.get('name');
+        let studentName = new URLSearchParams(window.location.search).get('name');
+        if (!studentName) {
+            studentName = localStorage.getItem('studentName'); // 尝试从本地存储获取学生名称
+        } else {
+            localStorage.setItem('studentName', studentName); // 将新的学生名称保存到本地存储
+        }
+
         if (studentName) {
-            document.querySelector('.display-4').textContent = 'Hello, ' + studentName + '!';
+            document.querySelectorAll('.display-4').forEach(function(header) {
+                header.textContent = 'Hello, ' + studentName + '!';
+            });
         }
     });
 </script>

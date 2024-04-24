@@ -1,50 +1,63 @@
 package team11.chengyu.domian;
 
-import jakarta.persistence.Column;
-import org.springframework.stereotype.Component;
-
+import jakarta.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
-
-/**
- * @author Chengyu Peng
- * @student ID:230045675
- */
+@Entity
+@Table(name = "student")
 public class Student {
-    private String student_email_address;
-    private String stuName;
-    private String password;
-    private String gender;
-    private Date birthday;
-    private Integer class_id;
 
+    @Id
+    @Column(name = "student_email_address", nullable = false)
+    private String studentEmailAddress;
+
+    @Column(name = "stu_name")
+    private String stuName;
+
+    @Column(name = "password")
+    private String password;
+
+    @Column(name = "gender")
+    private String gender;
+
+    @Column(name = "birthday")
+    @Temporal(TemporalType.DATE)
+    private Date birthday;
+
+    @Column(name = "class_id")
+    private Integer classId;
+
+    @ManyToMany(mappedBy = "students")
+    private Set<Course> coursesEnrolled;
 
     public Student() {
     }
 
-    public Student(String student_email_address, String stuName, String password, String gender, Date birthday, Integer class_id) {
-        this.student_email_address = student_email_address;
+    public Student(String studentEmailAddress, String stuName, String password, String gender, Date birthday, Integer classId, Set<Course> coursesEnrolled) {
+        this.studentEmailAddress = studentEmailAddress;
         this.stuName = stuName;
         this.password = password;
         this.gender = gender;
         this.birthday = birthday;
-        this.class_id = class_id;
+        this.classId = classId;
+        this.coursesEnrolled = coursesEnrolled;
     }
 
     /**
      * 获取
-     * @return student_email_address
+     * @return studentEmailAddress
      */
-    public String getStudent_email_address() {
-        return student_email_address;
+    public String getStudentEmailAddress() {
+        return studentEmailAddress;
     }
 
     /**
      * 设置
-     * @param student_email_address
+     * @param studentEmailAddress
      */
-    public void setStudent_email_address(String student_email_address) {
-        this.student_email_address = student_email_address;
+    public void setStudentEmailAddress(String studentEmailAddress) {
+        this.studentEmailAddress = studentEmailAddress;
     }
 
     /**
@@ -113,21 +126,42 @@ public class Student {
 
     /**
      * 获取
-     * @return class_id
+     * @return classId
      */
-    public Integer getClass_id() {
-        return class_id;
+    public Integer getClassId() {
+        return classId;
     }
 
     /**
      * 设置
-     * @param class_id
+     * @param classId
      */
-    public void setClass_id(Integer class_id) {
-        this.class_id = class_id;
+    public void setClassId(Integer classId) {
+        this.classId = classId;
+    }
+
+    /**
+     * 获取
+     * @return coursesEnrolled
+     */
+    public Set<Course> getCoursesEnrolled() {
+        return coursesEnrolled;
+    }
+
+    /**
+     * 设置
+     * @param coursesEnrolled
+     */
+    public void setCoursesEnrolled(Set<Course> coursesEnrolled) {
+        this.coursesEnrolled = coursesEnrolled;
     }
 
     public String toString() {
-        return "Student{student_email_address = " + student_email_address + ", stuName = " + stuName + ", password = " + password + ", gender = " + gender + ", birthday = " + birthday + ", class_id = " + class_id + "}";
+        return "Student{studentEmailAddress = " + studentEmailAddress + ", stuName = " + stuName + ", password = " + password + ", gender = " + gender + ", birthday = " + birthday + ", classId = " + classId + ", coursesEnrolled = " + coursesEnrolled + "}";
     }
+
+    // 构造函数、getter和setter
+    // ...
+
+
 }
