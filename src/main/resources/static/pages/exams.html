@@ -56,10 +56,12 @@
             <div class="app-header-left">
                 <div class="search-wrapper">
                     <div class="input-holder">
-                        <input type="text" class="search-input" placeholder="Type to search">
-                        <button class="search-icon"><span></span></button>
+                        <input type="text" class="search-input" placeholder="Type to search" id="searchInput">
+                        <!--TODO add id-->
+                        <button class="search-icon" onclick="searchExams()"><span></span></button>
                     </div>
-                    <button class="close"></button>
+                    <!--TODO add id-->
+                    <button class="close" onclick="clearSearch()"></button>
                 </div>
                 <!--
                 <ul class="header-megamenu nav">
@@ -236,6 +238,8 @@
                 </ul>
                 -->
             </div>
+            <!--TODO add content-->
+            <div id="searchResults"></div>
             <div class="app-header-right">
                 <div class="header-dots">
                     <div class="dropdown">
@@ -2759,6 +2763,66 @@
                 console.error('Failed to fetch exam data:', error);
             }
         })
+    }
+
+    //implement search function
+    function searchExams() {
+        var input = document.getElementById('searchInput').value;
+        if (input.length === 0) {
+            alert("请输入搜索内容。");
+            return;
+        }
+
+        // 构建带有搜索词的 URL
+        var url = "/exams?query=" + encodeURIComponent(input);
+
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json(); // 解析 JSON 数据
+            })
+            .then(data => {
+                console.log("Received data:", data); // 查看数据
+                console.log("Type of data:", typeof data); // 检查数据类型
+                displayResults(data); // 处理并显示数据
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error); // 处理任何在请求或处理过程中出现的错误
+            });
+    }
+
+    function displayResults(data) {
+        var resultsContainer = document.getElementById('searchResults');
+        resultsContainer.innerHTML = ''; // 清除之前的结果
+
+        // 检查 data 是否含有 exams 数组
+        if (!data.exams || !Array.isArray(data.exams)) {
+            console.error('Expected an array in data.exams but got:', data.exams);
+            resultsContainer.innerHTML = '<p>Error: Received data does not contain a valid "exams" array.</p>';
+            return;
+        }
+
+        if (data.exams.length === 0) {
+            resultsContainer.innerHTML = '<p>No results found.</p>';
+            return;
+        }
+
+        var content = data.exams.map(exam => {
+            return `<div class="search-item">
+                    <h4>${exam.examName} (${exam.examId})</h4>
+                    <p>${exam.place} at ${new Date(exam.examTime).toLocaleString()}</p>
+                </div>`;
+        }).join('');
+
+        resultsContainer.innerHTML = content;
+    }
+
+
+    function clearSearch() {
+        document.getElementById('searchInput').value = '';
+        document.getElementById('searchResults').innerHTML = '';
     }
 </script>
 </html>

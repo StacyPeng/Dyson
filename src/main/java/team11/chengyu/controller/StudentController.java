@@ -36,7 +36,7 @@ public class StudentController {
         return new Result(flag?Code.REGISTER_OK:Code.REGISTER_ERR,flag);
     }
 
-    @PutMapping
+    @PutMapping("/modifypassword")
     public Result modifyPasswor(@RequestParam String password,String student_email_address) {
         boolean flag = studentService.modifyPassword(password,student_email_address);
         return new Result(flag ? Code.UPDATE_OK:Code.UPDATE_ERR,flag);

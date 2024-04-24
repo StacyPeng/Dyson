@@ -28,20 +28,20 @@ public class Student {
     @Column(name = "class_id")
     private Integer classId;
 
-    @ManyToMany(mappedBy = "students")
-    private Set<Course> coursesEnrolled;
+    /*@ManyToMany(mappedBy = "students")
+    private Set<Course> coursesEnrolled;*/
 
     public Student() {
     }
 
-    public Student(String studentEmailAddress, String stuName, String password, String gender, Date birthday, Integer classId, Set<Course> coursesEnrolled) {
+    public Student(String studentEmailAddress, String stuName, String password, String gender, Date birthday, Integer classId/*, Set<Course> coursesEnrolled*/) {
         this.studentEmailAddress = studentEmailAddress;
         this.stuName = stuName;
         this.password = password;
         this.gender = gender;
         this.birthday = birthday;
         this.classId = classId;
-        this.coursesEnrolled = coursesEnrolled;
+        /*this.coursesEnrolled = coursesEnrolled;*/
     }
 
     /**
@@ -144,21 +144,21 @@ public class Student {
      * 获取
      * @return coursesEnrolled
      */
-    public Set<Course> getCoursesEnrolled() {
+    /*public Set<Course> getCoursesEnrolled() {
         return coursesEnrolled;
-    }
+    }*/
 
     /**
      * 设置
-     * @param coursesEnrolled
-     */
-    public void setCoursesEnrolled(Set<Course> coursesEnrolled) {
+     * @param /*coursesEnrolled
+//     */
+    /*public void setCoursesEnrolled(Set<Course> coursesEnrolled) {
         this.coursesEnrolled = coursesEnrolled;
-    }
+    }*/
 
-    public String toString() {
+    /*public String toString() {
         return "Student{studentEmailAddress = " + studentEmailAddress + ", stuName = " + stuName + ", password = " + password + ", gender = " + gender + ", birthday = " + birthday + ", classId = " + classId + ", coursesEnrolled = " + coursesEnrolled + "}";
-    }
+    }*/
 
     // 构造函数、getter和setter
     // ...

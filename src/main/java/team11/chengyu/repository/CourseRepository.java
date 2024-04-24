@@ -1,3 +1,4 @@
+/*
 //Auther：Hengqian Mao
 package team11.chengyu.repository;
 
@@ -8,3 +9,4 @@ import team11.chengyu.domian.Course;
 @Repository
 public interface CourseRepository extends JpaRepository<Course, Long> {
 }
+*/

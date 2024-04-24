@@ -24,7 +24,7 @@ public class ExamController {
     @Autowired
     private ExamService examService;
 
-    @GetMapping("/{modId}")
+    @GetMapping("/{examName}")
     public Result getById(@PathVariable int modId) {
         Exam exam = examService.getById(modId);
         Integer code = exam !=null?Code.GET_OK:Code.GET_ERR;
