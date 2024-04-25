@@ -25,8 +25,8 @@ public class ExamController {
     private ExamService examService;
 
     @GetMapping("/{examName}")
-    public Result getById(@PathVariable int modId) {
-        Exam exam = examService.getById(modId);
+    public Result getByName(@PathVariable String examName) {
+        Exam exam = examService.getByName(examName);
         Integer code = exam !=null?Code.GET_OK:Code.GET_ERR;
         String massage = exam != null?"":"fail to search, please input again";
         return new Result(code,exam,massage);

@@ -21,9 +21,9 @@ public class ModulesController {
     @Autowired
     private ModulesService modulesService;
 
-    @GetMapping("/{id}")
-    public Result getByEmail(@PathVariable int modId) {
-        Modules modules = modulesService.getById(modId);
+    @GetMapping("/{modName}")
+    public Result getByName(@PathVariable String modName) {
+        Modules modules = modulesService.getByName(modName);
         Integer code = modules !=null?Code.GET_OK:Code.GET_ERR;
         String massage = modules != null?"":"fail to search, please input again";
         return new Result(code,modules,massage);

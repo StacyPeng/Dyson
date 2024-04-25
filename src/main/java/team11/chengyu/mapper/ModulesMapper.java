@@ -14,8 +14,8 @@ import java.util.List;
 @Mapper
 @Repository
 public interface ModulesMapper {
-    @Select("select * from modules where mod_Id=#{modId}")
-    public Modules getById(int modId);
+    @Select("select * from modules where modName=#{modName}")
+    public Modules getByName(String modName);
 
     @Select("select * from modules")
     public List<Modules> getAll();

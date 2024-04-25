@@ -16,7 +16,7 @@ import java.util.List;
 @Service
 public interface ExamService {
 
-    public Exam getById(int modID);
+    public Exam getByName(String examName);
 
     public List<Exam> getAll();
 }

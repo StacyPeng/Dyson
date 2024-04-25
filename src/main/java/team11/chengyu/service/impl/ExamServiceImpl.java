@@ -19,8 +19,8 @@ public class ExamServiceImpl implements ExamService {
     public ExamMapper examMapper;
 
     @Override
-    public Exam getById(int modID) {
-        return examMapper.getById(modID);
+    public Exam getByName(String examName) {
+        return examMapper.getByName(examName);
     }
 
     @Override

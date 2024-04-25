@@ -56,10 +56,13 @@
                 <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
-                            <input type="text" class="search-input" placeholder="Type to search">
-                            <button class="search-icon"><span></span></button>
+                            <!--TODO add id-->
+                            <input type="text" class="search-input" placeholder="Type to search" id="searchInput">
+                            <!--TODO add id-->
+                            <button class="search-icon" onclick="searchModule()"><span></span></button>
                         </div>
-                        <button class="close"></button>
+                        <!--TODO add id-->
+                        <button class="close" onclick="clearSearch()"></button>
                     </div>
                     <!--
                     <ul class="header-megamenu nav">
@@ -2905,5 +2908,47 @@
         $('#moduleTabs a').removeClass('active'); // 移除所有标签上的active类
         $(this).addClass('active'); // 只为被点击的标签添加active类
     });
+
+    //implement search function
+    function searchModule() {
+        var modName = document.getElementById("searchInput").value;
+        if (!modName.trim()) {
+            console.error('Error: Module name must not be empty');
+            return; // 如果输入为空，直接返回，不做请求
+        }
+        fetch(`/modules/${modName}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.code === 200) {
+                    console.log('成功:', data);
+                    var moduleId = data.data.modId;
+                    var targetTabLink = $("#moduleTabs a[href='#tab-faq-" + moduleId + "']");
+                    var targetTabContent = $("#tab-faq-" + moduleId);
+
+                    $('#moduleTabs a').removeClass('active');
+                    targetTabLink.addClass('active');
+
+                    $('.tab-pane').removeClass('show active');
+                    targetTabContent.addClass('show active');
+
+                    // 仅当目标元素存在时才尝试滚动到视图
+                    if(targetTabContent.length) {
+                        targetTabContent[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                } else {
+                    console.error('完整错误数据:', data);
+                }
+            })
+            .catch(error => {
+                console.error('Network or parsing error:', error);
+            });
+    }
+
+
 </script>
 </html>

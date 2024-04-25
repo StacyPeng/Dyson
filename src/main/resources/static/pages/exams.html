@@ -56,6 +56,7 @@
             <div class="app-header-left">
                 <div class="search-wrapper">
                     <div class="input-holder">
+                        <!--TODO add id-->
                         <input type="text" class="search-input" placeholder="Type to search" id="searchInput">
                         <!--TODO add id-->
                         <button class="search-icon" onclick="searchExams()"><span></span></button>
@@ -2736,7 +2737,7 @@
      * @author Chengyu Peng
      * @student ID:230045675
      */
-    window.onload=function () {
+    window.onload = function () {
         $.ajax({
             url: '/exams',
             type: 'GET',
@@ -2767,62 +2768,86 @@
 
     //implement search function
     function searchExams() {
-        var input = document.getElementById('searchInput').value;
-        if (input.length === 0) {
-            alert("请输入搜索内容。");
-            return;
+        var examName = document.getElementById("searchInput").value;
+        if (!examName.trim()) {
+            console.error('Error: Exam name must not be empty');
+            return; // 如果输入为空，直接返回，不做请求
         }
-
-        // 构建带有搜索词的 URL
-        var url = "/exams?query=" + encodeURIComponent(input);
-
-        fetch(url)
+        fetch(`/exams/${examName}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
-                return response.json(); // 解析 JSON 数据
+                return response.json();
             })
             .then(data => {
-                console.log("Received data:", data); // 查看数据
-                console.log("Type of data:", typeof data); // 检查数据类型
-                displayResults(data); // 处理并显示数据
+                //console.log(data)
+                if (data.code === 200) {
+                    //console.log('Success:', data);
+                    updateTableWithExams([data.data]); // 更新表格，假设返回的是单个考试对象
+                } else {
+                    console.error('Full error data:', data);
+                    updateTableWithExams([]); // 清空表格
+                }
             })
             .catch(error => {
-                console.error('Error fetching data:', error); // 处理任何在请求或处理过程中出现的错误
+                console.error('Network or parsing error:', error);
+                console.error('Error:', error);
+                updateTableWithExams([]); // 出错时清空表格
             });
     }
 
-    function displayResults(data) {
-        var resultsContainer = document.getElementById('searchResults');
-        resultsContainer.innerHTML = ''; // 清除之前的结果
-
-        // 检查 data 是否含有 exams 数组
-        if (!data.exams || !Array.isArray(data.exams)) {
-            console.error('Expected an array in data.exams but got:', data.exams);
-            resultsContainer.innerHTML = '<p>Error: Received data does not contain a valid "exams" array.</p>';
-            return;
-        }
-
-        if (data.exams.length === 0) {
-            resultsContainer.innerHTML = '<p>No results found.</p>';
-            return;
-        }
-
-        var content = data.exams.map(exam => {
-            return `<div class="search-item">
-                    <h4>${exam.examName} (${exam.examId})</h4>
-                    <p>${exam.place} at ${new Date(exam.examTime).toLocaleString()}</p>
-                </div>`;
-        }).join('');
-
-        resultsContainer.innerHTML = content;
+    function updateTableWithExams(exams) {
+        const tbody = document.getElementById('examTableBody');
+        tbody.innerHTML = ''; // 清空现有的表格内容
+        exams.forEach(exam => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `<td>${exam.examId}</td>
+                        <td>${exam.examName}</td>
+                        <td>${exam.examTime}</td>
+                        <td>${exam.place}</td>
+                        <td>${exam.modId}</td>`;
+            tbody.appendChild(tr);
+        });
     }
-
 
     function clearSearch() {
         document.getElementById('searchInput').value = '';
-        document.getElementById('searchResults').innerHTML = '';
+        // 可选：清空搜索结果显示区域
+        // document.getElementById('searchResults').innerHTML = '';
+        loadAllExams(); // 重新加载并显示所有考试数据
     }
+
+    // 加载所有考试数据的函数
+    function loadAllExams() {
+        $.ajax({
+            url: '/exams',
+            type: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                $('#examTableBody').empty();
+                if (Array.isArray(response.data)) {
+                    response.data.forEach(function (exam) {
+                        $('#examTableBody').append('<tr>' +
+                            '<td>' + exam.examId + '</td>' +
+                            '<td>' + exam.examName + '</td>' +
+                            '<td>' + exam.examTime + '</td>' +
+                            '<td>' + exam.place + '</td>' +
+                            '<td>' + exam.modId + '</td>' +
+                            '</tr>');
+                    });
+                } else {
+                    console.error('The exam data format does not match:', response.data);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error('Failed to fetch exam data:', error);
+            }
+        });
+    }
+
+    // 页面加载时加载所有考试数据
+    window.onload = loadAllExams;
+
 </script>
 </html>

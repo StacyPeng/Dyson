@@ -14,8 +14,8 @@ import java.util.List;
 @Mapper
 @Repository
 public interface ExamMapper {
-    @Select("select * from Exames where modId =#{modId}")
-    public Exam getById(int modId);
+    @Select("select * from Exames where examName =#{examName}")
+    public Exam getByName(String examName);
 
     @Select("select * from Exames")
     public List<Exam> getAll();

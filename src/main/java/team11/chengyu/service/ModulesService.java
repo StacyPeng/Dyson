@@ -16,7 +16,7 @@ import java.util.List;
 @Transactional
 @Service
 public interface ModulesService {
-    public Modules getById(int modId);
+    public Modules getByName(String modName);
 
     public List<Modules> getAll();
 }

@@ -20,8 +20,8 @@ public class ModulesServiceImpl implements ModulesService {
     private ModulesMapper modulesMapper;
 
     @Override
-    public Modules getById(int modId) {
-        return modulesMapper.getById(modId);
+    public Modules getByName(String modName) {
+        return modulesMapper.getByName(modName);
     }
 
     @Override
