@@ -4,6 +4,7 @@
     <option name="state">
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/resources/static/pages/indexTest.html" value="file://$PROJECT_DIR$/src/main/resources/static/pages" />
+        <entry key="file://$PROJECT_DIR$/src/main/resources/static/pages/moduleTest.html" value="file://$PROJECT_DIR$/src/main/resources/static/pages" />
       </map>
     </option>
   </component>
