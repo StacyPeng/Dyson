@@ -1,12 +1,11 @@
-/*
 //Auther：Hengqian Mao
-package team11.chengyu.controller;
+package team11.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import team11.chengyu.domian.Course;
-import team11.chengyu.service.impl.CourseService;
+import team11.domian.Course;
+import team11.service.impl.CourseService;
 
 import java.util.List;
 
@@ -30,4 +29,3 @@ public class CourseController {
         return courseService.findAllCourses();
     }
 }
-*/
