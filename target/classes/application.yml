@@ -1,4 +1,5 @@
 
+
 server:
     port: 8089
 
@@ -25,11 +26,11 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
   mapper-locations: classpath:/mappers/*
-  type-aliases-package: team11.chengyu.domian
+  type-aliases-package: team11.domian
 
 logging:
   level:
-    root: info #debug #warn
+    root:  debug #debug #warn
   pattern:
     console: '%d{yyyy-MM-dd} [%thread] %-5level %logger- %msg%n'
 
