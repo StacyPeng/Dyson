@@ -1,11 +1,10 @@
-/*
 //Auther：Hengqian Mao
-package team11.chengyu.service.impl;
+package team11.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import team11.chengyu.domian.Course;
-import team11.chengyu.repository.CourseRepository;
+import team11.domian.Course;
+import team11.repository.CourseRepository;
 
 import java.util.List;
 
@@ -54,4 +53,3 @@ public class CourseService {
     // Add any other service methods you need...
 
 }
-*/

@@ -1,6 +1,5 @@
-/*
 //Auther：Hengqian Mao
-package team11.chengyu.domian;
+package team11.domian;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
@@ -17,6 +16,7 @@ public class Course {
     @Column(name = "class_name")
     private String title;
 
+
     @ManyToOne // 教师和课程之间的多对一关系
     @JoinColumn(name = "staff_email_address") // 这里指定外键列名，匹配 Staff 表的主键
     private Staff teacher;
@@ -27,17 +27,22 @@ public class Course {
     @Column(name = "end_time") // 新添加的结束时间字段
     private LocalDateTime endTime;
 
+
     @Column(name = "room")
     private String room;
+
 
     @Column(name = "coursework_name")
     private String courseworkName;
 
+
     @Column(name = "coursework_deadline")
     private LocalDateTime courseworkDeadline;
 
+
     @Column(name = "coursework_description")
     private String courseworkDescription;
+
 
     @Column(name = "mod_Id")
     private Integer mod_Id;
@@ -142,4 +147,3 @@ public class Course {
         this.students = students;
     }
 }
-*/
