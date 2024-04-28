@@ -1,4 +1,4 @@
-package team11;
+package team11.chengyu;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
