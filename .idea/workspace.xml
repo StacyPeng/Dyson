@@ -1,130 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/Staff-main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/IMG_1112-01.jpeg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Screenshot 2024-03-12 164331.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/Timetable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/book-meeting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/exams.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/extension.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/landingpage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/modules.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/rough.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/login-security.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/man-working-on-laptop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/original.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/th.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/Staff-assets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/assets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-apexchart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-calendar2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-cdn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-jvector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-jvectormap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-simplebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-theme1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-theme2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-theme3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-theme4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-theme5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Exam-results.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Staff-all-students.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Timetable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/book-meeting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/exams.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/extension.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/landingpage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/modules.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/rough.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-calendar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-student-individual.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/DysonApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/MeetingMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/SignInMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/StuClassMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/GlobalCorsConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/GlobalCorsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/SpringMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/WebMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/Code.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseworkController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ExamController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ExtensionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/FeedbackController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/MeetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ModulesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ProjectExceptionAdvice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/SigninController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/StudentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/TimetableController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Classes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Coursework.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Exam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Feedback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Meeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Modules.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/ResultVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/SignIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Staff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/StuClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Timetable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/CourseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/StaffDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/exception/BussinessException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/exception/SystemException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/CourseworkMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ExamMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/FeedbackMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/MeetingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ModulesMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/SignInMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StuClassMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StudentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/TimetableMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/CourseRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/CourseworkService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/ExamService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/FeedbackService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/MeetingService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/ModulesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/SignInService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StuClassService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/TimetableService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/CourseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/CourseworkServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ExamServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/FeedbackServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/MeetingServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ModulesServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/SignInServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StuClassServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StudentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/TimetableServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/utils/ResultUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/utils/status/StatusCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/config/GlobalCorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/config/GlobalCorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Coursework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Coursework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Modules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Modules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Timetable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/exams.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/exams.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/landingpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/landingpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/modules.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,28 +38,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DysonApplication.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DysonApplication.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="student-management-system" />
@@ -210,7 +110,8 @@
       <workItem from="1714599137235" duration="201000" />
       <workItem from="1714599341364" duration="138000" />
       <workItem from="1714599482248" duration="2000" />
-      <workItem from="1714599508650" duration="317000" />
+      <workItem from="1714599508650" duration="908000" />
+      <workItem from="1714600492967" duration="1904000" />
     </task>
     <servers />
   </component>

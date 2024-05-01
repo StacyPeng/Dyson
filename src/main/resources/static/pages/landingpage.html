@@ -2741,9 +2741,9 @@
     document.addEventListener('DOMContentLoaded', function() {
         let studentName = new URLSearchParams(window.location.search).get('name');
         if (!studentName) {
-            studentName = localStorage.getItem('studentName'); // 尝试从本地存储获取学生名称
+            studentName = localStorage.getItem('studentName'); // try to get student name from local storage
         } else {
-            localStorage.setItem('studentName', studentName); // 将新的学生名称保存到本地存储
+            localStorage.setItem('studentName', studentName); // store new student name to local storage
         }
 
         if (studentName) {

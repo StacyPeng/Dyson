@@ -21,15 +21,15 @@ public class LoginController {
 
     public String login(@RequestParam("student_email_address") String email, @RequestParam("password") String password,
                         Model model, HttpSession session) {
-        //@RequestParam接收前端数据，参数是前端的name
+        //@RequestParam receive data of front end，parameter is name of front end
         if(studentMapper.getByEmail(email)!=null&& password.equals(studentMapper.getByEmail(email).getPassword())){
-            //查到了用户而且密码正确
-            session.setAttribute("LoginUser", email);//用户名传到session，用于安全控制
-            return "dashboard";//跳转到dashboard页面
+            //find user and password is correct
+            session.setAttribute("LoginUser", email);//username is sent to the session for security control
+            return "dashboard";//redirect to landing page
         }
         else {
-            model.addAttribute("msg", "User name or password is incorrect");//显示错误信息
-            return "index";//跳转到首页
+            model.addAttribute("msg", "User name or password is incorrect");//alert wrong message
+            return "index";//redirect to index
         }
     }
 }

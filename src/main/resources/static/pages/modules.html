@@ -2882,15 +2882,15 @@
             dataType: 'json',
             success: function (response) {
                 console.log("Response received: ", response);
-                var modulesData = response.data; // 取得模块数组
+                var modulesData = response.data; // get module data
 
-                $('#moduleTabs').empty(); // 清空现有的 Tab Link
-                $('.tab-content').empty(); // 清空现有的 Tab Pane
+                $('#moduleTabs').empty(); // delete existing Tab Link
+                $('.tab-content').empty(); // delete existing Tab Pane
 
                 $.each(modulesData, function (index, module) {
                     console.log("Module being processed: ", module);
 
-                    // 创建 Tab Link
+                    // create Tab Link
                     var tabLink = $('<a>')
                         .attr('href', "#tab-faq-" + module.modId)
                         .attr('data-toggle', "tab")
@@ -2898,14 +2898,14 @@
                         .text(module.modName);
                     $('#moduleTabs').append(tabLink);
 
-                    // 创建对应的 Tab Pane
+                    // create corresponding Tab Pane
                     var tabPane = $('<div class="tab-pane" id="tab-faq-' + module.modId + '">')
                         .html('<h4>' + module.modName + '</h4>' +
                             '<p>Content for ' + module.description + '</p>');
                     $('.tab-content').append(tabPane);
                 });
 
-                // 激活第一个 Tab Link 和第一个 Tab Pane
+                // activate first Tab Link and first Tab Pane
                 $('#moduleTabs a:first').addClass('active');
                 $('.tab-content .tab-pane:first').addClass('show active');
             },
@@ -2915,15 +2915,15 @@
         });
     }
 
-    // 确保文档加载完成后再调用 fetchModulesAndUpdatePage
+    // ensure call fetchModulesAndUpdatePage method after document load completely
     $(document).ready(function () {
         fetchModulesAndUpdatePage();
     });
 
     $(document).on('click', '#moduleTabs a', function(e) {
-        e.preventDefault(); // 阻止默认的锚点点击行为
-        $('#moduleTabs a').removeClass('active'); // 移除所有标签上的active类
-        $(this).addClass('active'); // 只为被点击的标签添加active类
+        e.preventDefault(); // prevents the default anchor click behavior
+        $('#moduleTabs a').removeClass('active'); // remove active class from all titles
+        $(this).addClass('active'); // only add active class to title which be clicked
     });
 
     //implement search function
@@ -2931,7 +2931,7 @@
         var modName = document.getElementById("searchInput").value;
         if (!modName.trim()) {
             console.error('Error: Module name must not be empty');
-            return; // 如果输入为空，直接返回，不做请求
+            return; // If the input is empty, it simply returns without making a request
         }
         fetch(`/modules/${modName}`)
             .then(response => {
@@ -2942,7 +2942,7 @@
             })
             .then(data => {
                 if (data.code === 200) {
-                    console.log('成功:', data);
+                    console.log('success:', data);
                     var moduleId = data.data.modId;
                     var targetTabLink = $("#moduleTabs a[href='#tab-faq-" + moduleId + "']");
                     var targetTabContent = $("#tab-faq-" + moduleId);
@@ -2953,12 +2953,12 @@
                     $('.tab-pane').removeClass('show active');
                     targetTabContent.addClass('show active');
 
-                    // 仅当目标元素存在时才尝试滚动到视图
+                    // try to scroll to a view only if the target element exists
                     if(targetTabContent.length) {
                         targetTabContent[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
                 } else {
-                    console.error('完整错误数据:', data);
+                    console.error('Complete error data:', data);
                 }
             })
             .catch(error => {

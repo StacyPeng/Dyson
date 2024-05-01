@@ -16,17 +16,17 @@ public class GlobalCorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        //添加映射路径，“/**”表示对所有的路径实行全局跨域访问权限的设置
+                        //adding a mapping path, /** indicates that the global cross-domain access permission is set for all paths
                         .allowedOriginPatterns("*")
-                        //开放哪些ip、端口、域名的访问权限
+                        //Which ip addresses, ports, and domain names are allowed to access
                         .allowCredentials(true)
-                        //是否允许发送Cookie信息
+                        //Whether to allow cookies to be sent
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
-                        //开放哪些Http方法，允许跨域访问
+                        //Which Http methods are open to allow cross-domain access
                         .allowedHeaders("*")
-                        //允许HTTP请求中的携带哪些Header信息
+                        //What headers are allowed in HTTP requests
                         .exposedHeaders("*");
-                        //暴露哪些头部信息（因为跨域访问默认不能获取全部头部信息）
+                        //Which header information is exposed (because cross-domain access does not capture all header information by default)
             }
         };
     }
