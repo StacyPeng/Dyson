@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/Staff-main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/IMG_1112-01.jpeg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Screenshot 2024-03-12 164331.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/Timetable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/book-meeting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/exams.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/extension.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/landingpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Student-dashboard/rough.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/login-security.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/man-working-on-laptop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/original.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/th.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/Staff-assets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/assets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-apexchart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-calendar2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-cdn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-jvector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-jvectormap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-simplebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-theme1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-theme2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-theme3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-theme4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-theme5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Exam-results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Staff-all-students.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Timetable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/book-meeting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/exams.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/extension.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/landingpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/rough.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-student-individual.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/DysonApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/MeetingMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/SignInMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/StuClassMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/GlobalCorsConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/GlobalCorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/SpringMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseworkController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ExamController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ExtensionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/FeedbackController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/MeetingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ModulesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ProjectExceptionAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/SigninController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/TimetableController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Classes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Coursework.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Exam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Feedback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Meeting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Modules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/ResultVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/SignIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Staff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/StuClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Timetable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/CourseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/StaffDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/exception/BussinessException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/exception/SystemException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/CourseworkMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ExamMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/FeedbackMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/MeetingMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ModulesMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/SignInMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StuClassMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StudentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/TimetableMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/CourseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/CourseworkService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/ExamService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/FeedbackService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/MeetingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/ModulesService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/SignInService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StuClassService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/TimetableService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/CourseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/CourseworkServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ExamServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/FeedbackServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/MeetingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ModulesServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/SignInServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StuClassServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StudentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/TimetableServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/utils/ResultUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/utils/status/StatusCode.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2fsmRKhX85bZhRSXDPDDUXJaUIr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DysonApplication.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="student-management-system" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DysonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Dyson" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="team11.Dyson.DysonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="" />
+      <created>1714598149525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714598149525</updated>
+      <workItem from="1714598150483" duration="28000" />
+      <workItem from="1714598180933" duration="14000" />
+      <workItem from="1714598282948" duration="115000" />
+      <workItem from="1714598401158" duration="146000" />
+      <workItem from="1714598584801" duration="9000" />
+      <workItem from="1714598595505" duration="7000" />
+      <workItem from="1714598604561" duration="81000" />
+      <workItem from="1714598687365" duration="19000" />
+      <workItem from="1714598719253" duration="242000" />
+      <workItem from="1714598981080" duration="102000" />
+      <workItem from="1714599093087" duration="1000" />
+      <workItem from="1714599137235" duration="201000" />
+      <workItem from="1714599341364" duration="138000" />
+      <workItem from="1714599482248" duration="2000" />
+      <workItem from="1714599508650" duration="317000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
