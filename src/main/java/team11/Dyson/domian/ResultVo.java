@@ -6,7 +6,7 @@ import lombok.Data;
 /*
 * @author: Dechun Meng
 */
-@Data //字段生成get和set方法
+@Data //Field generation get and set methods
 @AllArgsConstructor
 public class ResultVo<T> {
     private String msg;

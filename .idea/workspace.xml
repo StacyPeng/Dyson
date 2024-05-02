@@ -5,32 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/StaffController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/StaffMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/StaffService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StaffServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/ResultVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/ResultVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -130,7 +119,6 @@
       <workItem from="1714657952630" duration="3455000" />
       <workItem from="1714661454247" duration="3917000" />
       <workItem from="1714665843171" duration="894000" />
-      <workItem from="1714668323661" duration="8422000" />
     </task>
     <servers />
   </component>
