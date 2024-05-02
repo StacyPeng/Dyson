@@ -8,6 +8,7 @@ import team11.Dyson.domian.Student;
 import team11.Dyson.service.impl.StudentServiceImpl;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Chengyu Peng
@@ -37,7 +38,9 @@ public class StudentController {
     }
 
     @PutMapping("/modifypassword")
-    public Result modifyPasswor(@RequestParam String password,String student_email_address) {
+    public Result modifyPasswor(@RequestBody Map<String, String> requestBody) {
+        String password = requestBody.get("password");
+        String student_email_address = requestBody.get("student_email_address");
         boolean flag = studentService.modifyPassword(password,student_email_address);
         return new Result(flag ? Code.UPDATE_OK:Code.UPDATE_ERR,flag);
     }
