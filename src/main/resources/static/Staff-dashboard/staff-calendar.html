@@ -229,7 +229,7 @@
                                                     <div class="d-flex align-items-center flex-shrink-0">
                                                         <div class="user-profile me-sm-3 me-2">
                                                             <img src="/images/IMG_1112-01.jpeg.jpg" width="40"
-                                                                 class="rounded-circle" alt="spike-img">
+                                                                class="rounded-circle" alt="spike-img">
                                                         </div>
                                                         <span class="d-sm-none d-block"><iconify-icon
                                                                 icon="solar:alt-arrow-down-line-duotone"></iconify-icon></span>
@@ -255,7 +255,7 @@
 
                                                         <div class="d-flex align-items-center mx-7 py-9 border-bottom">
                                                             <img src="/images/IMG_1112-01.jpeg.jpg" alt="user"
-                                                                 width="90" class="rounded-circle" />
+                                                                width="90" class="rounded-circle" />
                                                             <div class="ms-4">
                                                                 <h4 class="mb-0 fs-5 fw-normal">Staff Name</h4>
                                                                 <span class="text-muted">super admin</span>
@@ -341,7 +341,7 @@
                                             <img src="../assets/images/logos/logo-light.svg" class="dark-logo"
                                                 width="180" alt="spike-img" />
                                             <img src="/images/original.png" class="light-logo"
-                                                 width="180" alt="spike-img" />
+                                                width="180" alt="spike-img" />
                                         </a>
                                     </li>
                                 </ul>
@@ -385,7 +385,7 @@
                                                     <div class="d-flex align-items-center flex-shrink-0">
                                                         <div class="user-profile me-sm-3 me-2">
                                                             <img src="/images/IMG_1112-01.jpeg.jpg" width="40"
-                                                                 class="rounded-circle" alt="spike-img">
+                                                                class="rounded-circle" alt="spike-img">
                                                         </div>
                                                         <span class="d-sm-none d-block"><iconify-icon
                                                                 icon="solar:alt-arrow-down-line-duotone"></iconify-icon></span>
@@ -411,7 +411,7 @@
 
                                                         <div class="d-flex align-items-center mx-7 py-9 border-bottom">
                                                             <img src="/images/IMG_1112-01.jpeg.jpg" alt="user"
-                                                                 width="90" class="rounded-circle" />
+                                                                width="90" class="rounded-circle" />
                                                             <div class="ms-4">
                                                                 <h4 class="mb-0 fs-5 fw-normal">Staff Name</h4>
                                                                 <span class="text-muted">super admin</span>
@@ -443,566 +443,107 @@
                         </div>
                     </header>
                     <!--  Header End -->
-                    
-                    
+                    <!--  Header End -->
+          <div class="card shadow-none position-relative overflow-hidden mb-4">
+            <div class="card-body d-flex align-items-center justify-content-between p-4">
+              <h4 class="card-title mb-0">Calendar</h4>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a class="text-muted text-decoration-none" href="staff-dashboard.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item" aria-current="page">Calendar</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body calender-sidebar app-calendar">
+              <div id="calendar"></div>
+            </div>
+          </div>
+          <!-- BEGIN MODAL -->
+          <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="eventModalLabel">
+                    Add / Edit Event
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="card shadow-none position-relative overflow-hidden mb-4">
-                    <div class="card-body d-flex align-items-center justify-content-between p-4">
-                      <h4 class="card-title mb-0">All Students</h4>
-                      <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb mb-0">
-                          <li class="breadcrumb-item">
-                            <a class="text-muted text-decoration-none" href="staff-dashboard.html">Home</a>
-                          </li>
-                          <li class="breadcrumb-item" aria-current="page">All Students</li>
-                        </ol>
-                      </nav>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div>
+                        <label class="form-label">Event Title</label>
+                        <input id="event-title" type="text" class="form-control" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title mb-4 pb-2">All Students Data</h4>
-                      <div class="table-responsive pb-4">
-                        <table id="all-student" class="table table-striped table-bordered border text-nowrap align-middle">
-                          <thead>
-                            <!-- start row -->
-                            <tr>
-                              <th>Profile</th>
-                              <th>Sec.</th>
-                              <th>Parents</th>
-                              <th>D.O.B.</th>
-                              <th>Phone</th>
-                              <th>Email</th>
-                              <th></th>
-                            </tr>
-                            <!-- end row -->
-                          </thead>
-                          <tbody>
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-2.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Mark J. Freeman</h6>
-                                    <p class="fs-3 mb-0">Class: 2</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>A</td>
-                              <td>Jack Sparrow</td>
-                              <td>25/05/2012</td>
-                              <td>+ 123 9988568</td>
-                              <td>k93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-2.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Noah</h6>
-                                    <p class="fs-3 mb-0">Class: 12</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>B</td>
-                              <td>Joshi David</td>
-                              <td>12/12/2001</td>
-                              <td>+ 123 9988568</td>
-                              <td>d93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-3.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">John Deo</h6>
-                                    <p class="fs-3 mb-0">Class: 5</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>B</td>
-                              <td>Ronaldo Singh</td>
-                              <td>20/10/2007</td>
-                              <td>+ 123 9988568</td>
-                              <td>r93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-4.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Oliver</h6>
-                                    <p class="fs-3 mb-0">Class: 5</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>c</td>
-                              <td>Jack Sparrow</td>
-                              <td>26/01/2006</td>
-                              <td>+ 123 9988568</td>
-                              <td>j93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-5.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">John Deo</h6>
-                                    <p class="fs-3 mb-0">Class: 12</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>c</td>
-                              <td>John Doe</td>
-                              <td>02/10/2001</td>
-                              <td>+ 123 9988568</td>
-                              <td>p93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-2.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Yui Rio</h6>
-                                    <p class="fs-3 mb-0">Class: 2</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>A</td>
-                              <td>Jack Sparrow</td>
-                              <td>25/05/2012</td>
-                              <td>+ 123 9988568</td>
-                              <td>k93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-2.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Yuna Hina</h6>
-                                    <p class="fs-3 mb-0">Class: 12</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>B</td>
-                              <td>Joshi David</td>
-                              <td>12/12/2001</td>
-                              <td>+ 123 9988568</td>
-                              <td>d93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-3.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Koharu Hinata</h6>
-                                    <p class="fs-3 mb-0">Class: 5</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>B</td>
-                              <td>Ronaldo Singh</td>
-                              <td>20/10/2007</td>
-                              <td>+ 123 9988568</td>
-                              <td>r93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-4.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Mei Mio</h6>
-                                    <p class="fs-3 mb-0">Class: 10</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>c</td>
-                              <td>Jack Sparrow</td>
-                              <td>26/01/2004</td>
-                              <td>+ 123 9988568</td>
-                              <td>m93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-5.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Saki Miyu</h6>
-                                    <p class="fs-3 mb-0">Class: 6</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>A</td>
-                              <td>John Doe</td>
-                              <td>06/07/2007</td>
-                              <td>+ 123 9988568</td>
-                              <td>s93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-6.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Kokona Haruka</h6>
-                                    <p class="fs-3 mb-0">Class: 2</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>A</td>
-                              <td>Jack Sparrow</td>
-                              <td>25/05/2012</td>
-                              <td>+ 123 9988568</td>
-                              <td>k93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-7.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Haruto Yuto</h6>
-                                    <p class="fs-3 mb-0">Class: 12</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>B</td>
-                              <td>Joshi David</td>
-                              <td>12/12/2001</td>
-                              <td>+ 123 9988568</td>
-                              <td>d93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-8.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Sota Yuki</h6>
-                                    <p class="fs-3 mb-0">Class: 5</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>B</td>
-                              <td>Ronaldo Singh</td>
-                              <td>20/10/2007</td>
-                              <td>+ 123 9988568</td>
-                              <td>r93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-2.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Hayato Haruki</h6>
-                                    <p class="fs-3 mb-0">Class: 5</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>c</td>
-                              <td>Jack Sparrow</td>
-                              <td>26/01/2006</td>
-                              <td>+ 123 9988568</td>
-                              <td>j93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-2.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Ryusei Koki</h6>
-                                    <p class="fs-3 mb-0">Class: 12</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>c</td>
-                              <td>John Doe</td>
-                              <td>02/10/2001</td>
-                              <td>+ 123 9988568</td>
-                              <td>p93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-3.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Sora Sosuke</h6>
-                                    <p class="fs-3 mb-0">Class: 2</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>A</td>
-                              <td>Jack Sparrow</td>
-                              <td>25/05/2012</td>
-                              <td>+ 123 9988568</td>
-                              <td>k93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-4.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Riku Soma</h6>
-                                    <p class="fs-3 mb-0">Class: 12</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>B</td>
-                              <td>Joshi David</td>
-                              <td>12/12/2001</td>
-                              <td>+ 123 9988568</td>
-                              <td>d93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-5.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Pippi Osu</h6>
-                                    <p class="fs-3 mb-0">Class: 5</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>B</td>
-                              <td>Ronaldo Singh</td>
-                              <td>20/10/2007</td>
-                              <td>+ 123 9988568</td>
-                              <td>r93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-2.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Ryuto Ippongo</h6>
-                                    <p class="fs-3 mb-0">Class: 10</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>c</td>
-                              <td>Jack Sparrow</td>
-                              <td>26/01/2004</td>
-                              <td>+ 123 9988568</td>
-                              <td>m93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                            <!-- start row -->
-                            <tr>
-                              <td>
-                                <div class="d-flex align-items-center">
-                                  <div class="me-3">
-                                    <img src="../assets/images/profile/user-2.jpg" alt="spike-img" class="rounded-circle" width="45" />
-                                  </div>
-        
-                                  <div>
-                                    <h6 class="mb-1">Midori Gurin</h6>
-                                    <p class="fs-3 mb-0">Class: 6</p>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>A</td>
-                              <td>John Doe</td>
-                              <td>06/07/2007</td>
-                              <td>+ 123 9988568</td>
-                              <td>s93@gmail.com</td>
-                              <td>
-                                <a href="staff-student-individual.html" class="link-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Details">
-                                  <i class="ti ti-eye fs-7"></i>
-                                </a>
-                              </td>
-                            </tr>
-                            <!-- end row -->
-                          </tbody>
-                        </table>
+                    <div class="col-md-12 mt-6">
+                      <div>
+                        <label class="form-label">Event Color</label>
+                      </div>
+                      <div class="d-flex">
+                        <div class="n-chk">
+                          <div class="form-check form-check-primary form-check-inline">
+                            <input class="form-check-input" type="radio" name="event-level" value="Danger" id="modalDanger" />
+                            <label class="form-check-label" for="modalDanger">Danger</label>
+                          </div>
+                        </div>
+                        <div class="n-chk">
+                          <div class="form-check form-check-warning form-check-inline">
+                            <input class="form-check-input" type="radio" name="event-level" value="Success" id="modalSuccess" />
+                            <label class="form-check-label" for="modalSuccess">Success</label>
+                          </div>
+                        </div>
+                        <div class="n-chk">
+                          <div class="form-check form-check-success form-check-inline">
+                            <input class="form-check-input" type="radio" name="event-level" value="Primary" id="modalPrimary" />
+                            <label class="form-check-label" for="modalPrimary">Primary</label>
+                          </div>
+                        </div>
+                        <div class="n-chk">
+                          <div class="form-check form-check-danger form-check-inline">
+                            <input class="form-check-input" type="radio" name="event-level" value="Warning" id="modalWarning" />
+                            <label class="form-check-label" for="modalWarning">Warning</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 mt-6">
+                      <div>
+                        <label class="form-label">Enter Start Date</label>
+                        <input id="event-start-date" type="date" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 mt-6">
+                      <div>
+                        <label class="form-label">Enter End Date</label>
+                        <input id="event-end-date" type="date" class="form-control" />
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn bg-danger-subtle text-danger" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-success btn-update-event" data-fc-event-public-id="">
+                    Update changes
+                  </button>
+                  <button type="button" class="btn btn-primary btn-add-event">
+                    Add Event
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END MODAL -->
+                    
+                </div>
             </div>
         </div>
         <script>
@@ -1193,6 +734,8 @@
     <script src="/js/staff-apexchart.js"></script>
     <script src="/js/staff-jvectormap.js"></script>
     <script src="/js/staff-dashboard.js"></script>
+    <script src="/js/calendar.js"></script>
+    <script src="/js/staff-calendar2.js"></script>
 </body>
 
 </html>

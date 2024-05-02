@@ -6,22 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Data Tables - Choose between regular React Bootstrap tables or advanced dynamic ones.</title>
+    <title>Guided Tours - These can be used with other components and elements to create stunning and unique new
+        elements for your UIs.</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-    <meta name="description" content="Choose between regular React Bootstrap tables or advanced dynamic ones.">
+    <meta name="description"
+        content="These can be used with other components and elements to create stunning and unique new elements for your UIs.">
 
     <meta name="msapplication-tap-highlight" content="no">
     <link href="/css/main.css" rel="stylesheet">
-    <!--TODO add jquery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
         <div class="app-header header-shadow">
             <div class="app-header__logo">
-                <div class="logo-src"></div>
+                <div class="logo-src">
+                    <a href="landingpage.html"></a>
+                </div>
                 <div class="header__pane ml-auto">
                     <div>
                         <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
@@ -56,15 +58,12 @@
                 <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
-                            <!--TODO add id-->
-                            <input type="text" class="search-input" placeholder="Type to search" id="searchInput">
-                            <!--TODO calling method-->
-                            <button class="search-icon" onclick="searchExams()"><span></span></button>
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
                         </div>
-                        <!--TODO calling method-->
-                        <button class="close" onclick="clearSearch()"></button>
+                        <button class="close"></button>
                     </div>
-                    <!--
+                    <!-- 
                     <ul class="header-megamenu nav">
                         <li class="nav-item">
                             <a href="javascript:void(0);" data-placement="bottom" rel="popover-focus" data-offset="300"
@@ -239,11 +238,8 @@
                     </ul>
                     -->
                 </div>
-                <!--TODO add content-->
-                <div id="searchResults"></div>
                 <div class="app-header-right">
-                    <!-- TODO comment out header dot-->
-                    <!--<div class="header-dots">
+                    <div class="header-dots">
                         <div class="dropdown">
                             <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
                                 class="p-0 mr-2 btn btn-link">
@@ -271,8 +267,8 @@
                                             <button
                                                 class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
-                                                    class="pe-7s-world icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i>
-                                                Automation
+                                                    class="pe-7s-world-myfile icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i>
+                                                Reports
                                             </button>
                                         </div>
                                         <div class="col-sm-6 col-xl-4">
@@ -280,7 +276,7 @@
                                                 class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
                                                     class="pe-7s-piggy icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Reports
+                                                </i> Library
                                             </button>
                                         </div>
                                         <div class="col-sm-6 col-xl-4">
@@ -288,7 +284,7 @@
                                                 class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
                                                     class="pe-7s-config icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Settings
+                                                </i> Contacts
                                             </button>
                                         </div>
                                         <div class="col-sm-6 col-xl-4">
@@ -296,7 +292,7 @@
                                                 class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
                                                     class="pe-7s-browser icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Content
+                                                </i> Social Activities
                                             </button>
                                         </div>
                                         <div class="col-sm-6 col-xl-4">
@@ -304,7 +300,7 @@
                                                 class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
                                                     class="pe-7s-hourglass icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i>
-                                                Activity
+                                                Digital ID
                                             </button>
                                         </div>
                                         <div class="col-sm-6 col-xl-4">
@@ -312,17 +308,19 @@
                                                 class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
                                                     class="pe-7s-world icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Contacts
+                                                </i> Find A PC
                                             </button>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 
                                 <ul class="nav flex-column">
                                     <li class="nav-item-divider nav-item"></li>
                                     <li class="nav-item-btn text-center nav-item">
                                         <button class="btn-shadow btn btn-primary btn-sm">Follow-ups</button>
                                     </li>
                                 </ul>
+                                -->
                             </div>
                         </div>
                         <div class="dropdown">
@@ -373,7 +371,7 @@
                                                 <div class="p-3">
                                                     <div class="notifications-box">
                                                         <div
-                                                            class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline&#45;&#45;one-column">
+                                                            class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--one-column">
                                                             <div
                                                                 class="vertical-timeline-item dot-danger vertical-timeline-element">
                                                                 <div><span
@@ -579,7 +577,7 @@
                                             <div class="scrollbar-container">
                                                 <div class="p-3">
                                                     <div
-                                                        class="vertical-without-time vertical-timeline vertical-timeline&#45;&#45;animate vertical-timeline&#45;&#45;one-column">
+                                                        class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
                                                         <div class="vertical-timeline-item vertical-timeline-element">
                                                             <div>
                                                                 <span class="vertical-timeline-element-icon bounce-in">
@@ -758,7 +756,7 @@
                                 </ul>
                             </div>
                         </div>
-                        &lt;!&ndash;
+                        <!-- 
                         <div class="dropdown">
                             <button type="button" data-toggle="dropdown" class="p-0 mr-2 btn btn-link">
                                 <span class="icon-wrapper icon-wrapper-alt rounded-circle">
@@ -801,6 +799,8 @@
                                 </button>
                             </div>
                         </div>
+                        -->
+                        <!-- 
                         <div class="dropdown">
                             <button type="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false"
                                 class="p-0 btn btn-link dd-chart-btn">
@@ -853,22 +853,16 @@
                                 </ul>
                             </div>
                         </div>
-                        &ndash;&gt;
-                    </div>-->
+                        -->
+                    </div>
                     <div class="header-btn-lg pr-0">
                         <div class="widget-content p-0">
                             <div class="widget-content-wrapper">
                                 <div class="widget-content-left">
-                                    <!--TODO keep logout button-->
-                                    <div class="widget-content-right mr-2">
-                                        <button
-                                                class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
-                                    </div>
-                                    <!--TODO comment out orginal menu-->
-                                    <!--<div class="btn-group">
+                                    <div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                             class="p-0 btn">
-                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg"
+                                            <img width="42" class="rounded-circle" src="/images/IMG_1112-01.jpeg.jpg"
                                                 alt>
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
@@ -877,21 +871,24 @@
                                             <div class="dropdown-menu-header">
                                                 <div class="dropdown-menu-header-inner bg-info">
                                                     <div class="menu-header-image opacity-2"
-                                                        style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                                                        style="background-image: url('/images/th.jpeg');">
                                                     </div>
                                                     <div class="menu-header-content text-left">
                                                         <div class="widget-content p-0">
                                                             <div class="widget-content-wrapper">
                                                                 <div class="widget-content-left mr-3">
                                                                     <img width="42" class="rounded-circle"
-                                                                        src="assets/images/avatars/1.jpg" alt>
+                                                                        src="/images/IMG_1112-01.jpeg.jpg" alt>
                                                                 </div>
                                                                 <div class="widget-content-left">
-                                                                    <div class="widget-heading">Alina Mcloughlin</div>
+                                                                    <div class="widget-heading">Student Name</div>
                                                                     <div class="widget-subheading opacity-8">A short
                                                                         profile description</div>
                                                                 </div>
-
+                                                                <div class="widget-content-right mr-2">
+                                                                    <button
+                                                                        class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -960,19 +957,18 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>-->
+                                    </div>
                                 </div>
                                 <div class="widget-content-left  ml-3 header-user-info">
                                     <div class="widget-heading"> Alina Mclourd </div>
                                     <div class="widget-subheading"> VP People Manager </div>
                                 </div>
-                                <!--TODO comment out message button-->
-                                <!--<div class="widget-content-right header-user-info ml-3">
+                                <div class="widget-content-right header-user-info ml-3">
                                     <button type="button"
                                         class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
                                         <i class="fa text-white fa-calendar pr-1 pl-1"></i>
                                     </button>
-                                </div>-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -988,7 +984,7 @@
                 </div>
             </div>
         </div>
-        <!--
+        <!-- 
         <div class="ui-theme-settings">
             <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
                 <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
@@ -1469,96 +1465,92 @@
                     </div>
                 </div>
             </div>
-            <!--TODO exam form-->
             <div class="app-main__outer">
                 <div class="app-main__inner">
-                    <!--
-                    <div class="app-page-title">
-                        <div class="page-title-wrapper">
-                            <div class="page-title-heading">
-                                <div class="page-title-icon">
-                                    <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
-                                </div>
-                                <div>Data Tables
-                                    <div class="page-title-subheading">Choose between regular React Bootstrap tables or
-                                        advanced dynamic ones.</div>
-                                </div>
-                            </div>
-                            <div class="page-title-actions">
-                                <button type="button" data-toggle="tooltip" title="Example Tooltip"
-                                    data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
-                                    <i class="fa fa-star"></i>
-                                </button>
-                                <div class="d-inline-block dropdown">
-                                    <button type="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
-                                        <span class="btn-icon-wrapper pr-2 opacity-7">
-                                            <i class="fa fa-business-time fa-w-20"></i>
-                                        </span>
-                                        Buttons
-                                    </button>
-                                    <div tabindex="-1" role="menu" aria-hidden="true"
-                                        class="dropdown-menu dropdown-menu-right">
-                                        <ul class="nav flex-column">
-                                            <li class="nav-item">
-                                                <a class="nav-link">
-                                                    <i class="nav-link-icon lnr-inbox"></i>
-                                                    <span> Inbox</span>
-                                                    <div class="ml-auto badge badge-pill badge-secondary">86</div>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link">
-                                                    <i class="nav-link-icon lnr-book"></i>
-                                                    <span> Book</span>
-                                                    <div class="ml-auto badge badge-pill badge-danger">5</div>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link">
-                                                    <i class="nav-link-icon lnr-picture"></i>
-                                                    <span> Picture</span>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a disabled class="nav-link disabled">
-                                                    <i class="nav-link-icon lnr-file-empty"></i>
-                                                    <span> File Disabled</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    -->
+
                     <div class="main-card mb-3 card">
                         <div class="card-body">
-                            <table style="width: 100%;" id="example"
-                                   class="table table-hover table-striped table-bordered">
-                                <!--TODO modify parameters-->
-                                <thead>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>Name</th>
-                                    <th>Time</th>
-                                    <th>Place</th>
-                                    <th>Module Id</th>
-                                </tr>
-                                </thead>
-                                <!--TODO delete static data-->
-                                <tbody id="examTableBody"></tbody>
-                                <tfoot>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>Name</th>
-                                    <th>Time</th>
-                                    <th>Place</th>
-                                    <th>Module Id</th>
-                                </tr>
-                                </tfoot>
-                            </table>
+                            <div class="text-center">
+                                <button class="btn btn-lg btn-success start-tour">Start Tour</button>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="jumbotron" data-step="1" data-intro="This is a tooltip!">
+                                <h1 class="display-4">Hello, (Student Name)!</h1>
+                                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
+                                    calling extra
+                                    attention to featured content or information.</p>
+                                <hr class="my-4">
+                                <p>It uses utility classes for typography and spacing to space content out within the
+                                    larger
+                                    container.</p>
+                                <p class="lead">
+                                    <a class="btn btn-primary btn-lg" data-step="2" data-intro="Ok, wasn't that fun?"
+                                        data-position="right" data-scrollTo="tooltip" href="javascript:void(0);"
+                                        role="button">Learn
+                                        more
+                                    </a>
+                                </p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor. Aenean
+                                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                mus. Donec
+                                quam felis, ultricies nec,
+                                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                                fringilla
+                                vel, aliquet nec, vulputate eget, arcu.</p>
+                            <p data-step="3" data-intro="More features, more fun." data-scrollTo="tooltip"
+                                data-position="left">In
+                                enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                                mollis
+                                pretium. Integer tincidunt.
+                                Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
+                                leo ligula,
+                                porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+                                viverra quis,
+                                feugiat a, tellus. Phasellus
+                                viverra nulla ut metus varius laoreet.</p>
+                            <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+                                ultricies
+                                nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem
+                                quam semper
+                                libero, sit amet adipiscing
+                                sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                                Maecenas nec
+                                odio et ante tincidunt tempus.</p>
+                            <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci
+                                eget eros
+                                faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis
+                                magna. Sed
+                                consequat, leo eget bibendum
+                                sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate
+                                eleifend sapien.
+                                Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
+                            <p>Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum
+                                ante ipsum
+                                primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi
+                                consectetuer
+                                lacinia. Nam pretium turpis
+                                et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed
+                                aliquam
+                                ultrices mauris.</p>
+                            <p>Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent
+                                adipiscing. Phasellus
+                                ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero.
+                                Cras id dui.
+                                Aenean ut eros et nisl
+                                sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet
+                                feugiat, pede. Sed
+                                lectus. Donec mollis hendrerit risus.</p>
+                            <div class="jumbotron jumbotron-fluid" data-step="4"
+                                data-intro="This is the end of the tour!" data-position="top">
+                                <div class="container">
+                                    <h1 class="display-4">Course Name</h1>
+                                    <p class="lead" id="elem-tour-5">This is a modified jumbotron that occupies the
+                                        entire
+                                        horizontal space of its parent.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1744,7 +1736,8 @@
                                                                                                 class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
                                                                                                 <div
                                                                                                     class="avatar-icon">
-                                                                                                    <i>+</i></div>
+                                                                                                    <i>+</i>
+                                                                                                </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </h4>
@@ -2733,124 +2726,5 @@
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     <script type="text/javascript" src="/js/assets.js"></script>
 </body>
-<script>
-    /**
-     * @author Chengyu Peng
-     * @student ID:230045675
-     */
-    window.onload = function () {
-        $.ajax({
-            url: '/exams',
-            type: 'GET',
-            dataType: 'json',
-            success: function (response) {
-                $('#examTableBody').empty();
-                if (Array.isArray(response.data)) {
-                    console.log(response.data)
-                    response.data.forEach(function (exam) {
-                        $('#examTableBody').append('<tr>' +
-                            '<td>' + exam.examId + '</td>' +
-                            '<td>' + exam.examName + '</td>' +
-                            '<td>' + exam.examTime + '</td>' +
-                            '<td>' + exam.place + '</td>' +
-                            '<td>' + exam.modId + '</td>' +
-                            '</tr>');
-                    });
-                } else {
-                    console.error('The exam data format does not match:', response.data);
-                }
-            },
-            error: function (xhr, status, error) {
-                console.error('Failed to fetch exam data:', error);
-            }
-        })
-    }
 
-    //implement search function
-    function searchExams() {
-        var examName = document.getElementById("searchInput").value;
-        if (!examName.trim()) {
-            console.error('Error: Exam name must not be empty');
-            return; // If the input is empty, it simply returns without making a request
-        }
-        fetch(`/exams/${examName}`)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                //console.log(data)
-                if (data.code === 200) {
-                    //console.log('Success:', data);
-                    updateTableWithExams([data.data]); // update form, assuming that a single test object is returned
-                } else {
-                    console.error('Full error data:', data);
-                    updateTableWithExams([]); // clear table
-                }
-            })
-            .catch(error => {
-                console.error('Network or parsing error:', error);
-                console.error('Error:', error);
-                updateTableWithExams([]); // clear table when error occurs
-            });
-    }
-
-    function updateTableWithExams(exams) {
-        const tbody = document.getElementById('examTableBody');
-        tbody.innerHTML = ''; // clear existing form content
-        exams.forEach(exam => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `<td>${exam.examId}</td>
-                        <td>${exam.examName}</td>
-                        <td>${exam.examTime}</td>
-                        <td>${exam.place}</td>
-                        <td>${exam.modId}</td>`;
-            tbody.appendChild(tr);
-        });
-    }
-
-    function clearSearch() {
-        document.getElementById('searchInput').value = '';
-        // optional: clear the search results display area
-        // document.getElementById('searchResults').innerHTML = '';
-        loadAllExams(); // reload and show all exam data
-    }
-
-    // function to load all exam data
-    function loadAllExams() {
-        $.ajax({
-            url: '/exams',
-            type: 'GET',
-            dataType: 'json',
-            success: function (response) {
-                $('#examTableBody').empty();
-                if (Array.isArray(response.data)) {
-                    response.data.forEach(function (exam) {
-                        $('#examTableBody').append('<tr>' +
-                            '<td>' + exam.examId + '</td>' +
-                            '<td>' + exam.examName + '</td>' +
-                            '<td>' + exam.examTime + '</td>' +
-                            '<td>' + exam.place + '</td>' +
-                            '<td>' + exam.modId + '</td>' +
-                            '</tr>');
-                    });
-                } else {
-                    console.error('The exam data format does not match:', response.data);
-                }
-            },
-            error: function (xhr, status, error) {
-                console.error('Failed to fetch exam data:', error);
-            }
-        });
-    }
-
-    // load all exam data when page load
-    window.onload = loadAllExams;
-
-    function logout() {
-        location.href= '/index.html';
-    }
-</script>
 </html>
