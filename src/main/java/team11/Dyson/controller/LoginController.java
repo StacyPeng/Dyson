@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import team11.Dyson.mapper.StaffMapper;
 import team11.Dyson.mapper.StudentMapper;
 
 
@@ -19,12 +20,29 @@ public class LoginController {
     @Autowired
     private StudentMapper studentMapper;
 
+    @Autowired
+    private StaffMapper staffMapper;
+
     public String login(@RequestParam("student_email_address") String email, @RequestParam("password") String password,
                         Model model, HttpSession session) {
         //@RequestParam receive data of front end，parameter is name of front end
         if(studentMapper.getByEmail(email)!=null&& password.equals(studentMapper.getByEmail(email).getPassword())){
             //find user and password is correct
             session.setAttribute("LoginUser", email);//username is sent to the session for security control
+            return "dashboard";//redirect to landing page
+        }
+        else {
+            model.addAttribute("msg", "User name or password is incorrect");//alert wrong message
+            return "index";//redirect to index
+        }
+    }
+
+    public String staffLogin(@RequestParam("staff_email_address") String staffEmail, @RequestParam("password") String staPassword,
+                        Model model, HttpSession session) {
+        //@RequestParam receive data of front end，parameter is name of front end
+        if(staffMapper.getByEmail(staffEmail)!=null&& staPassword.equals(staffMapper.getByEmail(staffEmail).getPassword())){
+            //find user and password is correct
+            session.setAttribute("LoginUser", staffEmail);//username is sent to the session for security control
             return "dashboard";//redirect to landing page
         }
         else {

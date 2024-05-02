@@ -57,7 +57,7 @@ public class CourseController {
         // 如果 Course 中的 teacher 不为 null，转换为 StaffDTO
         if (course.getTeacher() != null) {
             StaffDTO teacherDTO = new StaffDTO();
-            teacherDTO.setEmail(course.getTeacher().getEmail());
+            teacherDTO.setEmail(course.getTeacher().getStaff_email_address());
             // 设置 Staff 的其他属性
             dto.setTeacher(teacherDTO);
         }

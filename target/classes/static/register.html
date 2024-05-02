@@ -41,18 +41,39 @@
                                 
                                 <form>
                                     <div class="mb-7">
-                                        <label for="inputexample" class="form-label fw-bold">Name</label>
-                                        <input class="form-control py-6" id="inputexample" type="text" placeholder=""
-                                            aria-label="inputexample">
+                                        <label for="inputName" class="form-label fw-bold">Name</label>
+                                        <input class="form-control py-6" id="inputName" type="text" placeholder="Enter your name" aria-label="inputName">
                                     </div>
+
                                     <div class="mb-7">
                                         <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
-                                        <input type="email" class="form-control py-6" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp">
+                                        <input type="email" class="form-control py-6" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                               placeholder="Enter your email">
                                     </div>
+
                                     <div class="mb-9">
                                         <label for="exampleInputPassword1" class="form-label fw-bold">Password</label>
-                                        <input type="password" class="form-control py-6" id="exampleInputPassword1">
+                                        <input type="password" class="form-control py-6" id="exampleInputPassword1" placeholder="Enter your password">
+                                    </div>
+
+                                    <div class="mb-7">
+                                        <label for="inputGender" class="form-label fw-bold">Gender</label>
+                                        <select class="form-select py-6" id="inputGender" aria-label="inputGender">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-7">
+                                        <label for="inputBirthday" class="form-label fw-bold">Birthday</label>
+                                        <input type="date" class="form-control py-6" id="inputBirthday" aria-label="inputBirthday">
+                                    </div>
+
+                                    <div class="mb-7">
+                                        <label for="inputClassID" class="form-label fw-bold">Class ID</label>
+                                        <input type="text" class="form-control py-6" id="inputClassID" placeholder="Enter your class ID"
+                                               aria-label="inputClassID">
                                     </div>
                                     <a href="#"
                                         class="btn btn-primary w-100 mb-7 rounded-pill">Sign Up</a>
@@ -276,5 +297,51 @@
     <script src="js/staff-jvectormap.js"></script>
     <script src="js/staff-dashboard.js"></script>
 </body>
+<script>
+    /**
+     * @author Dechun Meng
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+    const signUpButton = document.getElementById('signUpButton');
+
+    signUpButton.addEventListener('click', function(event) {
+        event.preventDefault(); // 阻止默认表单提交行为
+
+        // 获取用户填写的注册信息
+        const name = document.getElementById('nameInput').value;
+        const email = document.getElementById('emailInput').value;
+        const password = document.getElementById('passwordInput').value;
+
+        // 构造包含用户信息的对象
+        const studentData = {
+            name: name,
+            email: email,
+            password: password
+        };
+
+        // 发起 POST 请求将用户信息发送给后端
+        fetch('/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(studentData)
+        })
+        .then(response => {
+            if (response.ok) {
+                // 注册成功，重定向到 index 页面
+                window.location.href = '/index.html';
+            } else {
+                // 注册失败，显示错误提示
+                alert('Registration failed. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error registering user:', error);
+            alert('Registration failed. Please try again.');
+        });
+    });
+});
+</script>
 
 </html>
