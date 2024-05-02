@@ -1,7 +1,9 @@
 package team11.Dyson.domian;
 
 import jakarta.persistence.*;
+
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "student")
@@ -27,8 +29,8 @@ public class Student {
     @Column(name = "class_id")
     private Integer classId;
 
-    /*@ManyToMany(mappedBy = "students")
-    private Set<Course> coursesEnrolled;*/
+    @ManyToMany(mappedBy = "students")
+    private List<Course> courses;
 
     public Student() {
     }
@@ -89,6 +91,11 @@ public class Student {
 
     public void setClassId(Integer classId) {
         this.classId = classId;
+    }
+
+    // 获取学生的课程列表
+    public List<Course> getCourses() {
+        return courses;
     }
 
     /*public Set<Course> getCoursesEnrolled() {
