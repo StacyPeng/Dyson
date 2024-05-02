@@ -305,21 +305,21 @@
     const signUpButton = document.getElementById('signUpButton');
 
     signUpButton.addEventListener('click', function(event) {
-        event.preventDefault(); // 阻止默认表单提交行为
+        event.preventDefault(); // Block default form submission behavior
 
-        // 获取用户填写的注册信息
+        // Obtain the registration information filled in by users.
         const name = document.getElementById('nameInput').value;
         const email = document.getElementById('emailInput').value;
         const password = document.getElementById('passwordInput').value;
 
-        // 构造包含用户信息的对象
+        // Construct an object containing user information
         const studentData = {
             name: name,
             email: email,
             password: password
         };
 
-        // 发起 POST 请求将用户信息发送给后端
+        // Initiate a POST request to send user information to the backend.
         fetch('/register', {
             method: 'POST',
             headers: {
@@ -329,10 +329,10 @@
         })
         .then(response => {
             if (response.ok) {
-                // 注册成功，重定向到 index 页面
+                // Successful registration, redirected to the index page.
                 window.location.href = '/index.html';
             } else {
-                // 注册失败，显示错误提示
+                // Registration failed, and an error message was displayed.
                 alert('Registration failed. Please try again.');
             }
         })
