@@ -13,6 +13,8 @@
 
     <meta name="msapplication-tap-highlight" content="no">
     <link href="css/main.css" rel="stylesheet">
+    <!--TODO add jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -82,7 +84,8 @@
                             </h4>
                             <div class="divider row"></div>
                             <div>
-                                <form class>
+                                <!--TODO add form id-->
+                                <form id="login">
                                     <div class="form-row">
                                         <div class="col-md-6">
                                             <div class="position-relative form-group">
@@ -121,5 +124,76 @@
     </div>
     <script type="text/javascript" src="js/assets.js"></script>
 </body>
+<script>
+    /**
+     * @author Chengyu Peng
+     * @student ID:230045675
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+        // 获取表单元素
+        const loginForm = document.querySelector('#login');
 
+        // 自动填充邮箱和密码
+        const savedEmail = localStorage.getItem('email');
+        const savedPassword = localStorage.getItem('password');
+
+        if (savedEmail && savedPassword) {
+            loginForm.querySelector('input[name="email"]').value = savedEmail;
+            loginForm.querySelector('input[name="password"]').value = savedPassword;
+            loginForm.querySelector('input[name="check"]').checked = true;
+        }
+
+        // 登录表单提交事件
+        loginForm.addEventListener('submit', async (event) => {
+            event.preventDefault(); // 阻止表单默认提交行为
+
+            const student_email_address = loginForm.querySelector('input[name="email"]').value;
+            const password = loginForm.querySelector('input[name="password"]').value;
+            const keepLoggedIn = loginForm.querySelector('input[name="check"]').checked;
+
+            // 正则表达式检查
+            /*const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;*/
+
+            try {
+                if (keepLoggedIn) {
+                    localStorage.setItem('email', student_email_address);
+                    localStorage.setItem('password', password);
+                } else {
+                    localStorage.removeItem('email');
+                    localStorage.removeItem('password');
+                }
+
+                const formData = new URLSearchParams();
+                formData.append('student_email_address', student_email_address);
+                formData.append('password', password);
+
+                const response = await fetch('/students/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({student_email_address, password})
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    const studentName = data.data.stuName;
+                    console.log('stuName:',studentName); // 检查stuName是否正确
+                    if (studentName) {
+                        location.href = '/pages/landingpage.html?name=' + encodeURIComponent(studentName);
+                    } else {
+                        alert('Fail to log in: Missing student name');
+                    }
+                } else {
+                    // 登录失败
+                    alert('Fail to log in：' + data.message);
+                }
+            } catch (error) {
+                console.error('登录失败：', error);
+            }
+        })
+    });
+
+</script>
 </html>

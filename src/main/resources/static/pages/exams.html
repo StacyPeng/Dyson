@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>FAQ Section - ArchitectUI HTML Bootstrap 4 Dashboard Template</title>
+    <title>Data Tables - Choose between regular React Bootstrap tables or advanced dynamic ones.</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-    <meta name="description" content="ArchitectUI HTML Bootstrap 4 Dashboard Template">
+    <meta name="description" content="Choose between regular React Bootstrap tables or advanced dynamic ones.">
 
     <meta name="msapplication-tap-highlight" content="no">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/main.css rel="stylesheet">
     <!--TODO add jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -58,10 +58,10 @@
                         <div class="input-holder">
                             <!--TODO add id-->
                             <input type="text" class="search-input" placeholder="Type to search" id="searchInput">
-                            <!--TODO calling method-->
-                            <button class="search-icon" onclick="searchModule()"><span></span></button>
+                            <!--TODO add id-->
+                            <button class="search-icon" onclick="searchExams()"><span></span></button>
                         </div>
-                        <!--TODO calling method-->
+                        <!--TODO add id-->
                         <button class="close" onclick="clearSearch()"></button>
                     </div>
                     <!--
@@ -239,10 +239,12 @@
                     </ul>
                     -->
                 </div>
+                <!--TODO add content-->
+                <div id="searchResults"></div>
                 <div class="app-header-right">
-                    <div class="header-dots">
-                        <!--TODO comment out grid dashboard-->
-                        <!--<div class="dropdown">
+                    <!-- TODO comment out header dot-->
+                    <!--<div class="header-dots">
+                        <div class="dropdown">
                             <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
                                     class="p-0 mr-2 btn btn-link">
                                     <span class="icon-wrapper icon-wrapper-alt rounded-circle">
@@ -269,8 +271,8 @@
                                             <button
                                                     class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
-                                                        class="pe-7s-world-myfile icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i>
-                                                Reports
+                                                        class="pe-7s-world icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i>
+                                                Automation
                                             </button>
                                         </div>
                                         <div class="col-sm-6 col-xl-4">
@@ -278,7 +280,7 @@
                                                     class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
                                                         class="pe-7s-piggy icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Library
+                                                </i> Reports
                                             </button>
                                         </div>
                                         <div class="col-sm-6 col-xl-4">
@@ -286,7 +288,7 @@
                                                     class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
                                                         class="pe-7s-config icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Contacts
+                                                </i> Settings
                                             </button>
                                         </div>
                                         <div class="col-sm-6 col-xl-4">
@@ -294,7 +296,7 @@
                                                     class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
                                                         class="pe-7s-browser icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Social Activities
+                                                </i> Content
                                             </button>
                                         </div>
                                         <div class="col-sm-6 col-xl-4">
@@ -302,7 +304,7 @@
                                                     class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
                                                         class="pe-7s-hourglass icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i>
-                                                Digital ID
+                                                Activity
                                             </button>
                                         </div>
                                         <div class="col-sm-6 col-xl-4">
@@ -310,23 +312,20 @@
                                                     class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
                                                 <i
                                                         class="pe-7s-world icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Find A PC
+                                                </i> Contacts
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                                &lt;!&ndash;
                                 <ul class="nav flex-column">
                                     <li class="nav-item-divider nav-item"></li>
                                     <li class="nav-item-btn text-center nav-item">
                                         <button class="btn-shadow btn btn-primary btn-sm">Follow-ups</button>
                                     </li>
                                 </ul>
-                                &ndash;&gt;
                             </div>
-                        </div>-->
-                        <!--TODO Comment out page warnings-->
-                        <!--<div class="dropdown">
+                        </div>
+                        <div class="dropdown">
                             <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
                                     class="p-0 mr-2 btn btn-link">
                                     <span class="icon-wrapper icon-wrapper-alt rounded-circle">
@@ -754,12 +753,13 @@
                                     <li class="nav-item-divider nav-item"></li>
                                     <li class="nav-item-btn text-center nav-item">
                                         <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">View Latest
-                                            Changes</button>
+                                            Changes
+                                        </button>
                                     </li>
                                 </ul>
                             </div>
-                        </div>-->
-                        <!--
+                        </div>
+                        &lt;!&ndash;
                         <div class="dropdown">
                             <button type="button" data-toggle="dropdown" class="p-0 mr-2 btn btn-link">
                                 <span class="icon-wrapper icon-wrapper-alt rounded-circle">
@@ -854,8 +854,8 @@
                                 </ul>
                             </div>
                         </div>
-                        -->
-                    </div>
+                        &ndash;&gt;
+                    </div>-->
                     <div class="header-btn-lg pr-0">
                         <div class="widget-content p-0">
                             <div class="widget-content-wrapper">
@@ -863,39 +863,36 @@
                                     <!--TODO keep logout button-->
                                     <div class="widget-content-right mr-2">
                                         <button
-                                                class="btn-pill btn-shadow btn-shine btn btn-focus" onclick="logout()">Logout</button>
+                                                class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
                                     </div>
-                                    <!--TODO comment out original menu-->
+                                    <!--TODO comment out orginal menu-->
                                     <!--<div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                           class="p-0 btn">
+                                            class="p-0 btn">
                                             <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg"
-                                                 alt>
+                                                alt>
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true"
-                                             class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                                            class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
                                             <div class="dropdown-menu-header">
                                                 <div class="dropdown-menu-header-inner bg-info">
                                                     <div class="menu-header-image opacity-2"
-                                                         style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                                                        style="background-image: url('assets/images/dropdown-header/city3.jpg');">
                                                     </div>
                                                     <div class="menu-header-content text-left">
                                                         <div class="widget-content p-0">
                                                             <div class="widget-content-wrapper">
                                                                 <div class="widget-content-left mr-3">
                                                                     <img width="42" class="rounded-circle"
-                                                                         src="assets/images/avatars/1.jpg" alt>
+                                                                        src="assets/images/avatars/1.jpg" alt>
                                                                 </div>
                                                                 <div class="widget-content-left">
                                                                     <div class="widget-heading">Alina Mcloughlin</div>
                                                                     <div class="widget-subheading opacity-8">A short
                                                                         profile description</div>
                                                                 </div>
-                                                                <div class="widget-content-right mr-2">
-                                                                    <button
-                                                                            class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
-                                                                </div>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -939,17 +936,17 @@
                                                 <div class="no-gutters row">
                                                     <div class="col-sm-6">
                                                         <button
-                                                                class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
+                                                            class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
                                                             <i
-                                                                    class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i>
+                                                                class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i>
                                                             Message Inbox
                                                         </button>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <button
-                                                                class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                            class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
                                                             <i
-                                                                    class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
+                                                                class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
                                                             <b>Support Tickets</b>
                                                         </button>
                                                     </div>
@@ -977,6 +974,7 @@
                                         <i class="fa text-white fa-calendar pr-1 pl-1"></i>
                                     </button>
                                 </div>-->
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -1473,228 +1471,96 @@
                     </div>
                 </div>
             </div>
+            <!--TODO exam form-->
             <div class="app-main__outer">
-                <div class="app-main__inner p-0">
-                    <div class="app-inner-layout chat-layout">
-                        <div class="app-inner-layout__header text-white bg-premium-dark">
-                            <div class="app-page-title">
-                                <div class="page-title-wrapper">
-                                    <div class="page-title-heading">
-                                        <div class="page-title-icon bg-happy-fisher"><i
-                                                class="pe-7s-umbrella text-white"></i></div>
-                                        <div>Modules Section
-                                            <div class="page-title-subheading">Dummy page layout.</div>
-                                        </div>
-                                    </div>
-                                    <div class="page-title-actions">
-                                        <button
-                                            class="ladda-button btn btn-pill btn-wide btn-alternate">Refresh</button>
+                <div class="app-main__inner">
+                    <!--
+                    <div class="app-page-title">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading">
+                                <div class="page-title-icon">
+                                    <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
+                                </div>
+                                <div>Data Tables
+                                    <div class="page-title-subheading">Choose between regular React Bootstrap tables or
+                                        advanced dynamic ones.</div>
+                                </div>
+                            </div>
+                            <div class="page-title-actions">
+                                <button type="button" data-toggle="tooltip" title="Example Tooltip"
+                                    data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
+                                    <i class="fa fa-star"></i>
+                                </button>
+                                <div class="d-inline-block dropdown">
+                                    <button type="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
+                                        <span class="btn-icon-wrapper pr-2 opacity-7">
+                                            <i class="fa fa-business-time fa-w-20"></i>
+                                        </span>
+                                        Buttons
+                                    </button>
+                                    <div tabindex="-1" role="menu" aria-hidden="true"
+                                        class="dropdown-menu dropdown-menu-right">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link">
+                                                    <i class="nav-link-icon lnr-inbox"></i>
+                                                    <span> Inbox</span>
+                                                    <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link">
+                                                    <i class="nav-link-icon lnr-book"></i>
+                                                    <span> Book</span>
+                                                    <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link">
+                                                    <i class="nav-link-icon lnr-picture"></i>
+                                                    <span> Picture</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a disabled class="nav-link disabled">
+                                                    <i class="nav-link-icon lnr-file-empty"></i>
+                                                    <span> File Disabled</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="app-inner-layout__wrapper row-fluid no-gutters">
-                            <div class="app-inner-layout__sidebar bg-transparent card">
-                                <!--TODO add tabs id-->
-                                <div class="p-3" id="moduleTabs">
-                                    <div
-                                        class="dropdown-menu nav p-0 dropdown-menu-inline dropdown-menu-rounded dropdown-menu-hover-primary">
-                                        <h6 tabindex="-1" class="pt-0 dropdown-header">Menu</h6>
-                                        <a href="#tab-faq-1" data-toggle="tab" tabindex="0"
-                                            class="mb-1 active dropdown-item">Tab Example 1</a>
-                                        <a href="#tab-faq-2" data-toggle="tab" tabindex="0"
-                                            class="mb-1 dropdown-item">Tab Example 2</a>
-                                        <a href="#tab-faq-3" data-toggle="tab" tabindex="0"
-                                            class="mb-1 dropdown-item">Tab Example 3</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 app-inner-layout__content card">
-                                <div class="pb-5 pl-5 pr-5 pt-3">
-                                    <div class="mobile-app-menu-btn mb-3">
-                                        <button type="button" class="hamburger hamburger--elastic"><span
-                                                class="hamburger-box"><span
-                                                    class="hamburger-inner"></span></span></button>
-                                    </div>
-                                    <div class="tab-content">
-                                        <div class="tab-pane active show" id="tab-faq-1">
-                                            <div id="accordion" class="accordion-wrapper mb-3">
-                                                <div class="card">
-                                                    <!--TODO change title order is number-->
-                                                    <div id="heading1" class="card-header">
-                                                        <button type="button" data-toggle="collapse"
-                                                            data-target="#collapseOne1" aria-expanded="true"
-                                                            aria-controls="collapseOne"
-                                                            class="text-left m-0 p-0 btn btn-link btn-block">
-                                                            <h5 class="m-0 p-0">Collapsible Group Item #1</h5>
-                                                        </button>
-                                                    </div>
-                                                    <div data-parent="#accordion" id="collapseOne1"
-                                                        aria-labelledby="headingOne" class="collapse show">
-                                                        <div class="card-body">1. Anim pariatur cliche reprehenderit,
-                                                            enim eiusmod high life accusamus terry richardson ad squid.
-                                                            3 wolf moon officia aute, non cupidatat skateboard dolor
-                                                            brunch. Food truck
-                                                            quinoa
-                                                            nesciunt
-                                                            laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                                            a bird on it squid single-origin coffee nulla assumenda
-                                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                                                            labore wes anderson cred
-                                                            nesciunt
-                                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                                            Leggings occaecat craft beer farm-to-table, raw denim
-                                                            aesthetic synth nesciunt you probably haven't heard of them
-                                                            accusamus labore
-                                                            sustainable
-                                                            VHS.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card">
-                                                    <!--TODO change title order is number-->
-                                                    <div id="heading2" class="b-radius-0 card-header">
-                                                        <button type="button" data-toggle="collapse"
-                                                            data-target="#collapseOne2" aria-expanded="false"
-                                                            aria-controls="collapseTwo"
-                                                            class="text-left m-0 p-0 btn btn-link btn-block">
-                                                            <h5 class="m-0 p-0">
-                                                                Collapsible Group Item #2</h5>
-                                                        </button>
-                                                    </div>
-                                                    <div data-parent="#accordion" id="collapseOne2" class="collapse">
-                                                        <div class="card-body">2. Anim pariatur cliche reprehenderit,
-                                                            enim eiusmod high life accusamus terry richardson ad squid.
-                                                            3 wolf moon officia aute, non cupidatat skateboard dolor
-                                                            brunch. Food truck
-                                                            quinoa
-                                                            nesciunt
-                                                            laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                                            a bird on it squid single-origin coffee nulla assumenda
-                                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                                                            labore wes anderson cred
-                                                            nesciunt
-                                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                                            Leggings occaecat craft beer farm-to-table, raw denim
-                                                            aesthetic synth nesciunt you probably haven't heard of them
-                                                            accusamus labore
-                                                            sustainable
-                                                            VHS.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card">
-                                                    <!--TODO change title order is number-->
-                                                    <div id="heading3" class="card-header">
-                                                        <button type="button" data-toggle="collapse"
-                                                            data-target="#collapseOne3" aria-expanded="false"
-                                                            aria-controls="collapseThree"
-                                                            class="text-left m-0 p-0 btn btn-link btn-block">
-                                                            <h5 class="m-0 p-0">
-                                                                Collapsible Group Item #3</h5>
-                                                        </button>
-                                                    </div>
-                                                    <div data-parent="#accordion" id="collapseOne3" class="collapse">
-                                                        <div class="card-body">3. Anim pariatur cliche reprehenderit,
-                                                            enim eiusmod high life accusamus terry richardson ad squid.
-                                                            3 wolf moon officia aute, non cupidatat skateboard dolor
-                                                            brunch. Food truck
-                                                            quinoa
-                                                            nesciunt
-                                                            laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
-                                                            a bird on it squid single-origin coffee nulla assumenda
-                                                            shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                                                            labore wes anderson cred
-                                                            nesciunt
-                                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                                            Leggings occaecat craft beer farm-to-table, raw denim
-                                                            aesthetic synth nesciunt you probably haven't heard of them
-                                                            accusamus labore
-                                                            sustainable
-                                                            VHS.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-5"></div>
-                                            <div class="clearfix">
-                                                <div class="text-center">
-                                                    <a href="javascript:void(0);"
-                                                        class="btn-pill btn-wide btn-shadow btn btn-primary btn-lg">Maecenas
-                                                        tempus, tellus</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="tab-faq-2">
-                                            <h4>Maecenas tempus, tellus</h4>
-                                            <div class="divider"></div>
-                                            <p>But I must explain to you how all this mistaken idea of denouncing
-                                                pleasure and praising pain was born and I will give you a complete
-                                                account of the system, and expound the actual teachings of the great
-                                                explorer of the truth, the master-builder of human happiness.</p>
-                                            <p>No one rejects, dislikes, or avoids pleasure itself, because it is
-                                                pleasure, but because those who do not know how to pursue pleasure
-                                                rationally encounter consequences that are extremely painful.</p>
-                                            <p>Nor again is there anyone who loves or pursues or desires to obtain pain
-                                                of itself, because it is pain, but because occasionally circumstances
-                                                occur in which toil and pain can procure him some great
-                                                pleasure.</p>
-                                            <p>To take a trivial example, which of us ever undertakes laborious physical
-                                                exercise, except to obtain some advantage from it?</p>
-                                            <p>But who has any right to find fault with a man who chooses to enjoy a
-                                                pleasure that has no annoying consequences, or one who avoids a pain
-                                                that produces no resultant pleasure?</p>
-                                            <p>On the other hand, we denounce with righteous indignation and dislike men
-                                                who are so beguiled and demoralized by the charms of pleasure of the
-                                                moment, so blinded by desire, that they cannot foresee</p>
-                                            <div class="mt-5"></div>
-                                            <div class="clearfix">
-                                                <div class="text-center">
-                                                    <a href="javascript:void(0);"
-                                                        class="btn-pill btn-wide btn-shadow btn btn-primary btn-lg">Maecenas
-                                                        tempus, tellus</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="tab-faq-3">
-                                            <h4>Maecenas tempus, tellus</h4>
-                                            <div class="divider"></div>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                                ligula eget dolor. Aenean massa.</p>
-                                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                                ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                                                quis, sem.</p>
-                                            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
-                                                nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                                                venenatis vitae, justo.</p>
-                                            <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-                                                dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-                                                tellus.</p>
-                                            <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-                                                Phasellus viverra nulla ut metus varius laoreet.</p>
-                                            <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-                                                Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
-                                            <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
-                                                sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
-                                                luctus pulvinar, hendrerit id, lorem.</p>
-                                            <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero
-                                                venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
-                                                faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-                                                Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales,
-                                                augue velit cursus nunc,</p>
-                                            <div class="mt-5"></div>
-                                            <div class="clearfix">
-                                                <div class="text-center">
-                                                    <button type="button"
-                                                        class="btn-pill btn-wide btn-shadow btn btn-primary btn-lg">Maecenas
-                                                        tempus, tellus</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    -->
+                    <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <table style="width: 100%;" id="example"
+                                   class="table table-hover table-striped table-bordered">
+                                <!--TODO modify parameters-->
+                                <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Name</th>
+                                    <th>Time</th>
+                                    <th>Place</th>
+                                    <th>Module Id</th>
+                                </tr>
+                                </thead>
+                                <!--TODO delete static data-->
+                                <tbody id="examTableBody"></tbody>
+                                <tfoot>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Name</th>
+                                    <th>Time</th>
+                                    <th>Place</th>
+                                    <th>Module Id</th>
+                                </tr>
+                                </tfoot>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -1880,8 +1746,7 @@
                                                                                                 class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
                                                                                                 <div
                                                                                                     class="avatar-icon">
-                                                                                                    <i>+</i>
-                                                                                                </div>
+                                                                                                    <i>+</i></div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </h4>
@@ -2875,65 +2740,43 @@
      * @author Chengyu Peng
      * @student ID:230045675
      */
-    function fetchModulesAndUpdatePage() {
+    window.onload = function () {
         $.ajax({
-            url: '/modules',
+            url: '/exams',
             type: 'GET',
             dataType: 'json',
             success: function (response) {
-                console.log("Response received: ", response);
-                var modulesData = response.data; // 取得模块数组
-
-                $('#moduleTabs').empty(); // 清空现有的 Tab Link
-                $('.tab-content').empty(); // 清空现有的 Tab Pane
-
-                $.each(modulesData, function (index, module) {
-                    console.log("Module being processed: ", module);
-
-                    // 创建 Tab Link
-                    var tabLink = $('<a>')
-                        .attr('href', "#tab-faq-" + module.modId)
-                        .attr('data-toggle', "tab")
-                        .addClass("mb-1 dropdown-item")
-                        .text(module.modName);
-                    $('#moduleTabs').append(tabLink);
-
-                    // 创建对应的 Tab Pane
-                    var tabPane = $('<div class="tab-pane" id="tab-faq-' + module.modId + '">')
-                        .html('<h4>' + module.modName + '</h4>' +
-                            '<p>Content for ' + module.description + '</p>');
-                    $('.tab-content').append(tabPane);
-                });
-
-                // 激活第一个 Tab Link 和第一个 Tab Pane
-                $('#moduleTabs a:first').addClass('active');
-                $('.tab-content .tab-pane:first').addClass('show active');
+                $('#examTableBody').empty();
+                // 确保'response.data'确实是一个数组
+                if (Array.isArray(response.data)) {
+                    console.log(response.data)
+                    response.data.forEach(function (exam) {
+                        $('#examTableBody').append('<tr>' +
+                            '<td>' + exam.examId + '</td>' +
+                            '<td>' + exam.examName + '</td>' +
+                            '<td>' + exam.examTime + '</td>' + // 处理 null 描述
+                            '<td>' + exam.place + '</td>' + // 处理 null modId
+                            '<td>' + exam.modId + '</td>' + // 你可能想在这里添加实际操作
+                            '</tr>');
+                    });
+                } else {
+                    console.error('The exam data format does not match:', response.data);
+                }
             },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.error('Error fetching modules:', textStatus, errorThrown);
+            error: function (xhr, status, error) {
+                console.error('Failed to fetch exam data:', error);
             }
-        });
+        })
     }
 
-    // 确保文档加载完成后再调用 fetchModulesAndUpdatePage
-    $(document).ready(function () {
-        fetchModulesAndUpdatePage();
-    });
-
-    $(document).on('click', '#moduleTabs a', function(e) {
-        e.preventDefault(); // 阻止默认的锚点点击行为
-        $('#moduleTabs a').removeClass('active'); // 移除所有标签上的active类
-        $(this).addClass('active'); // 只为被点击的标签添加active类
-    });
-
     //implement search function
-    function searchModule() {
-        var modName = document.getElementById("searchInput").value;
-        if (!modName.trim()) {
-            console.error('Error: Module name must not be empty');
+    function searchExams() {
+        var examName = document.getElementById("searchInput").value;
+        if (!examName.trim()) {
+            console.error('Error: Exam name must not be empty');
             return; // 如果输入为空，直接返回，不做请求
         }
-        fetch(`/modules/${modName}`)
+        fetch(`/exams/${examName}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -2941,34 +2784,76 @@
                 return response.json();
             })
             .then(data => {
+                //console.log(data)
                 if (data.code === 200) {
-                    console.log('成功:', data);
-                    var moduleId = data.data.modId;
-                    var targetTabLink = $("#moduleTabs a[href='#tab-faq-" + moduleId + "']");
-                    var targetTabContent = $("#tab-faq-" + moduleId);
-
-                    $('#moduleTabs a').removeClass('active');
-                    targetTabLink.addClass('active');
-
-                    $('.tab-pane').removeClass('show active');
-                    targetTabContent.addClass('show active');
-
-                    // 仅当目标元素存在时才尝试滚动到视图
-                    if(targetTabContent.length) {
-                        targetTabContent[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
+                    //console.log('Success:', data);
+                    updateTableWithExams([data.data]); // 更新表格，假设返回的是单个考试对象
                 } else {
-                    console.error('完整错误数据:', data);
+                    console.error('Full error data:', data);
+                    updateTableWithExams([]); // 清空表格
                 }
             })
             .catch(error => {
                 console.error('Network or parsing error:', error);
+                console.error('Error:', error);
+                updateTableWithExams([]); // 出错时清空表格
             });
     }
+
+    function updateTableWithExams(exams) {
+        const tbody = document.getElementById('examTableBody');
+        tbody.innerHTML = ''; // 清空现有的表格内容
+        exams.forEach(exam => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `<td>${exam.examId}</td>
+                        <td>${exam.examName}</td>
+                        <td>${exam.examTime}</td>
+                        <td>${exam.place}</td>
+                        <td>${exam.modId}</td>`;
+            tbody.appendChild(tr);
+        });
+    }
+
+    function clearSearch() {
+        document.getElementById('searchInput').value = '';
+        // 可选：清空搜索结果显示区域
+        // document.getElementById('searchResults').innerHTML = '';
+        loadAllExams(); // 重新加载并显示所有考试数据
+    }
+
+    // 加载所有考试数据的函数
+    function loadAllExams() {
+        $.ajax({
+            url: '/exams',
+            type: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                $('#examTableBody').empty();
+                if (Array.isArray(response.data)) {
+                    response.data.forEach(function (exam) {
+                        $('#examTableBody').append('<tr>' +
+                            '<td>' + exam.examId + '</td>' +
+                            '<td>' + exam.examName + '</td>' +
+                            '<td>' + exam.examTime + '</td>' +
+                            '<td>' + exam.place + '</td>' +
+                            '<td>' + exam.modId + '</td>' +
+                            '</tr>');
+                    });
+                } else {
+                    console.error('The exam data format does not match:', response.data);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error('Failed to fetch exam data:', error);
+            }
+        });
+    }
+
+    // 页面加载时加载所有考试数据
+    window.onload = loadAllExams;
 
     function logout() {
         location.href= '/index.html';
     }
-
 </script>
 </html>
