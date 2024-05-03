@@ -29,7 +29,7 @@ mybatis:
 
 logging:
   level:
-    root: debug #info #warn
+    root: info #debug #warn
   pattern:
     console: '%d{yyyy-MM-dd} [%thread] %-5level %logger- %msg%n'
 

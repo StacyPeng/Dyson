@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import team11.Dyson.controller.TimetableController;
+import team11.Dyson.domian.Student;
 import team11.Dyson.service.impl.StudentServiceImpl;
 
 @SpringBootTest
@@ -23,5 +24,12 @@ class DysonApplicationTests {
     @Test
     public void testGetStudent(){
         System.out.println(studentService.getAll());
+    }
+
+    @Test
+    public void testRegisterStudent(){
+        Student student = new Student("test","test","test","male",null,null);
+        String register = studentService.register(student);
+        System.out.println(register);
     }
 }

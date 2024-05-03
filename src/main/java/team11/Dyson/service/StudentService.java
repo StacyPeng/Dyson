@@ -15,15 +15,15 @@ import java.util.List;
 @Service
 public interface StudentService {
 
-    public Object login(String student_email_address, String password);
+    public Object login(String studentEmailAddress, String password);
 
     public String register(Student student);
 
-    public boolean modifyPassword(String password,String student_email_address);
+    public boolean modifyPassword(String password,String studentEmailAddress);
 
     //public boolean delete(Student student);
 
-    public Student getByEmail(String student_email_address);
+    public Student getByEmail(String studentEmailAddress);
 
     public List<Student> getAll();
 }

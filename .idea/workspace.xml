@@ -5,24 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/Code.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StudentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/forgotpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/forgotpassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/book-meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/book-meeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/feedback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Exam-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/Exam-results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Staff-all-students.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/Staff-all-students.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/book-meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/book-meeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/feedback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/rough.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/rough.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/staff-calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/staff-dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-student-individual.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/staff-student-individual.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/Code.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/Code.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/Timetable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/Timetable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/DysonApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/DysonApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StudentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StudentServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,41 +51,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Maven.Chengyu [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DysonApplication.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.DysonApplicationTests.testRegisterStudent.executor": "Run",
+    "Maven.Chengyu [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DysonApplication.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/pages" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.DysonApplication">
+    <configuration name="DysonApplicationTests.testRegisterStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Dyson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team11.Dyson.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="team11.Dyson" />
+      <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplicationTests" />
+      <option name="METHOD_NAME" value="testRegisterStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="student-management-system" />
       <method v="2">
@@ -102,6 +117,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DysonApplicationTests.testRegisterStudent" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -149,6 +169,8 @@
       <workItem from="1714760906485" duration="2713000" />
       <workItem from="1714764217390" duration="4136000" />
       <workItem from="1714769078247" duration="901000" />
+      <workItem from="1714770121277" duration="1982000" />
+      <workItem from="1714772463977" duration="2875000" />
     </task>
     <servers />
   </component>

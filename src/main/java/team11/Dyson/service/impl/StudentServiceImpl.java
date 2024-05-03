@@ -17,7 +17,7 @@ import java.util.List;
  */
 @Service
 public class StudentServiceImpl implements StudentService {
-    private static final Logger log = (Logger) LoggerFactory.getLogger(StudentServiceImpl.class);
+    public static final Logger log = (Logger) LoggerFactory.getLogger(StudentServiceImpl.class);
     @Autowired
     private StudentMapper studentMapper;
 
@@ -33,18 +33,18 @@ public class StudentServiceImpl implements StudentService {
         }
         return null;
     }*/
-    public Student login(String student_email_address, String password) {
-        Student student = studentMapper.login(student_email_address, password);
+    public Student login(String studentEmailAddress, String password) {
+        Student student = studentMapper.login(studentEmailAddress, password);
         if (student != null) {
             if (password.equals(student.getPassword())) {
-                log.info("Login successful for user: {}", student_email_address);
+                log.info("Login successful for user: {}", studentEmailAddress);
                 return student;
             } else {
-                log.warn("Incorrect password for user: {}", student_email_address);
+                log.warn("Incorrect password for user: {}", studentEmailAddress);
                 return null;
             }
         }
-        log.warn("User not found: {}", student_email_address);
+        log.warn("User not found: {}", studentEmailAddress);
         return null;
     }
 
@@ -62,8 +62,8 @@ public class StudentServiceImpl implements StudentService {
 
 
     @Override
-    public boolean modifyPassword(String password, String student_email_address) {
-        boolean modifyPassword = studentMapper.modifyPassword(password, student_email_address);
+    public boolean modifyPassword(String password, String studentEmailAddress) {
+        boolean modifyPassword = studentMapper.modifyPassword(password, studentEmailAddress);
         return modifyPassword;
     }
 
@@ -74,8 +74,8 @@ public class StudentServiceImpl implements StudentService {
     }*/
 
     @Override
-    public Student getByEmail(String student_email_address) {
-        return studentMapper.getByEmail(student_email_address);
+    public Student getByEmail(String studentEmailAddress) {
+        return studentMapper.getByEmail(studentEmailAddress);
     }
 
     @Override

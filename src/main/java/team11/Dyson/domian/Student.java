@@ -5,6 +5,9 @@ import jakarta.persistence.*;
 import java.util.Date;
 import java.util.List;
 
+/*
+* author: Hengqian Mao
+* */
 @Entity
 @Table(name = "student")
 public class Student {
