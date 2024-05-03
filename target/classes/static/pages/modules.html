@@ -13,8 +13,6 @@
 
     <meta name="msapplication-tap-highlight" content="no">
     <link href="/css/main.css" rel="stylesheet">
-    <!--TODO add jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -56,13 +54,10 @@
                 <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
-                            <!--TODO add id-->
-                            <input type="text" class="search-input" placeholder="Type to search" id="searchInput">
-                            <!--TODO add id-->
-                            <button class="search-icon" onclick="searchModule()"><span></span></button>
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
                         </div>
-                        <!--TODO add id-->
-                        <button class="close" onclick="clearSearch()"></button>
+                        <button class="close"></button>
                     </div>
                     <!--
                     <ul class="header-megamenu nav">
@@ -240,8 +235,7 @@
                     -->
                 </div>
                 <div class="app-header-right">
-                    <!--TODO comment out header dots-->
-                    <!--<div class="header-dots">
+                    <div class="header-dots">
                         <div class="dropdown">
                             <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
                                 class="p-0 mr-2 btn btn-link">
@@ -315,14 +309,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                &lt;!&ndash;
+                                <!-- 
                                 <ul class="nav flex-column">
                                     <li class="nav-item-divider nav-item"></li>
                                     <li class="nav-item-btn text-center nav-item">
                                         <button class="btn-shadow btn btn-primary btn-sm">Follow-ups</button>
                                     </li>
                                 </ul>
-                                &ndash;&gt;
+                                -->
                             </div>
                         </div>
                         <div class="dropdown">
@@ -373,7 +367,7 @@
                                                 <div class="p-3">
                                                     <div class="notifications-box">
                                                         <div
-                                                            class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline&#45;&#45;one-column">
+                                                            class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--one-column">
                                                             <div
                                                                 class="vertical-timeline-item dot-danger vertical-timeline-element">
                                                                 <div><span
@@ -579,7 +573,7 @@
                                             <div class="scrollbar-container">
                                                 <div class="p-3">
                                                     <div
-                                                        class="vertical-without-time vertical-timeline vertical-timeline&#45;&#45;animate vertical-timeline&#45;&#45;one-column">
+                                                        class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
                                                         <div class="vertical-timeline-item vertical-timeline-element">
                                                             <div>
                                                                 <span class="vertical-timeline-element-icon bounce-in">
@@ -758,7 +752,7 @@
                                 </ul>
                             </div>
                         </div>
-                        &lt;!&ndash;
+                        <!--
                         <div class="dropdown">
                             <button type="button" data-toggle="dropdown" class="p-0 mr-2 btn btn-link">
                                 <span class="icon-wrapper icon-wrapper-alt rounded-circle">
@@ -853,18 +847,13 @@
                                 </ul>
                             </div>
                         </div>
-                        &ndash;&gt;
-                    </div>-->
+                        -->
+                    </div>
                     <div class="header-btn-lg pr-0">
                         <div class="widget-content p-0">
                             <div class="widget-content-wrapper">
                                 <div class="widget-content-left">
-                                    <!--TODO keep logout button-->
-                                    <div class="widget-content-right mr-2">
-                                        <button
-                                                class="btn-pill btn-shadow btn-shine btn btn-focus" onclick="logout()">Logout</button>
-                                    </div>
-                                    <!--<div class="btn-group">
+                                    <div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                             class="p-0 btn">
                                             <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg"
@@ -962,19 +951,18 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>-->
+                                    </div>
                                 </div>
                                 <div class="widget-content-left  ml-3 header-user-info">
                                     <div class="widget-heading"> Alina Mclourd </div>
                                     <div class="widget-subheading"> VP People Manager </div>
                                 </div>
-                                <!--TODO comment out message button-->
-                                <!--<div class="widget-content-right header-user-info ml-3">
+                                <div class="widget-content-right header-user-info ml-3">
                                     <button type="button"
-                                            class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
+                                        class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
                                         <i class="fa text-white fa-calendar pr-1 pl-1"></i>
                                     </button>
-                                </div>-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1350,7 +1338,12 @@
                                     <i class="metismenu-icon pe-7s-graph"></i>Exams
                                 </a>
                             </li>
-                            
+                            <li>
+                                <a href="coursework.html">
+                                    <i class="metismenu-icon pe-7s-graph"></i>Courseworks
+                                </a>
+                            </li>
+
                             <li class="app-sidebar__heading">Requests</li>
                             <li>
                                 <a href="book-meeting.html">
@@ -1360,6 +1353,16 @@
                             <li>
                                 <a href="extension.html">
                                     <i class="metismenu-icon pe-7s-way"></i>Extensions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Notify-absense.html">
+                                    <i class="metismenu-icon pe-7s-id"></i>Notify Absense
+                                </a>
+                            </li>
+                            <li>
+                                <a href="feedback.html">
+                                    <i class="metismenu-icon pe-7s-ball"></i>Feedback
                                 </a>
                             </li>
                             <!--
@@ -1493,8 +1496,7 @@
                         </div>
                         <div class="app-inner-layout__wrapper row-fluid no-gutters">
                             <div class="app-inner-layout__sidebar bg-transparent card">
-                                <!--TODO add tabs id-->
-                                <div class="p-3" id="moduleTabs">
+                                <div class="p-3">
                                     <div
                                         class="dropdown-menu nav p-0 dropdown-menu-inline dropdown-menu-rounded dropdown-menu-hover-primary">
                                         <h6 tabindex="-1" class="pt-0 dropdown-header">Menu</h6>
@@ -1518,8 +1520,7 @@
                                         <div class="tab-pane active show" id="tab-faq-1">
                                             <div id="accordion" class="accordion-wrapper mb-3">
                                                 <div class="card">
-                                                    <!--TODO change title order is number-->
-                                                    <div id="heading1" class="card-header">
+                                                    <div id="headingOne" class="card-header">
                                                         <button type="button" data-toggle="collapse"
                                                             data-target="#collapseOne1" aria-expanded="true"
                                                             aria-controls="collapseOne"
@@ -1550,8 +1551,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="card">
-                                                    <!--TODO change title order is number-->
-                                                    <div id="heading2" class="b-radius-0 card-header">
+                                                    <div id="headingTwo" class="b-radius-0 card-header">
                                                         <button type="button" data-toggle="collapse"
                                                             data-target="#collapseOne2" aria-expanded="false"
                                                             aria-controls="collapseTwo"
@@ -1582,8 +1582,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="card">
-                                                    <!--TODO change title order is number-->
-                                                    <div id="heading3" class="card-header">
+                                                    <div id="headingThree" class="card-header">
                                                         <button type="button" data-toggle="collapse"
                                                             data-target="#collapseOne3" aria-expanded="false"
                                                             aria-controls="collapseThree"
@@ -2868,105 +2867,5 @@
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     <script type="text/javascript" src="/js/assets.js"></script>
 </body>
-<script>
-    /**
-     * @author Chengyu Peng
-     * @student ID:230045675
-     */
-    function fetchModulesAndUpdatePage() {
-        $.ajax({
-            url: '/modules',
-            type: 'GET',
-            dataType: 'json',
-            success: function (response) {
-                console.log("Response received: ", response);
-                var modulesData = response.data; // 取得模块数组
 
-                $('#moduleTabs').empty(); // 清空现有的 Tab Link
-                $('.tab-content').empty(); // 清空现有的 Tab Pane
-
-                $.each(modulesData, function (index, module) {
-                    console.log("Module being processed: ", module);
-
-                    // 创建 Tab Link
-                    var tabLink = $('<a>')
-                        .attr('href', "#tab-faq-" + module.modId)
-                        .attr('data-toggle', "tab")
-                        .addClass("mb-1 dropdown-item")
-                        .text(module.modName);
-                    $('#moduleTabs').append(tabLink);
-
-                    // 创建对应的 Tab Pane
-                    var tabPane = $('<div class="tab-pane" id="tab-faq-' + module.modId + '">')
-                        .html('<h4>' + module.modName + '</h4>' +
-                            '<p>Content for ' + module.description + '</p>');
-                    $('.tab-content').append(tabPane);
-                });
-
-                // 激活第一个 Tab Link 和第一个 Tab Pane
-                $('#moduleTabs a:first').addClass('active');
-                $('.tab-content .tab-pane:first').addClass('show active');
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.error('Error fetching modules:', textStatus, errorThrown);
-            }
-        });
-    }
-
-    // 确保文档加载完成后再调用 fetchModulesAndUpdatePage
-    $(document).ready(function () {
-        fetchModulesAndUpdatePage();
-    });
-
-    $(document).on('click', '#moduleTabs a', function(e) {
-        e.preventDefault(); // 阻止默认的锚点点击行为
-        $('#moduleTabs a').removeClass('active'); // 移除所有标签上的active类
-        $(this).addClass('active'); // 只为被点击的标签添加active类
-    });
-
-    //implement search function
-    function searchModule() {
-        var modName = document.getElementById("searchInput").value;
-        if (!modName.trim()) {
-            console.error('Error: Module name must not be empty');
-            return; // 如果输入为空，直接返回，不做请求
-        }
-        fetch(`/modules/${modName}`)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.code === 200) {
-                    console.log('成功:', data);
-                    var moduleId = data.data.modId;
-                    var targetTabLink = $("#moduleTabs a[href='#tab-faq-" + moduleId + "']");
-                    var targetTabContent = $("#tab-faq-" + moduleId);
-
-                    $('#moduleTabs a').removeClass('active');
-                    targetTabLink.addClass('active');
-
-                    $('.tab-pane').removeClass('show active');
-                    targetTabContent.addClass('show active');
-
-                    // 仅当目标元素存在时才尝试滚动到视图
-                    if(targetTabContent.length) {
-                        targetTabContent[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                } else {
-                    console.error('完整错误数据:', data);
-                }
-            })
-            .catch(error => {
-                console.error('Network or parsing error:', error);
-            });
-    }
-
-    function logout() {
-        location.href= '/index.html';
-    }
-
-</script>
 </html>
