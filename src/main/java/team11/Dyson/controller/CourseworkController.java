@@ -23,12 +23,12 @@ public class CourseworkController {
     @Autowired
     private CourseworkService courseworkService;
 
-    @GetMapping("/{classId}")
-    public Result getById(@PathVariable int classId) {
-        Coursework coursework = courseworkService.getById(classId);
-        Integer code = coursework !=null?Code.GET_OK:Code.GET_ERR;
-        String massage = coursework != null?"":"fail to search, please input again";
-        return new Result(code,coursework,massage);
+    @GetMapping("/{courseworkName}")
+    public Result getByName(@PathVariable String courseworkName) {
+        List<Coursework> courseworkList = courseworkService.getByName(courseworkName);
+        Integer code = courseworkList !=null?Code.GET_OK:Code.GET_ERR;
+        String massage = courseworkList != null?"":"fail to search, please input again";
+        return new Result(code,courseworkList,massage);
     }
 
     @GetMapping
