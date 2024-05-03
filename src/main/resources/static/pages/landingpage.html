@@ -15,8 +15,6 @@
 
     <meta name="msapplication-tap-highlight" content="no">
     <link href="/css/main.css" rel="stylesheet">
-    <!--TODO add jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -241,8 +239,7 @@
                     -->
                 </div>
                 <div class="app-header-right">
-                    <!--TODO comment out header dots-->
-                    <!--<div class="header-dots">
+                    <div class="header-dots">
                         <div class="dropdown">
                             <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
                                 class="p-0 mr-2 btn btn-link">
@@ -316,14 +313,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                &lt;!&ndash;
+                                <!-- 
                                 <ul class="nav flex-column">
                                     <li class="nav-item-divider nav-item"></li>
                                     <li class="nav-item-btn text-center nav-item">
                                         <button class="btn-shadow btn btn-primary btn-sm">Follow-ups</button>
                                     </li>
                                 </ul>
-                                &ndash;&gt;
+                                -->
                             </div>
                         </div>
                         <div class="dropdown">
@@ -374,7 +371,7 @@
                                                 <div class="p-3">
                                                     <div class="notifications-box">
                                                         <div
-                                                            class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline&#45;&#45;one-column">
+                                                            class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--one-column">
                                                             <div
                                                                 class="vertical-timeline-item dot-danger vertical-timeline-element">
                                                                 <div><span
@@ -580,7 +577,7 @@
                                             <div class="scrollbar-container">
                                                 <div class="p-3">
                                                     <div
-                                                        class="vertical-without-time vertical-timeline vertical-timeline&#45;&#45;animate vertical-timeline&#45;&#45;one-column">
+                                                        class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
                                                         <div class="vertical-timeline-item vertical-timeline-element">
                                                             <div>
                                                                 <span class="vertical-timeline-element-icon bounce-in">
@@ -759,7 +756,7 @@
                                 </ul>
                             </div>
                         </div>
-                        &lt;!&ndash;
+                        <!-- 
                         <div class="dropdown">
                             <button type="button" data-toggle="dropdown" class="p-0 mr-2 btn btn-link">
                                 <span class="icon-wrapper icon-wrapper-alt rounded-circle">
@@ -802,8 +799,8 @@
                                 </button>
                             </div>
                         </div>
-                        &ndash;&gt;
-                        &lt;!&ndash;
+                        -->
+                        <!-- 
                         <div class="dropdown">
                             <button type="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false"
                                 class="p-0 btn btn-link dd-chart-btn">
@@ -856,19 +853,13 @@
                                 </ul>
                             </div>
                         </div>
-                        &ndash;&gt;
-                    </div>-->
+                        -->
+                    </div>
                     <div class="header-btn-lg pr-0">
                         <div class="widget-content p-0">
                             <div class="widget-content-wrapper">
                                 <div class="widget-content-left">
-                                    <!--TODO keep logout button-->
-                                    <div class="widget-content-right mr-2">
-                                        <button
-                                                class="btn-pill btn-shadow btn-shine btn btn-focus" onclick="logout()">Logout</button>
-                                    </div>
-                                    <!--TODO comment out original menu-->
-                                    <!--<div class="btn-group">
+                                    <div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                             class="p-0 btn">
                                             <img width="42" class="rounded-circle" src="/images/IMG_1112-01.jpeg.jpg"
@@ -887,14 +878,17 @@
                                                             <div class="widget-content-wrapper">
                                                                 <div class="widget-content-left mr-3">
                                                                     <img width="42" class="rounded-circle"
-                                                                         src="/images/IMG_1112-01.jpeg.jpg" alt>
+                                                                        src="/images/IMG_1112-01.jpeg.jpg" alt>
                                                                 </div>
                                                                 <div class="widget-content-left">
-                                                                    <div class="widget-heading" id="studentName"></div>
+                                                                    <div class="widget-heading">Student Name</div>
                                                                     <div class="widget-subheading opacity-8">A short
                                                                         profile description</div>
                                                                 </div>
-
+                                                                <div class="widget-content-right mr-2">
+                                                                    <button
+                                                                        class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -963,19 +957,18 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>-->
+                                    </div>
                                 </div>
                                 <div class="widget-content-left  ml-3 header-user-info">
                                     <div class="widget-heading"> Alina Mclourd </div>
                                     <div class="widget-subheading"> VP People Manager </div>
                                 </div>
-                                <!--TODO comment out message button-->
-                                <!--<div class="widget-content-right header-user-info ml-3">
+                                <div class="widget-content-right header-user-info ml-3">
                                     <button type="button"
                                         class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
                                         <i class="fa text-white fa-calendar pr-1 pl-1"></i>
                                     </button>
-                                </div>-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1361,6 +1354,16 @@
                             <li>
                                 <a href="extension.html">
                                     <i class="metismenu-icon pe-7s-way"></i>Extensions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Notify-absense.html">
+                                    <i class="metismenu-icon pe-7s-id"></i>Notify Absense
+                                </a>
+                            </li>
+                            <li>
+                                <a href="feedback.html">
+                                    <i class="metismenu-icon pe-7s-ball"></i>Feedback
                                 </a>
                             </li>
                             <!--
@@ -2733,28 +2736,5 @@
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     <script type="text/javascript" src="/js/assets.js"></script>
 </body>
-<script>
-    /**
-     * @author Chengyu Peng
-     * @student ID:230045675
-     */
-    document.addEventListener('DOMContentLoaded', function() {
-        let studentName = new URLSearchParams(window.location.search).get('name');
-        if (!studentName) {
-            studentName = localStorage.getItem('studentName'); // 尝试从本地存储获取学生名称
-        } else {
-            localStorage.setItem('studentName', studentName); // 将新的学生名称保存到本地存储
-        }
 
-        if (studentName) {
-            document.querySelectorAll('.display-4').forEach(function(header) {
-                header.textContent = 'Hello, ' + studentName + '!';
-            });
-        }
-    });
-
-    function logout() {
-        location.href= '/index.html';
-    }
-</script>
 </html>
