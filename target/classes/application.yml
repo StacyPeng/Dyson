@@ -25,7 +25,7 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
   mapper-locations: classpath:/mappers/*
-  type-aliases-package: team11.chengyu.domian
+#  type-aliases-package: team11.dyson.chengyu.domian
 
 logging:
   level:
@@ -41,5 +41,5 @@ mybatis-plus:
     db-config:
       #配置mybatis plus 在更新时只更新非空和非NULL的字段
       update-strategy: not_empty
-  mapper-locations: classpath:resources/mapper/*.xml
-  type-aliases-package: com.dyson.institute.web.mapper
+#  mapper-locations: classpath:resources/mapper/*.xml
+#  type-aliases-package: com.dyson.institute.web.mapper
