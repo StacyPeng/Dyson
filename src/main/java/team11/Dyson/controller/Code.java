@@ -8,8 +8,8 @@ package team11.Dyson.controller;
 public class Code {
     public static final Integer LOG_OK = 10011;
     public static final Integer LOG_ERR = 10010;
-    public static final Integer REGISTER_OK = 10021;
-    public static final Integer REGISTER_ERR = 10020;
+    public static final Integer REGISTER_OK = 200;
+    public static final Integer REGISTER_ERR = 201;
 
 
     public static final Integer SAVE_OK = 20011;

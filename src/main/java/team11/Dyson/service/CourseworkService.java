@@ -15,7 +15,7 @@ import java.util.List;
 @Service
 @Transactional
 public interface CourseworkService {
-    public Coursework getById(int classId);
+    public List<Coursework> getByName(String courseworkName);
 
     public List<Coursework> getAll();
 }

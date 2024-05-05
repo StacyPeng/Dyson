@@ -10,7 +10,7 @@ import java.sql.Timestamp;
 public class Coursework {
     private String courseworkName;
     private Timestamp courseworkDeadline;
-    private String coursework_description;
+    private String courseworkDescription;
     private Integer modId;
 
     public Coursework() {
@@ -19,7 +19,7 @@ public class Coursework {
     public Coursework(String courseworkName, Timestamp courseworkDeadline, String coursework_description, Integer modId) {
         this.courseworkName = courseworkName;
         this.courseworkDeadline = courseworkDeadline;
-        this.coursework_description = coursework_description;
+        this.courseworkDescription = coursework_description;
         this.modId = modId;
     }
 
@@ -40,12 +40,12 @@ public class Coursework {
     }
 
 
-    public String getCoursework_description() {
-        return coursework_description;
+    public String getCourseworkDescription() {
+        return courseworkDescription;
     }
 
-    public void setCoursework_description(String coursework_description) {
-        this.coursework_description = coursework_description;
+    public void setCourseworkDescription(String courseworkDescription) {
+        this.courseworkDescription = courseworkDescription;
     }
 
 
@@ -58,6 +58,6 @@ public class Coursework {
     }
 
     public String toString() {
-        return "Coursework{courseworkName = " + courseworkName + ", courseworkDeadline = " + courseworkDeadline + ", coursework_description = " + coursework_description + ", modId = " + modId + "}";
+        return "Coursework{courseworkName = " + courseworkName + ", courseworkDeadline = " + courseworkDeadline + ", coursework_description = " + courseworkDescription + ", modId = " + modId + "}";
     }
 }
