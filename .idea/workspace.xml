@@ -5,30 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MeetingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SignInMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/StuClassMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/ProgrammeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Programme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/ProgrammeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/ProgrammeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/ProgrammeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1087efde-fd98-4bb2-9bd8-ecbbb2cc95bc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1087efde-fd98-4bb2-9bd8-ecbbb2cc95bc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1087efde-fd98-4bb2-9bd8-ecbbb2cc95bc/storage_v2/_src_/schema/management_system.q7UN_A.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1087efde-fd98-4bb2-9bd8-ecbbb2cc95bc/storage_v2/_src_/schema/management_system.q7UN_A.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/ExtensionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/ExtensionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/MeetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/MeetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Meeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/StuClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/StuClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/MeetingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/MeetingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/StuClassMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/StuClassMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/StuClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/StuClassService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StuClassServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StuClassServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/Notify-absense.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/Notify-absense.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/book-meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/book-meeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/extension.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/extension.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,6 +51,9 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.DysonApplicationTests.testRegisterStudent.executor": "Run",
+    "Maven.Chengyu [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -59,13 +62,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.DysonApplication.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Documents/GitHub/student-management-system/src/main/resources/mapper",
+    "last_opened_file_path": "/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "fileTemplates",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -75,23 +78,23 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Documents\GitHub\student-management-system\src\main\resources\mapper" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DysonApplication">
-    <configuration name="DysonApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplication" />
-      <module name="Chengyu" />
+  <component name="RunManager" selected="Spring Boot.DysonApplication">
+    <configuration name="DysonApplicationTests.testRegisterStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Dyson" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="team11.Dyson.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="team11.Dyson" />
+      <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplicationTests" />
+      <option name="METHOD_NAME" value="testRegisterStudent" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,7 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DysonApplication" />
+        <item itemvalue="JUnit.DysonApplicationTests.testRegisterStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +158,17 @@
       <workItem from="1714657952630" duration="3455000" />
       <workItem from="1714661454247" duration="3917000" />
       <workItem from="1714665843171" duration="894000" />
+      <workItem from="1714689856259" duration="1052000" />
+      <workItem from="1714739078852" duration="313000" />
+      <workItem from="1714741010046" duration="907000" />
+      <workItem from="1714741944512" duration="10166000" />
+      <workItem from="1714760906485" duration="2713000" />
+      <workItem from="1714764217390" duration="4136000" />
+      <workItem from="1714769078247" duration="901000" />
+      <workItem from="1714770121277" duration="1982000" />
+      <workItem from="1714772463977" duration="2875000" />
+      <workItem from="1714862303614" duration="1579000" />
+      <workItem from="1714910782492" duration="5435000" />
     </task>
     <servers />
   </component>

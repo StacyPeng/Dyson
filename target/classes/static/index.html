@@ -130,10 +130,10 @@
      * @student ID:230045675
      */
     document.addEventListener('DOMContentLoaded', function() {
-        // 获取表单元素
+        // get form parameter
         const loginForm = document.querySelector('#login');
 
-        // 自动填充邮箱和密码
+        // Automatically fill email and password
         const savedEmail = localStorage.getItem('email');
         const savedPassword = localStorage.getItem('password');
 
@@ -143,15 +143,15 @@
             loginForm.querySelector('input[name="check"]').checked = true;
         }
 
-        // 登录表单提交事件
+        // submit log in form
         loginForm.addEventListener('submit', async (event) => {
-            event.preventDefault(); // 阻止表单默认提交行为
+            event.preventDefault(); // prevent form default submit
 
             const student_email_address = loginForm.querySelector('input[name="email"]').value;
             const password = loginForm.querySelector('input[name="password"]').value;
             const keepLoggedIn = loginForm.querySelector('input[name="check"]').checked;
 
-            // 正则表达式检查
+            // regex check
             /*const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;*/
 
             try {
@@ -179,18 +179,17 @@
 
                 if (response.ok) {
                     const studentName = data.data.stuName;
-                    console.log('stuName:',studentName); // 检查stuName是否正确
+                    console.log('stuName:',studentName); // check student name
                     if (studentName) {
                         location.href = '/pages/landingpage.html?name=' + encodeURIComponent(studentName);
                     } else {
                         alert('Fail to log in: Missing student name');
                     }
                 } else {
-                    // 登录失败
                     alert('Fail to log in：' + data.message);
                 }
             } catch (error) {
-                console.error('登录失败：', error);
+                console.error('Fail to log in：', error);
             }
         })
     });
