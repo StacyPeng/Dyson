@@ -2819,10 +2819,10 @@
     document.getElementById('searchInput').value = '';
     // optional: clear search result
     // document.getElementById('searchResults').innerHTML = '';
-    loadAllCourseworks(); // 重新加载并显示所有考试数据
+    loadAllCourseworks(); // Reload and display all test data
   }
 
-  // 加载所有考试数据的函数
+  // load all exam data
   function loadAllCourseworks() {
     $.ajax({
       url: '/courseworks',

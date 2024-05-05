@@ -1133,7 +1133,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="289" parent="1" name="management_system">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-05.12:10:55</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-05.13:54:49</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="290" parent="1" name="mysql">
@@ -1554,215 +1554,227 @@ modId</ColNames>
       <DasType>varchar(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <index id="385" parent="307" name="PRIMARY">
+    <column id="385" parent="307" name="student_email_address">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="386" parent="307" name="PRIMARY">
       <ColNames>proId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="386" parent="307" name="PRIMARY">
+    <index id="387" parent="307" name="unique_student_email">
+      <ColNames>student_email_address</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="388" parent="307" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="387" parent="308" name="student_email_address">
+    <key id="389" parent="307" name="unique_student_email">
+      <UnderlyingIndexName>unique_student_email</UnderlyingIndexName>
+    </key>
+    <column id="390" parent="308" name="student_email_address">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="388" parent="308" name="modId">
+    <column id="391" parent="308" name="modId">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="389" parent="308" name="registeredmodules_ibfk_1">
+    <foreign-key id="392" parent="308" name="registeredmodules_ibfk_1">
       <ColNames>student_email_address</ColNames>
       <RefColNames>student_email_address</RefColNames>
       <RefTableName>student</RefTableName>
     </foreign-key>
-    <foreign-key id="390" parent="308" name="registeredmodules_ibfk_2">
+    <foreign-key id="393" parent="308" name="registeredmodules_ibfk_2">
       <ColNames>modId</ColNames>
       <RefColNames>mod_Id</RefColNames>
       <RefTableName>modules</RefTableName>
     </foreign-key>
-    <index id="391" parent="308" name="PRIMARY">
+    <index id="394" parent="308" name="PRIMARY">
       <ColNames>student_email_address
 modId</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="392" parent="308" name="modId">
+    <index id="395" parent="308" name="modId">
       <ColNames>modId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="393" parent="308" name="PRIMARY">
+    <key id="396" parent="308" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="394" parent="309" name="id">
+    <column id="397" parent="309" name="id">
       <AutoIncrement>9</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="395" parent="309" name="class_id">
+    <column id="398" parent="309" name="class_id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="396" parent="309" name="student_email_address">
+    <column id="399" parent="309" name="student_email_address">
       <DasType>varchar(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="397" parent="309" name="absence">
+    <column id="400" parent="309" name="absence">
       <DasType>int|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="398" parent="309" name="date_absence">
+    <column id="401" parent="309" name="date_absence">
       <DasType>datetime|0s</DasType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <Position>5</Position>
     </column>
-    <foreign-key id="399" parent="309" name="sign_in_ibfk_1">
+    <foreign-key id="402" parent="309" name="sign_in_ibfk_1">
       <ColNames>class_id</ColNames>
       <RefColNames>class_id</RefColNames>
       <RefTableName>classes</RefTableName>
     </foreign-key>
-    <index id="400" parent="309" name="PRIMARY">
+    <index id="403" parent="309" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="401" parent="309" name="sign_in_ibfk_1">
+    <index id="404" parent="309" name="sign_in_ibfk_1">
       <ColNames>class_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="402" parent="309" name="PRIMARY">
+    <key id="405" parent="309" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="403" parent="310" name="staff_email_address">
+    <column id="406" parent="310" name="staff_email_address">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="404" parent="310" name="staName">
+    <column id="407" parent="310" name="staName">
       <DasType>varchar(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="405" parent="310" name="password">
+    <column id="408" parent="310" name="password">
       <DasType>varchar(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="406" parent="310" name="gender">
+    <column id="409" parent="310" name="gender">
       <DasType>varchar(10)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="407" parent="310" name="birthday">
+    <column id="410" parent="310" name="birthday">
       <DasType>date|0s</DasType>
       <Position>5</Position>
     </column>
-    <index id="408" parent="310" name="PRIMARY">
+    <index id="411" parent="310" name="PRIMARY">
       <ColNames>staff_email_address</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="409" parent="310" name="PRIMARY">
+    <key id="412" parent="310" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="410" parent="311" name="staff_email_address">
+    <column id="413" parent="311" name="staff_email_address">
       <DasType>varchar(255)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="411" parent="311" name="student_email_address">
+    <column id="414" parent="311" name="student_email_address">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="412" parent="312" name="stu_class_id">
+    <column id="415" parent="312" name="stu_class_id">
       <AutoIncrement>6</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="413" parent="312" name="class_id">
+    <column id="416" parent="312" name="class_id">
       <DasType>int|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="414" parent="312" name="student_email_address">
+    <column id="417" parent="312" name="student_email_address">
       <DasType>varchar(50)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="415" parent="312" name="coursework_deadline">
+    <column id="418" parent="312" name="coursework_deadline">
       <DasType>datetime|0s</DasType>
       <Position>4</Position>
     </column>
-    <foreign-key id="416" parent="312" name="stu_class_ibfk_1">
+    <foreign-key id="419" parent="312" name="stu_class_ibfk_1">
       <ColNames>class_id</ColNames>
       <RefColNames>class_id</RefColNames>
       <RefTableName>classes</RefTableName>
     </foreign-key>
-    <foreign-key id="417" parent="312" name="stu_class_ibfk_2">
+    <foreign-key id="420" parent="312" name="stu_class_ibfk_2">
       <ColNames>student_email_address</ColNames>
       <RefColNames>student_email_address</RefColNames>
       <RefTableName>student</RefTableName>
     </foreign-key>
-    <index id="418" parent="312" name="PRIMARY">
+    <index id="421" parent="312" name="PRIMARY">
       <ColNames>stu_class_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="419" parent="312" name="uk_classid_stu_email">
+    <index id="422" parent="312" name="uk_classid_stu_email">
       <ColNames>class_id
 student_email_address</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="420" parent="312" name="student_email_address">
+    <index id="423" parent="312" name="student_email_address">
       <ColNames>student_email_address</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="421" parent="312" name="PRIMARY">
+    <key id="424" parent="312" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="422" parent="312" name="uk_classid_stu_email">
+    <key id="425" parent="312" name="uk_classid_stu_email">
       <UnderlyingIndexName>uk_classid_stu_email</UnderlyingIndexName>
     </key>
-    <column id="423" parent="313" name="student_email_address">
+    <column id="426" parent="313" name="student_email_address">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="424" parent="313" name="stu_name">
+    <column id="427" parent="313" name="stu_name">
       <DasType>varchar(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="425" parent="313" name="password">
+    <column id="428" parent="313" name="password">
       <DasType>varchar(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="426" parent="313" name="gender">
+    <column id="429" parent="313" name="gender">
       <DasType>varchar(10)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="427" parent="313" name="birthday">
+    <column id="430" parent="313" name="birthday">
       <DasType>date|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="428" parent="313" name="class_id">
+    <column id="431" parent="313" name="class_id">
       <DasType>int|0s</DasType>
       <Position>6</Position>
     </column>
-    <index id="429" parent="313" name="PRIMARY">
+    <index id="432" parent="313" name="PRIMARY">
       <ColNames>student_email_address</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="430" parent="313" name="PRIMARY">
+    <key id="433" parent="313" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
