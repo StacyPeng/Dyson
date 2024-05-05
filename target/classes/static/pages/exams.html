@@ -2763,16 +2763,16 @@
             dataType: 'json',
             success: function (response) {
                 $('#examTableBody').empty();
-                // 确保'response.data'确实是一个数组
+                // make sure 'response.data' is an array
                 if (Array.isArray(response.data)) {
                     console.log(response.data)
                     response.data.forEach(function (exam) {
                         $('#examTableBody').append('<tr>' +
                             '<td>' + exam.examId + '</td>' +
                             '<td>' + exam.examName + '</td>' +
-                            '<td>' + exam.examTime + '</td>' + // 处理 null 描述
-                            '<td>' + exam.place + '</td>' + // 处理 null modId
-                            '<td>' + exam.modId + '</td>' + // 你可能想在这里添加实际操作
+                            '<td>' + exam.examTime + '</td>' +
+                            '<td>' + exam.place + '</td>' +
+                            '<td>' + exam.modId + '</td>' +
                             '</tr>');
                     });
                 } else {
@@ -2790,7 +2790,7 @@
         var examName = document.getElementById("searchInput").value;
         if (!examName.trim()) {
             console.error('Error: Exam name must not be empty');
-            return; // 如果输入为空，直接返回，不做请求
+            return;
         }
         fetch(`/exams/${examName}`)
             .then(response => {
@@ -2803,22 +2803,22 @@
                 //console.log(data)
                 if (data.code === 200) {
                     //console.log('Success:', data);
-                    updateTableWithExams([data.data]); // 更新表格，假设返回的是单个考试对象
+                    updateTableWithExams([data.data]); // updata form, assuming reture whole exam object
                 } else {
                     console.error('Full error data:', data);
-                    updateTableWithExams([]); // 清空表格
+                    updateTableWithExams([]); // clear form
                 }
             })
             .catch(error => {
                 console.error('Network or parsing error:', error);
                 console.error('Error:', error);
-                updateTableWithExams([]); // 出错时清空表格
+                updateTableWithExams([]); // clear form when fault occur
             });
     }
 
     function updateTableWithExams(exams) {
         const tbody = document.getElementById('examTableBody');
-        tbody.innerHTML = ''; // 清空现有的表格内容
+        tbody.innerHTML = ''; // clear existing form content
         exams.forEach(exam => {
             const tr = document.createElement('tr');
             tr.innerHTML = `<td>${exam.examId}</td>
@@ -2832,9 +2832,9 @@
 
     function clearSearch() {
         document.getElementById('searchInput').value = '';
-        // 可选：清空搜索结果显示区域
+        // optional: clear search result display area
         // document.getElementById('searchResults').innerHTML = '';
-        loadAllExams(); // 重新加载并显示所有考试数据
+        loadAllExams(); // reload and display all exam data
     }
 
     // 加载所有考试数据的函数

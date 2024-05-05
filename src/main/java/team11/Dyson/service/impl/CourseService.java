@@ -32,7 +32,7 @@ public class CourseService {
                             course.getStartTime().isBefore(newCourse.getEndTime());
             if (course.getTeacher() != null && newCourse.getTeacher() != null) {
                 // Check if both courses have a teacher and if their emails match
-                return course.getTeacher().getStaff_email_address().equals(newCourse.getTeacher().getStaff_email_address()) &&
+                return course.getTeacher().getStaffEmailAddress().equals(newCourse.getTeacher().getStaffEmailAddress()) &&
                         hasTimeConflict;
             }
             // If one of the courses doesn't have a teacher, just check the time conflict

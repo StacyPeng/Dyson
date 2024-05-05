@@ -13,17 +13,17 @@ import team11.Dyson.domian.Student;
 @Repository
 public interface StaffMapper extends BaseMapper<Staff> {
 
-    @Select("select * from staff where staff_email_address=#{staff_email_address} and password=#{password}")
-    public Staff login(String staff_email_address, String password);
+    @Select("select * from staff where staff_email_address=#{staffEmailAddress} and password=#{password}")
+    public Staff login(String staffEmailAddress, String password);
 
-    @Select("select * from staff where staff_email_address =#{staff_email_address}")
-    public Staff getByEmail(String emailAddress);
+    @Select("select * from staff where staff_email_address =#{staffEmailAddress}")
+    public Staff getByEmail(String staffEmailAddress);
 
     @Insert("insert into staff (staff_email_address, staName, password, gender, birthday)" +
-            "values (#{staff_email_address},#{staName},#{password},#{gender},#{birthday})")
+            "values (#{staffEmailAddress},#{staName},#{password},#{gender},#{birthday})")
     //parameter name, not column name
     public int register(Staff staff);
 
-    @Update("update staff set password=#{password} where staff_email_address=#{staff_email_address}")
-    public boolean modifyPassword(String password,String staff_email_address);
+    @Update("update staff set password=#{password} where staff_email_address=#{staffEmailAddress}")
+    public boolean modifyPassword(String password,String staffEmailAddress);
 }

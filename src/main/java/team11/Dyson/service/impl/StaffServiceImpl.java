@@ -15,7 +15,7 @@ import team11.Dyson.service.StaffService;
  */
 @Service
 public class StaffServiceImpl implements StaffService {
-    private static final Logger log = (Logger) LoggerFactory.getLogger(StudentServiceImpl.class);
+    private static final Logger log = (Logger) LoggerFactory.getLogger(StaffServiceImpl.class);
 
     @Autowired
     private StaffMapper staffMapper;
@@ -40,7 +40,7 @@ public class StaffServiceImpl implements StaffService {
     public String register(Staff staff) {
         if ("".equals(staff.getPassword())) {
             return "please input password";
-        } else if ("".equals(staff.getStaff_email_address())) {
+        } else if ("".equals(staff.getStaffEmailAddress())) {
             return "please input email address";
         } else {
             staffMapper.register(staff);

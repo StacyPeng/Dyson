@@ -2,9 +2,9 @@ package team11.Dyson.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import team11.Dyson.domian.Login;
 import team11.Dyson.domian.Result;
 import team11.Dyson.domian.Student;
+import team11.Dyson.domian.StudentLogin;
 import team11.Dyson.service.impl.StudentServiceImpl;
 
 import java.util.List;
@@ -25,8 +25,8 @@ public class StudentController {
     private StudentServiceImpl studentService;
 
     @PostMapping("/login")
-    public Result login(@RequestBody Login login) {
-        Student student = studentService.login(login.getStudent_email_address(),login.getPassword());
+    public Result login(@RequestBody StudentLogin login) {
+        Student student = studentService.login(login.getStudentEmailAddress(),login.getStudentPassword());
         Integer code = student !=null?Code.GET_OK:Code.GET_ERR;
         String massage = student != null?"":"fail to log in, please input again";
         return new Result(code,student,massage);

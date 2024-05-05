@@ -12,7 +12,7 @@ import java.util.Set;
 public class Staff {
     @Id
     @Column(name = "staff_email_address")
-    private String staff_email_address;
+    private String staffEmailAddress;
 
     private String staName;
     private String password;
@@ -27,8 +27,8 @@ public class Staff {
     public Staff() {
     }
 
-    public Staff(String staff_email_address, String staName, String password, String gender, Timestamp birthday, Set<Course> coursesTaught) {
-        this.staff_email_address = staff_email_address;
+    public Staff(String staffEmailAddress, String staName, String password, String gender, Timestamp birthday, Set<Course> coursesTaught) {
+        this.staffEmailAddress = staffEmailAddress;
         this.staName = staName;
         this.password = password;
         this.gender = gender;
@@ -36,12 +36,12 @@ public class Staff {
         this.coursesTaught = coursesTaught;
     }
 
-    public String getStaff_email_address() {
-        return staff_email_address;
+    public String getStaffEmailAddress() {
+        return staffEmailAddress;
     }
 
-    public void setStaff_email_address(String staff_email_address) {
-        this.staff_email_address = staff_email_address;
+    public void setStaffEmailAddress(String staffEmailAddress) {
+        this.staffEmailAddress = staffEmailAddress;
     }
 
     public String getStaName() {
@@ -85,7 +85,7 @@ public class Staff {
     }
 
     public String toString() {
-        return "Staff{staff_email_address = " + staff_email_address + ", staName = " + staName + ", password = " + password + ", gender = " + gender + ", birthday = " + birthday + ", coursesTaught = " + coursesTaught + "}";
+        return "Staff{staffEmailAddress = " + staffEmailAddress + ", staName = " + staName + ", password = " + password + ", gender = " + gender + ", birthday = " + birthday + ", coursesTaught = " + coursesTaught + "}";
     }
 }
 
