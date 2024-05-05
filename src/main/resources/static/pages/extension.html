@@ -9,26 +9,701 @@
     <title>Form Controls - Wide selection of forms controls, using the Bootstrap 4 code base, but built with React.
     </title>
     <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description"
-        content="Wide selection of forms controls, using the Bootstrap 4 code base, but built with React.">
+          content="Wide selection of forms controls, using the Bootstrap 4 code base, but built with React.">
 
     <meta name="msapplication-tap-highlight" content="no">
     <link href="/css/main.css " rel="stylesheet">
 </head>
 
 <body>
-    <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
-        <div class="app-header header-shadow">
+<div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+    <div class="app-header header-shadow">
+        <div class="app-header__logo">
+            <div class="logo-src"></div>
+            <div class="header__pane ml-auto">
+                <div>
+                    <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
+                            data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="app-header__mobile-menu">
+            <div>
+                <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                </button>
+            </div>
+        </div>
+        <div class="app-header__menu">
+                <span>
+                    <button type="button"
+                            class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+        </div>
+        <div class="app-header__content">
+            <div class="app-header-left">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="Type to search">
+                        <button class="search-icon"><span></span></button>
+                    </div>
+                    <button class="close"></button>
+                </div>
+            </div>
+            <div class="app-header-right">
+                <div class="header-dots">
+                    <div class="dropdown">
+                        <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
+                                class="p-0 mr-2 btn btn-link">
+                                <span class="icon-wrapper icon-wrapper-alt rounded-circle">
+                                    <span class="icon-wrapper-bg bg-primary"></span>
+                                    <i class="icon text-primary ion-android-apps"></i>
+                                </span>
+                        </button>
+                        <div tabindex="-1" role="menu" aria-hidden="true"
+                             class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-menu-header">
+                                <div class="dropdown-menu-header-inner bg-plum-plate">
+                                    <div class="menu-header-image"
+                                         style="background-image: url('assets/images/dropdown-header/abstract4.jpg');">
+                                    </div>
+                                    <div class="menu-header-content text-white">
+                                        <h5 class="menu-header-title">Grid Dashboard</h5>
+                                        <h6 class="menu-header-subtitle">Easy grid navigation inside dropdowns</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-menu grid-menu-xl grid-menu-3col">
+                                <div class="no-gutters row">
+                                    <div class="col-sm-6 col-xl-4">
+                                        <button
+                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
+                                            <i
+                                                    class="pe-7s-world-myfile icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i>
+                                            Reports
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4">
+                                        <button
+                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
+                                            <i
+                                                    class="pe-7s-piggy icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
+                                            </i> Library
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4">
+                                        <button
+                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
+                                            <i
+                                                    class="pe-7s-config icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
+                                            </i> Contacts
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4">
+                                        <button
+                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
+                                            <i
+                                                    class="pe-7s-browser icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
+                                            </i> Social Activities
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4">
+                                        <button
+                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
+                                            <i
+                                                    class="pe-7s-hourglass icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i>
+                                            Digital ID
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4">
+                                        <button
+                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
+                                            <i
+                                                    class="pe-7s-world icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
+                                            </i> Find A PC
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
+                                class="p-0 mr-2 btn btn-link">
+                                <span class="icon-wrapper icon-wrapper-alt rounded-circle">
+                                    <span class="icon-wrapper-bg bg-danger"></span>
+                                    <i class="icon text-danger icon-anim-pulse ion-android-notifications"></i>
+                                    <span class="badge badge-dot badge-dot-sm badge-danger">Notifications</span>
+                                </span>
+                        </button>
+                        <div tabindex="-1" role="menu" aria-hidden="true"
+                             class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-menu-header mb-0">
+                                <div class="dropdown-menu-header-inner bg-deep-blue">
+                                    <div class="menu-header-image opacity-1"
+                                         style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                                    </div>
+                                    <div class="menu-header-content text-dark">
+                                        <h5 class="menu-header-title">Notifications</h5>
+                                        <h6 class="menu-header-subtitle">You have <b>21</b> unread messages</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul
+                                    class="tabs-animated-shadow tabs-animated nav nav-justified tabs-shadow-bordered p-3">
+                                <li class="nav-item">
+                                    <a role="tab" class="nav-link active" data-toggle="tab"
+                                       href="#tab-messages-header">
+                                        <span>Messages</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a role="tab" class="nav-link" data-toggle="tab" href="#tab-events-header">
+                                        <span>Events</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a role="tab" class="nav-link" data-toggle="tab" href="#tab-errors-header">
+                                        <span>System Errors</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab-messages-header" role="tabpanel">
+                                    <div class="scroll-area-sm">
+                                        <div class="scrollbar-container">
+                                            <div class="p-3">
+                                                <div class="notifications-box">
+                                                    <div
+                                                            class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--one-column">
+                                                        <div
+                                                                class="vertical-timeline-item dot-danger vertical-timeline-element">
+                                                            <div><span
+                                                                    class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">All Hands Meeting
+                                                                    </h4>
+                                                                    <span
+                                                                            class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                                class="vertical-timeline-item dot-warning vertical-timeline-element">
+                                                            <div>
+                                                                    <span
+                                                                            class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                    <p>Yet another one, at <span
+                                                                            class="text-success">15:00 PM</span></p>
+                                                                    <span
+                                                                            class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                                class="vertical-timeline-item dot-success vertical-timeline-element">
+                                                            <div>
+                                                                    <span
+                                                                            class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">Build the production
+                                                                        release
+                                                                        <span
+                                                                                class="badge badge-danger ml-2">NEW</span>
+                                                                    </h4>
+                                                                    <span
+                                                                            class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                                class="vertical-timeline-item dot-primary vertical-timeline-element">
+                                                            <div>
+                                                                    <span
+                                                                            class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">Something not
+                                                                        important
+                                                                        <div
+                                                                                class="avatar-wrapper mt-2 avatar-wrapper-overlap">
+                                                                            <div
+                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                <div class="avatar-icon">
+                                                                                    <img src="assets/images/avatars/1.jpg"
+                                                                                         alt>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                <div class="avatar-icon">
+                                                                                    <img src="assets/images/avatars/2.jpg"
+                                                                                         alt>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                <div class="avatar-icon">
+                                                                                    <img src="assets/images/avatars/3.jpg"
+                                                                                         alt>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                <div class="avatar-icon">
+                                                                                    <img src="assets/images/avatars/4.jpg"
+                                                                                         alt>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                <div class="avatar-icon">
+                                                                                    <img src="assets/images/avatars/5.jpg"
+                                                                                         alt>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                <div class="avatar-icon">
+                                                                                    <img src="assets/images/avatars/9.jpg"
+                                                                                         alt>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                <div class="avatar-icon">
+                                                                                    <img src="assets/images/avatars/7.jpg"
+                                                                                         alt>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                <div class="avatar-icon">
+                                                                                    <img src="assets/images/avatars/8.jpg"
+                                                                                         alt>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                    class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
+                                                                                <div class="avatar-icon"><i>+</i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </h4>
+                                                                    <span
+                                                                            class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                                class="vertical-timeline-item dot-info vertical-timeline-element">
+                                                            <div>
+                                                                    <span
+                                                                            class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">This dot has an info
+                                                                        state</h4>
+                                                                    <span
+                                                                            class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                                class="vertical-timeline-item dot-danger vertical-timeline-element">
+                                                            <div>
+                                                                    <span
+                                                                            class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">All Hands Meeting
+                                                                    </h4>
+                                                                    <span
+                                                                            class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                                class="vertical-timeline-item dot-warning vertical-timeline-element">
+                                                            <div>
+                                                                    <span
+                                                                            class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                    <p>Yet another one, at <span
+                                                                            class="text-success">15:00 PM</span>
+                                                                    </p><span
+                                                                        class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                                class="vertical-timeline-item dot-success vertical-timeline-element">
+                                                            <div><span
+                                                                    class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">Build the production
+                                                                        release
+                                                                        <span
+                                                                                class="badge badge-danger ml-2">NEW</span>
+                                                                    </h4>
+                                                                    <span
+                                                                            class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                                class="vertical-timeline-item dot-dark vertical-timeline-element">
+                                                            <div><span
+                                                                    class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <div
+                                                                        class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">This dot has a dark
+                                                                        state</h4>
+                                                                    <span
+                                                                            class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab-events-header" role="tabpanel">
+                                    <div class="scroll-area-sm">
+                                        <div class="scrollbar-container">
+                                            <div class="p-3">
+                                                <div
+                                                        class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                                                    <div class="vertical-timeline-item vertical-timeline-element">
+                                                        <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i
+                                                                            class="badge badge-dot badge-dot-xl badge-success">
+                                                                    </i>
+                                                                </span>
+                                                            <div
+                                                                    class="vertical-timeline-element-content bounce-in">
+                                                                <h4 class="timeline-title">All Hands Meeting</h4>
+                                                                <p>Lorem ipsum dolor sic amet, today at
+                                                                    <a href="javascript:void(0);">12:00 PM</a>
+                                                                </p>
+                                                                <span class="vertical-timeline-element-date"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vertical-timeline-item vertical-timeline-element">
+                                                        <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i
+                                                                            class="badge badge-dot badge-dot-xl badge-warning">
+                                                                    </i>
+                                                                </span>
+                                                            <div
+                                                                    class="vertical-timeline-element-content bounce-in">
+                                                                <p>Another meeting today, at <b
+                                                                        class="text-danger">12:00 PM</b></p>
+                                                                <p>Yet another one, at <span
+                                                                        class="text-success">15:00 PM</span></p>
+                                                                <span class="vertical-timeline-element-date"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vertical-timeline-item vertical-timeline-element">
+                                                        <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i
+                                                                            class="badge badge-dot badge-dot-xl badge-danger">
+                                                                    </i>
+                                                                </span>
+                                                            <div
+                                                                    class="vertical-timeline-element-content bounce-in">
+                                                                <h4 class="timeline-title">Build the production
+                                                                    release</h4>
+                                                                <p>Lorem ipsum dolor sit amit,consectetur eiusmdd
+                                                                    tempor incididunt ut
+                                                                    labore et dolore magna elit enim at minim veniam
+                                                                    quis nostrud
+                                                                </p>
+                                                                <span class="vertical-timeline-element-date"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vertical-timeline-item vertical-timeline-element">
+                                                        <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i
+                                                                            class="badge badge-dot badge-dot-xl badge-primary">
+                                                                    </i>
+                                                                </span>
+                                                            <div
+                                                                    class="vertical-timeline-element-content bounce-in">
+                                                                <h4 class="timeline-title text-success">Something
+                                                                    not important</h4>
+                                                                <p>Lorem ipsum dolor sit amit,consectetur elit enim
+                                                                    at minim veniam quis nostrud</p>
+                                                                <span class="vertical-timeline-element-date"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vertical-timeline-item vertical-timeline-element">
+                                                        <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i
+                                                                            class="badge badge-dot badge-dot-xl badge-success">
+                                                                    </i>
+                                                                </span>
+                                                            <div
+                                                                    class="vertical-timeline-element-content bounce-in">
+                                                                <h4 class="timeline-title">All Hands Meeting</h4>
+                                                                <p>Lorem ipsum dolor sic amet, today at
+                                                                    <a href="javascript:void(0);">12:00 PM</a>
+                                                                </p>
+                                                                <span class="vertical-timeline-element-date"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vertical-timeline-item vertical-timeline-element">
+                                                        <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i
+                                                                            class="badge badge-dot badge-dot-xl badge-warning">
+                                                                    </i>
+                                                                </span>
+                                                            <div
+                                                                    class="vertical-timeline-element-content bounce-in">
+                                                                <p>Another meeting today, at <b
+                                                                        class="text-danger">12:00 PM</b></p>
+                                                                <p>Yet another one, at <span
+                                                                        class="text-success">15:00 PM</span></p>
+                                                                <span class="vertical-timeline-element-date"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vertical-timeline-item vertical-timeline-element">
+                                                        <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i
+                                                                            class="badge badge-dot badge-dot-xl badge-danger">
+                                                                    </i>
+                                                                </span>
+                                                            <div
+                                                                    class="vertical-timeline-element-content bounce-in">
+                                                                <h4 class="timeline-title">Build the production
+                                                                    release</h4>
+                                                                <p>Lorem ipsum dolor sit amit,consectetur eiusmdd
+                                                                    tempor incididunt ut
+                                                                    labore et dolore magna elit enim at minim veniam
+                                                                    quis nostrud
+                                                                </p>
+                                                                <span class="vertical-timeline-element-date"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vertical-timeline-item vertical-timeline-element">
+                                                        <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i
+                                                                            class="badge badge-dot badge-dot-xl badge-primary">
+                                                                    </i>
+                                                                </span>
+                                                            <div
+                                                                    class="vertical-timeline-element-content bounce-in">
+                                                                <h4 class="timeline-title text-success">Something
+                                                                    not important</h4>
+                                                                <p>Lorem ipsum dolor sit amit,consectetur elit enim
+                                                                    at minim veniam quis nostrud</p>
+                                                                <span class="vertical-timeline-element-date"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab-errors-header" role="tabpanel">
+                                    <div class="scroll-area-sm">
+                                        <div class="scrollbar-container">
+                                            <div class="no-results pt-3 pb-0">
+                                                <div class="swal2-icon swal2-success swal2-animate-success-icon">
+                                                    <div class="swal2-success-circular-line-left"
+                                                         style="background-color: rgb(255, 255, 255);"></div>
+                                                    <span class="swal2-success-line-tip"></span>
+                                                    <span class="swal2-success-line-long"></span>
+                                                    <div class="swal2-success-ring"></div>
+                                                    <div class="swal2-success-fix"
+                                                         style="background-color: rgb(255, 255, 255);"></div>
+                                                    <div class="swal2-success-circular-line-right"
+                                                         style="background-color: rgb(255, 255, 255);"></div>
+                                                </div>
+                                                <div class="results-subtitle">All caught up!</div>
+                                                <div class="results-title">There are no system errors!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item-divider nav-item"></li>
+                                <li class="nav-item-btn text-center nav-item">
+                                    <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">View Latest
+                                        Changes</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-btn-lg pr-0">
+                    <div class="widget-content p-0">
+                        <div class="widget-content-wrapper">
+                            <div class="widget-content-left">
+                                <div class="btn-group">
+                                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                       class="p-0 btn">
+                                        <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg"
+                                             alt>
+                                        <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                    </a>
+                                    <div tabindex="-1" role="menu" aria-hidden="true"
+                                         class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                                        <div class="dropdown-menu-header">
+                                            <div class="dropdown-menu-header-inner bg-info">
+                                                <div class="menu-header-image opacity-2"
+                                                     style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                                                </div>
+                                                <div class="menu-header-content text-left">
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-3">
+                                                                <img width="42" class="rounded-circle"
+                                                                     src="assets/images/avatars/1.jpg" alt>
+                                                            </div>
+                                                            <div class="widget-content-left">
+                                                                <div class="widget-heading">Alina Mcloughlin</div>
+                                                                <div class="widget-subheading opacity-8">A short
+                                                                    profile description</div>
+                                                            </div>
+                                                            <div class="widget-content-right mr-2">
+                                                                <button
+                                                                        class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-area-xs" style="height: 150px;">
+                                            <div class="scrollbar-container ps">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item-header nav-item">Activity</li>
+                                                    <li class="nav-item">
+                                                        <a href="javascript:void(0);" class="nav-link">Chat
+                                                            <div class="ml-auto badge badge-pill badge-info">8</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="javascript:void(0);" class="nav-link">Recover
+                                                            Password</a>
+                                                    </li>
+                                                    <li class="nav-item-header nav-item">My Account
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="javascript:void(0);" class="nav-link">Settings
+                                                            <div class="ml-auto badge badge-success">New</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="javascript:void(0);" class="nav-link">Messages
+                                                            <div class="ml-auto badge badge-warning">512</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="javascript:void(0);" class="nav-link">Logs</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item-divider mb-0 nav-item"></li>
+                                        </ul>
+                                        <div class="grid-menu grid-menu-2col">
+                                            <div class="no-gutters row">
+                                                <div class="col-sm-6">
+                                                    <button
+                                                            class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
+                                                        <i
+                                                                class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i>
+                                                        Message Inbox
+                                                    </button>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <button
+                                                            class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                        <i
+                                                                class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
+                                                        <b>Support Tickets</b>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item-divider nav-item">
+                                            </li>
+                                            <li class="nav-item-btn text-center nav-item">
+                                                <button class="btn-wide btn btn-primary btn-sm"> Open Messages
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content-left  ml-3 header-user-info">
+                                <div class="widget-heading"> Alina Mclourd </div>
+                                <div class="widget-subheading"> VP People Manager </div>
+                            </div>
+                            <div class="widget-content-right header-user-info ml-3">
+                                <button type="button"
+                                        class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
+                                    <i class="fa text-white fa-calendar pr-1 pl-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-main">
+        <div class="app-sidebar sidebar-shadow">
             <div class="app-header__logo">
                 <div class="logo-src"></div>
                 <div class="header__pane ml-auto">
                     <div>
                         <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
-                            data-class="closed-sidebar">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
+                                data-class="closed-sidebar">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
                         </button>
                     </div>
                 </div>
@@ -36,1010 +711,513 @@
             <div class="app-header__mobile-menu">
                 <div>
                     <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
                     </button>
                 </div>
             </div>
             <div class="app-header__menu">
-                <span>
-                    <button type="button"
-                        class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
-                        <span class="btn-icon-wrapper">
-                            <i class="fa fa-ellipsis-v fa-w-6"></i>
-                        </span>
-                    </button>
-                </span>
-            </div>
-            <div class="app-header__content">
-                <div class="app-header-left">
-                    <div class="search-wrapper">
-                        <div class="input-holder">
-                            <input type="text" class="search-input" placeholder="Type to search">
-                            <button class="search-icon"><span></span></button>
-                        </div>
-                        <button class="close"></button>
-                    </div>
-                </div>
-                <div class="app-header-right">
-                    <div class="header-dots">
-                        <div class="dropdown">
-                            <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
-                                class="p-0 mr-2 btn btn-link">
-                                <span class="icon-wrapper icon-wrapper-alt rounded-circle">
-                                    <span class="icon-wrapper-bg bg-primary"></span>
-                                    <i class="icon text-primary ion-android-apps"></i>
-                                </span>
-                            </button>
-                            <div tabindex="-1" role="menu" aria-hidden="true"
-                                class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
-                                <div class="dropdown-menu-header">
-                                    <div class="dropdown-menu-header-inner bg-plum-plate">
-                                        <div class="menu-header-image"
-                                            style="background-image: url('assets/images/dropdown-header/abstract4.jpg');">
-                                        </div>
-                                        <div class="menu-header-content text-white">
-                                            <h5 class="menu-header-title">Grid Dashboard</h5>
-                                            <h6 class="menu-header-subtitle">Easy grid navigation inside dropdowns</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-menu grid-menu-xl grid-menu-3col">
-                                    <div class="no-gutters row">
-                                        <div class="col-sm-6 col-xl-4">
-                                            <button
-                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                                <i
-                                                    class="pe-7s-world-myfile icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i>
-                                                Reports
-                                            </button>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-4">
-                                            <button
-                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                                <i
-                                                    class="pe-7s-piggy icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Library
-                                            </button>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-4">
-                                            <button
-                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                                <i
-                                                    class="pe-7s-config icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Contacts
-                                            </button>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-4">
-                                            <button
-                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                                <i
-                                                    class="pe-7s-browser icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Social Activities
-                                            </button>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-4">
-                                            <button
-                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                                <i
-                                                    class="pe-7s-hourglass icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i>
-                                                Digital ID
-                                            </button>
-                                        </div>
-                                        <div class="col-sm-6 col-xl-4">
-                                            <button
-                                                class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-                                                <i
-                                                    class="pe-7s-world icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3">
-                                                </i> Find A PC
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
-                                class="p-0 mr-2 btn btn-link">
-                                <span class="icon-wrapper icon-wrapper-alt rounded-circle">
-                                    <span class="icon-wrapper-bg bg-danger"></span>
-                                    <i class="icon text-danger icon-anim-pulse ion-android-notifications"></i>
-                                    <span class="badge badge-dot badge-dot-sm badge-danger">Notifications</span>
-                                </span>
-                            </button>
-                            <div tabindex="-1" role="menu" aria-hidden="true"
-                                class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
-                                <div class="dropdown-menu-header mb-0">
-                                    <div class="dropdown-menu-header-inner bg-deep-blue">
-                                        <div class="menu-header-image opacity-1"
-                                            style="background-image: url('assets/images/dropdown-header/city3.jpg');">
-                                        </div>
-                                        <div class="menu-header-content text-dark">
-                                            <h5 class="menu-header-title">Notifications</h5>
-                                            <h6 class="menu-header-subtitle">You have <b>21</b> unread messages</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul
-                                    class="tabs-animated-shadow tabs-animated nav nav-justified tabs-shadow-bordered p-3">
-                                    <li class="nav-item">
-                                        <a role="tab" class="nav-link active" data-toggle="tab"
-                                            href="#tab-messages-header">
-                                            <span>Messages</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a role="tab" class="nav-link" data-toggle="tab" href="#tab-events-header">
-                                            <span>Events</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a role="tab" class="nav-link" data-toggle="tab" href="#tab-errors-header">
-                                            <span>System Errors</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="tab-messages-header" role="tabpanel">
-                                        <div class="scroll-area-sm">
-                                            <div class="scrollbar-container">
-                                                <div class="p-3">
-                                                    <div class="notifications-box">
-                                                        <div
-                                                            class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--one-column">
-                                                            <div
-                                                                class="vertical-timeline-item dot-danger vertical-timeline-element">
-                                                                <div><span
-                                                                        class="vertical-timeline-element-icon bounce-in"></span>
-                                                                    <div
-                                                                        class="vertical-timeline-element-content bounce-in">
-                                                                        <h4 class="timeline-title">All Hands Meeting
-                                                                        </h4>
-                                                                        <span
-                                                                            class="vertical-timeline-element-date"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="vertical-timeline-item dot-warning vertical-timeline-element">
-                                                                <div>
-                                                                    <span
-                                                                        class="vertical-timeline-element-icon bounce-in"></span>
-                                                                    <div
-                                                                        class="vertical-timeline-element-content bounce-in">
-                                                                        <p>Yet another one, at <span
-                                                                                class="text-success">15:00 PM</span></p>
-                                                                        <span
-                                                                            class="vertical-timeline-element-date"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="vertical-timeline-item dot-success vertical-timeline-element">
-                                                                <div>
-                                                                    <span
-                                                                        class="vertical-timeline-element-icon bounce-in"></span>
-                                                                    <div
-                                                                        class="vertical-timeline-element-content bounce-in">
-                                                                        <h4 class="timeline-title">Build the production
-                                                                            release
-                                                                            <span
-                                                                                class="badge badge-danger ml-2">NEW</span>
-                                                                        </h4>
-                                                                        <span
-                                                                            class="vertical-timeline-element-date"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="vertical-timeline-item dot-primary vertical-timeline-element">
-                                                                <div>
-                                                                    <span
-                                                                        class="vertical-timeline-element-icon bounce-in"></span>
-                                                                    <div
-                                                                        class="vertical-timeline-element-content bounce-in">
-                                                                        <h4 class="timeline-title">Something not
-                                                                            important
-                                                                            <div
-                                                                                class="avatar-wrapper mt-2 avatar-wrapper-overlap">
-                                                                                <div
-                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                    <div class="avatar-icon">
-                                                                                        <img src="assets/images/avatars/1.jpg"
-                                                                                            alt>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                    <div class="avatar-icon">
-                                                                                        <img src="assets/images/avatars/2.jpg"
-                                                                                            alt>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                    <div class="avatar-icon">
-                                                                                        <img src="assets/images/avatars/3.jpg"
-                                                                                            alt>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                    <div class="avatar-icon">
-                                                                                        <img src="assets/images/avatars/4.jpg"
-                                                                                            alt>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                    <div class="avatar-icon">
-                                                                                        <img src="assets/images/avatars/5.jpg"
-                                                                                            alt>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                    <div class="avatar-icon">
-                                                                                        <img src="assets/images/avatars/9.jpg"
-                                                                                            alt>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                    <div class="avatar-icon">
-                                                                                        <img src="assets/images/avatars/7.jpg"
-                                                                                            alt>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                    <div class="avatar-icon">
-                                                                                        <img src="assets/images/avatars/8.jpg"
-                                                                                            alt>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
-                                                                                    <div class="avatar-icon"><i>+</i>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </h4>
-                                                                        <span
-                                                                            class="vertical-timeline-element-date"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="vertical-timeline-item dot-info vertical-timeline-element">
-                                                                <div>
-                                                                    <span
-                                                                        class="vertical-timeline-element-icon bounce-in"></span>
-                                                                    <div
-                                                                        class="vertical-timeline-element-content bounce-in">
-                                                                        <h4 class="timeline-title">This dot has an info
-                                                                            state</h4>
-                                                                        <span
-                                                                            class="vertical-timeline-element-date"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="vertical-timeline-item dot-danger vertical-timeline-element">
-                                                                <div>
-                                                                    <span
-                                                                        class="vertical-timeline-element-icon bounce-in"></span>
-                                                                    <div
-                                                                        class="vertical-timeline-element-content bounce-in">
-                                                                        <h4 class="timeline-title">All Hands Meeting
-                                                                        </h4>
-                                                                        <span
-                                                                            class="vertical-timeline-element-date"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="vertical-timeline-item dot-warning vertical-timeline-element">
-                                                                <div>
-                                                                    <span
-                                                                        class="vertical-timeline-element-icon bounce-in"></span>
-                                                                    <div
-                                                                        class="vertical-timeline-element-content bounce-in">
-                                                                        <p>Yet another one, at <span
-                                                                                class="text-success">15:00 PM</span>
-                                                                        </p><span
-                                                                            class="vertical-timeline-element-date"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="vertical-timeline-item dot-success vertical-timeline-element">
-                                                                <div><span
-                                                                        class="vertical-timeline-element-icon bounce-in"></span>
-                                                                    <div
-                                                                        class="vertical-timeline-element-content bounce-in">
-                                                                        <h4 class="timeline-title">Build the production
-                                                                            release
-                                                                            <span
-                                                                                class="badge badge-danger ml-2">NEW</span>
-                                                                        </h4>
-                                                                        <span
-                                                                            class="vertical-timeline-element-date"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="vertical-timeline-item dot-dark vertical-timeline-element">
-                                                                <div><span
-                                                                        class="vertical-timeline-element-icon bounce-in"></span>
-                                                                    <div
-                                                                        class="vertical-timeline-element-content bounce-in">
-                                                                        <h4 class="timeline-title">This dot has a dark
-                                                                            state</h4>
-                                                                        <span
-                                                                            class="vertical-timeline-element-date"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab-events-header" role="tabpanel">
-                                        <div class="scroll-area-sm">
-                                            <div class="scrollbar-container">
-                                                <div class="p-3">
-                                                    <div
-                                                        class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in">
-                                                                    <i
-                                                                        class="badge badge-dot badge-dot-xl badge-success">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">All Hands Meeting</h4>
-                                                                    <p>Lorem ipsum dolor sic amet, today at
-                                                                        <a href="javascript:void(0);">12:00 PM</a>
-                                                                    </p>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in">
-                                                                    <i
-                                                                        class="badge badge-dot badge-dot-xl badge-warning">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <p>Another meeting today, at <b
-                                                                            class="text-danger">12:00 PM</b></p>
-                                                                    <p>Yet another one, at <span
-                                                                            class="text-success">15:00 PM</span></p>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in">
-                                                                    <i
-                                                                        class="badge badge-dot badge-dot-xl badge-danger">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Build the production
-                                                                        release</h4>
-                                                                    <p>Lorem ipsum dolor sit amit,consectetur eiusmdd
-                                                                        tempor incididunt ut
-                                                                        labore et dolore magna elit enim at minim veniam
-                                                                        quis nostrud
-                                                                    </p>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in">
-                                                                    <i
-                                                                        class="badge badge-dot badge-dot-xl badge-primary">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title text-success">Something
-                                                                        not important</h4>
-                                                                    <p>Lorem ipsum dolor sit amit,consectetur elit enim
-                                                                        at minim veniam quis nostrud</p>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in">
-                                                                    <i
-                                                                        class="badge badge-dot badge-dot-xl badge-success">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">All Hands Meeting</h4>
-                                                                    <p>Lorem ipsum dolor sic amet, today at
-                                                                        <a href="javascript:void(0);">12:00 PM</a>
-                                                                    </p>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in">
-                                                                    <i
-                                                                        class="badge badge-dot badge-dot-xl badge-warning">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <p>Another meeting today, at <b
-                                                                            class="text-danger">12:00 PM</b></p>
-                                                                    <p>Yet another one, at <span
-                                                                            class="text-success">15:00 PM</span></p>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in">
-                                                                    <i
-                                                                        class="badge badge-dot badge-dot-xl badge-danger">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Build the production
-                                                                        release</h4>
-                                                                    <p>Lorem ipsum dolor sit amit,consectetur eiusmdd
-                                                                        tempor incididunt ut
-                                                                        labore et dolore magna elit enim at minim veniam
-                                                                        quis nostrud
-                                                                    </p>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in">
-                                                                    <i
-                                                                        class="badge badge-dot badge-dot-xl badge-primary">
-                                                                    </i>
-                                                                </span>
-                                                                <div
-                                                                    class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title text-success">Something
-                                                                        not important</h4>
-                                                                    <p>Lorem ipsum dolor sit amit,consectetur elit enim
-                                                                        at minim veniam quis nostrud</p>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab-errors-header" role="tabpanel">
-                                        <div class="scroll-area-sm">
-                                            <div class="scrollbar-container">
-                                                <div class="no-results pt-3 pb-0">
-                                                    <div class="swal2-icon swal2-success swal2-animate-success-icon">
-                                                        <div class="swal2-success-circular-line-left"
-                                                            style="background-color: rgb(255, 255, 255);"></div>
-                                                        <span class="swal2-success-line-tip"></span>
-                                                        <span class="swal2-success-line-long"></span>
-                                                        <div class="swal2-success-ring"></div>
-                                                        <div class="swal2-success-fix"
-                                                            style="background-color: rgb(255, 255, 255);"></div>
-                                                        <div class="swal2-success-circular-line-right"
-                                                            style="background-color: rgb(255, 255, 255);"></div>
-                                                    </div>
-                                                    <div class="results-subtitle">All caught up!</div>
-                                                    <div class="results-title">There are no system errors!</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="nav flex-column">
-                                    <li class="nav-item-divider nav-item"></li>
-                                    <li class="nav-item-btn text-center nav-item">
-                                        <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">View Latest
-                                            Changes</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-btn-lg pr-0">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left">
-                                    <div class="btn-group">
-                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                            class="p-0 btn">
-                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg"
-                                                alt>
-                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
-                                        </a>
-                                        <div tabindex="-1" role="menu" aria-hidden="true"
-                                            class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
-                                            <div class="dropdown-menu-header">
-                                                <div class="dropdown-menu-header-inner bg-info">
-                                                    <div class="menu-header-image opacity-2"
-                                                        style="background-image: url('assets/images/dropdown-header/city3.jpg');">
-                                                    </div>
-                                                    <div class="menu-header-content text-left">
-                                                        <div class="widget-content p-0">
-                                                            <div class="widget-content-wrapper">
-                                                                <div class="widget-content-left mr-3">
-                                                                    <img width="42" class="rounded-circle"
-                                                                        src="assets/images/avatars/1.jpg" alt>
-                                                                </div>
-                                                                <div class="widget-content-left">
-                                                                    <div class="widget-heading">Alina Mcloughlin</div>
-                                                                    <div class="widget-subheading opacity-8">A short
-                                                                        profile description</div>
-                                                                </div>
-                                                                <div class="widget-content-right mr-2">
-                                                                    <button
-                                                                        class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="scroll-area-xs" style="height: 150px;">
-                                                <div class="scrollbar-container ps">
-                                                    <ul class="nav flex-column">
-                                                        <li class="nav-item-header nav-item">Activity</li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Chat
-                                                                <div class="ml-auto badge badge-pill badge-info">8</div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Recover
-                                                                Password</a>
-                                                        </li>
-                                                        <li class="nav-item-header nav-item">My Account
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Settings
-                                                                <div class="ml-auto badge badge-success">New</div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Messages
-                                                                <div class="ml-auto badge badge-warning">512</div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Logs</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item-divider mb-0 nav-item"></li>
-                                            </ul>
-                                            <div class="grid-menu grid-menu-2col">
-                                                <div class="no-gutters row">
-                                                    <div class="col-sm-6">
-                                                        <button
-                                                            class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
-                                                            <i
-                                                                class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i>
-                                                            Message Inbox
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <button
-                                                            class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
-                                                            <i
-                                                                class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
-                                                            <b>Support Tickets</b>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item-divider nav-item">
-                                                </li>
-                                                <li class="nav-item-btn text-center nav-item">
-                                                    <button class="btn-wide btn btn-primary btn-sm"> Open Messages
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content-left  ml-3 header-user-info">
-                                    <div class="widget-heading"> Alina Mclourd </div>
-                                    <div class="widget-subheading"> VP People Manager </div>
-                                </div>
-                                <div class="widget-content-right header-user-info ml-3">
-                                    <button type="button"
-                                        class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
-                                        <i class="fa text-white fa-calendar pr-1 pl-1"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="app-main">
-            <div class="app-sidebar sidebar-shadow">
-                <div class="app-header__logo">
-                    <div class="logo-src"></div>
-                    <div class="header__pane ml-auto">
-                        <div>
-                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
-                                data-class="closed-sidebar">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="app-header__mobile-menu">
-                    <div>
-                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <div class="app-header__menu">
                     <span>
                         <button type="button"
-                            class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
                             <span class="btn-icon-wrapper">
                                 <i class="fa fa-ellipsis-v fa-w-6"></i>
                             </span>
                         </button>
                     </span>
-                </div>
-                <div class="scrollbar-sidebar">
-                    <div class="app-sidebar__inner">
-                        <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading">Dashboard</li>
-                            <li>
-                                <a href="landingpage.html">
-                                    <i class="metismenu-icon pe-7s-graph"></i>Programme
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Timetable.html">
-                                    <i class="metismenu-icon pe-7s-graph"></i>Timetable
-                                </a>
-                            </li>
+            </div>
+            <div class="scrollbar-sidebar">
+                <div class="app-sidebar__inner">
+                    <ul class="vertical-nav-menu">
+                        <li class="app-sidebar__heading">Dashboard</li>
+                        <li>
+                            <a href="landingpage.html">
+                                <i class="metismenu-icon pe-7s-graph"></i>Programme
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Timetable.html">
+                                <i class="metismenu-icon pe-7s-graph"></i>Timetable
+                            </a>
+                        </li>
 
 
-                            <li class="app-sidebar__heading">Course</li>
-                            <li>
-                                <a href="modules.html">
-                                    <i class="metismenu-icon pe-7s-graph"></i>Modules
-                                </a>
-                            </li>
-                            <li>
-                                <a href="exams.html">
-                                    <i class="metismenu-icon pe-7s-graph"></i>Exams
-                                </a>
-                            </li>
-                            <li>
-                                <a href="coursework.html">
-                                    <i class="metismenu-icon pe-7s-graph"></i>Courseworks
-                                </a>
-                            </li>
+                        <li class="app-sidebar__heading">Course</li>
+                        <li>
+                            <a href="modules.html">
+                                <i class="metismenu-icon pe-7s-graph"></i>Modules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exams.html">
+                                <i class="metismenu-icon pe-7s-graph"></i>Exams
+                            </a>
+                        </li>
+                        <li>
+                            <a href="coursework.html">
+                                <i class="metismenu-icon pe-7s-graph"></i>Courseworks
+                            </a>
+                        </li>
 
-                            <li class="app-sidebar__heading">Requests</li>
-                            <li>
-                                <a href="book-meeting.html">
-                                    <i class="metismenu-icon pe-7s-graph"></i>Book meetings
-                                </a>
-                            </li>
-                            <li>
-                                <a href="extension.html">
-                                    <i class="metismenu-icon pe-7s-way"></i>Extensions
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Notify-absense.html">
-                                    <i class="metismenu-icon pe-7s-id"></i>Notify Absense
-                                </a>
-                            </li>
-                            <li>
-                                <a href="feedback.html">
-                                    <i class="metismenu-icon pe-7s-ball"></i>Feedback
-                                </a>
-                            </li>
-                            <!--
-                            <li>
-                                <a href="widgets-chart-boxes-3.html">
-                                    <i class="metismenu-icon pe-7s-ball"></i>Chart Boxes 3
-                                </a>
-                            </li>
-                            <li>
-                                <a href="widgets-profile-boxes.html">
-                                    <i class="metismenu-icon pe-7s-id"></i>Profile Boxes
-                                </a>
-                            </li>
-                            <li class="app-sidebar__heading">Forms</li>
-                            <li>
-                                <a href="#">
-                                    <i class="metismenu-icon pe-7s-light"></i> Elements
-                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a href="forms-controls.html">
-                                            <i class="metismenu-icon"></i>Controls
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-layouts.html">
-                                            <i class="metismenu-icon"></i>Layouts
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-validation.html">
-                                            <i class="metismenu-icon"></i>Validation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-wizard.html">
-                                            <i class="metismenu-icon"></i>Wizard
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="metismenu-icon pe-7s-joy"></i> Widgets
-                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a href="forms-datepicker.html">
-                                            <i class="metismenu-icon"></i>Datepicker
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-range-slider.html">
-                                            <i class="metismenu-icon"></i>Range Slider
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-input-selects.html">
-                                            <i class="metismenu-icon"></i>Input Selects
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-toggle-switch.html">
-                                            <i class="metismenu-icon"></i>Toggle Switch
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-wysiwyg-editor.html">
-                                            <i class="metismenu-icon"></i>WYSIWYG Editor
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-input-mask.html">
-                                            <i class="metismenu-icon"></i>Input Mask
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-clipboard.html">
-                                            <i class="metismenu-icon"></i>Clipboard
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-textarea-autosize.html">
-                                            <i class="metismenu-icon"></i>Textarea Autosize
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="app-sidebar__heading">Charts</li>
-                            <li>
-                                <a href="charts-chartjs.html">
-                                    <i class="metismenu-icon pe-7s-graph2"></i>ChartJS
-                                </a>
-                            </li>
-                            <li>
-                                <a href="charts-apexcharts.html">
-                                    <i class="metismenu-icon pe-7s-graph"></i>Apex Charts
-                                </a>
-                            </li>
-                            <li>
-                                <a href="charts-sparklines.html">
-                                    <i class="metismenu-icon pe-7s-graph1"></i>Chart Sparklines
-                                </a>
-                            </li>
-                        -->
-                        </ul>
-                    </div>
+                        <li class="app-sidebar__heading">Requests</li>
+                        <li>
+                            <a href="book-meeting.html">
+                                <i class="metismenu-icon pe-7s-graph"></i>Book meetings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="extension.html">
+                                <i class="metismenu-icon pe-7s-way"></i>Extensions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Notify-absense.html">
+                                <i class="metismenu-icon pe-7s-id"></i>Notify Absense
+                            </a>
+                        </li>
+                        <li>
+                            <a href="feedback.html">
+                                <i class="metismenu-icon pe-7s-ball"></i>Feedback
+                            </a>
+                        </li>
+                        <!--
+                        <li>
+                            <a href="widgets-chart-boxes-3.html">
+                                <i class="metismenu-icon pe-7s-ball"></i>Chart Boxes 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="widgets-profile-boxes.html">
+                                <i class="metismenu-icon pe-7s-id"></i>Profile Boxes
+                            </a>
+                        </li>
+                        <li class="app-sidebar__heading">Forms</li>
+                        <li>
+                            <a href="#">
+                                <i class="metismenu-icon pe-7s-light"></i> Elements
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="forms-controls.html">
+                                        <i class="metismenu-icon"></i>Controls
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-layouts.html">
+                                        <i class="metismenu-icon"></i>Layouts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-validation.html">
+                                        <i class="metismenu-icon"></i>Validation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-wizard.html">
+                                        <i class="metismenu-icon"></i>Wizard
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="metismenu-icon pe-7s-joy"></i> Widgets
+                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="forms-datepicker.html">
+                                        <i class="metismenu-icon"></i>Datepicker
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-range-slider.html">
+                                        <i class="metismenu-icon"></i>Range Slider
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-input-selects.html">
+                                        <i class="metismenu-icon"></i>Input Selects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-toggle-switch.html">
+                                        <i class="metismenu-icon"></i>Toggle Switch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-wysiwyg-editor.html">
+                                        <i class="metismenu-icon"></i>WYSIWYG Editor
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-input-mask.html">
+                                        <i class="metismenu-icon"></i>Input Mask
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-clipboard.html">
+                                        <i class="metismenu-icon"></i>Clipboard
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-textarea-autosize.html">
+                                        <i class="metismenu-icon"></i>Textarea Autosize
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="app-sidebar__heading">Charts</li>
+                        <li>
+                            <a href="charts-chartjs.html">
+                                <i class="metismenu-icon pe-7s-graph2"></i>ChartJS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="charts-apexcharts.html">
+                                <i class="metismenu-icon pe-7s-graph"></i>Apex Charts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="charts-sparklines.html">
+                                <i class="metismenu-icon pe-7s-graph1"></i>Chart Sparklines
+                            </a>
+                        </li>
+                    -->
+                    </ul>
                 </div>
             </div>
-            <div class="app-main__outer">
-                <div class="app-main__inner">
-                    <div class="tab-content">
-                        <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="main-card mb-3 card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Extension Form</h5>
-                                            <form class>
-                                                <div class="position-relative form-group">
-                                                    <label for="examplePassword" class>Student Class ID</label>
-                                                    <input name="password" id="examplePassword"
-                                                        placeholder="placeholder" type="email" class="form-control">
-                                                </div>
-                                                <div class="position-relative form-group">
-                                                    <label for="examplePassword" class>Class ID</label>
-                                                    <input name="password" id="examplePassword"
-                                                        placeholder="class ID placeholder" type="password"
-                                                        class="form-control">
-                                                </div>
-                                                <div class="position-relative form-group">
-                                                    <label for="exampleEmail" class>Student Mail ID</label>
-                                                    <input name="email" id="exampleEmail" placeholder="ID placeholder"
-                                                        type="email" class="form-control">
-                                                </div>
-                                                <div class="position-relative form-group">
-                                                    <label for="examplePassword" class>Course Deadline</label>
-                                                    <input name="password" id="examplePassword"
-                                                        placeholder="YYYYMMDD - format" type="password"
-                                                        class="form-control">
-                                                </div>
-                                                <div class="position-relative form-group">
-                                                    <label for="exampleText" class>Text Area</label>
-                                                    <textarea name="text" id="exampleText"
-                                                        class="form-control"></textarea>
-                                                </div>
-                                        </div>
-                                        <button class="mt-1 btn btn-primary">Submit</button>
-                                        </form>
+        </div>
+        <div class="app-main__outer">
+            <div class="app-main__inner">
+                <div class="tab-content">
+                    <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Extension Form</h5>
+                                        <form class>
+                                            <!--                                                <div class="position-relative form-group">-->
+                                            <!--                                                    <label for="examplePassword" class>Student Class ID</label>-->
+                                            <!--                                                    <input name="password" id="examplePassword"-->
+                                            <!--                                                        placeholder="placeholder" type="email" class="form-control">-->
+                                            <!--                                                </div>-->
+                                            <div class="position-relative form-group">
+                                                <label for="classId" class>Class ID</label>
+                                                <input name="classId" id="classId"
+                                                       placeholder="class ID placeholder" type="text"
+                                                       class="form-control">
+                                            </div>
+                                            <div class="position-relative form-group">
+                                                <label for="studentEmailAddress" class>Student Mail ID</label>
+                                                <input name="studentEmailAddress" id="studentEmailAddress" placeholder="ID placeholder"
+                                                       type="email" class="form-control">
+                                            </div>
+                                            <div class="position-relative form-group">
+                                                <label for="courseworkDeadline" class>Course Deadline</label>
+                                                <input name="courseworkDeadline" id="courseworkDeadline"
+                                                       placeholder="YYYY-MM-DD HH:MM:SS - 24 hour format" type="text"
+                                                       class="form-control">
+                                            </div>
+                                            <div class="position-relative form-group">
+                                                <label for="exampleText" class>Extension Reason</label>
+                                                <textarea name="text" id="exampleText"
+                                                          class="form-control"></textarea>
+                                            </div>
                                     </div>
+                                    <button id="extensionButton" class="mt-1 btn btn-primary">Submit</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="main-card mb-3 card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Input Groups</h5>
-                                            <div>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">@</span>
-                                                    </div>
-                                                    <input placeholder="username" type="text" class="form-control">
+                    </div>
+                    <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Input Groups</h5>
+                                        <div>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">@</span>
                                                 </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
+                                                <input placeholder="username" type="text" class="form-control">
+                                            </div>
+                                            <br>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
                                                         <span class="input-group-text">
                                                             <input aria-label="Checkbox for following text input"
-                                                                type="checkbox" class>
+                                                                   type="checkbox" class>
                                                         </span>
-                                                    </div>
-                                                    <input placeholder="Check it out" type="text" class="form-control">
                                                 </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <input placeholder="username" type="text" class="form-control">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">@example.com</span>
-                                                    </div>
+                                                <input placeholder="Check it out" type="text" class="form-control">
+                                            </div>
+                                            <br>
+                                            <div class="input-group">
+                                                <input placeholder="username" type="text" class="form-control">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">@example.com</span>
                                                 </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">$</span>
-                                                        <span class="input-group-text">$</span>
-                                                    </div>
-                                                    <input placeholder="Dolla dolla billz yo!" type="text"
-                                                        class="form-control">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">$</span>
-                                                        <span class="input-group-text">$</span>
-                                                    </div>
+                                            </div>
+                                            <br>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">$</span>
+                                                    <span class="input-group-text">$</span>
                                                 </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">$</span>
-                                                    </div>
-                                                    <input placeholder="Amount" step="1" type="number"
-                                                        class="form-control">
-                                                    <div class="input-group-append"><span
-                                                            class="input-group-text">.00</span></div>
+                                                <input placeholder="Dolla dolla billz yo!" type="text"
+                                                       class="form-control">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">$</span>
+                                                    <span class="input-group-text">$</span>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">$</span>
+                                                </div>
+                                                <input placeholder="Amount" step="1" type="number"
+                                                       class="form-control">
+                                                <div class="input-group-append"><span
+                                                        class="input-group-text">.00</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Input Group Button Dropdown</h5>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button type="button" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false"
+                                                        class="dropdown-toggle btn btn-secondary">Button Dropdown
+                                                </button>
+                                                <div tabindex="-1" role="menu" aria-hidden="true"
+                                                     class="dropdown-menu">
+                                                    <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                                    <button type="button" disabled tabindex="-1"
+                                                            class="disabled dropdown-item">Action</button>
+                                                    <button type="button" tabindex="0" class="dropdown-item">Another
+                                                        Action</button>
+                                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                                    <button type="button" tabindex="0" class="dropdown-item">Another
+                                                        Action</button>
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Input Group Button Shorthand</h5>
+                                        <div>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-secondary">To the Left!</button>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <br>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-secondary">To the Right!</button>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-danger">To the Left!</button>
+                                                </div>
+                                                <input placeholder="and..." type="text" class="form-control">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-success">To the Right!</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="main-card mb-3 card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Input Group Button Dropdown</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Input Group Sizing</h5>
+                                        <div>
+                                            <div class="input-group input-group-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">@lg</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <br>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
-                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false"
-                                                        class="dropdown-toggle btn btn-secondary">Button Dropdown
-                                                    </button>
-                                                    <div tabindex="-1" role="menu" aria-hidden="true"
-                                                        class="dropdown-menu">
-                                                        <h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                                        <button type="button" disabled tabindex="-1"
-                                                            class="disabled dropdown-item">Action</button>
-                                                        <button type="button" tabindex="0" class="dropdown-item">Another
-                                                            Action</button>
-                                                        <div tabindex="-1" class="dropdown-divider"></div>
-                                                        <button type="button" tabindex="0" class="dropdown-item">Another
-                                                            Action</button>
-                                                    </div>
+                                                    <span class="input-group-text">@normal</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <br>
+                                            <div class="input-group input-group-sm">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">@sm</span>
                                                 </div>
                                                 <input type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Input Group Addon</h5>
+                                        <div>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">To the Left!</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <br>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">To the Right!</span>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">To the Left!</span>
+                                                </div>
+                                                <input placeholder="and..." type="text" class="form-control">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">To the Right!</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Input Group Button</h5>
+                                        <div>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-secondary">I'm a button</button>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <br>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control">
+                                                <div class="input-group-append">
+                                                    <button type="button" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"
+                                                            class="dropdown-toggle btn btn-secondary">Button Dropdown
+                                                    </button>
+                                                    <div tabindex="-1" role="menu" aria-hidden="true"
+                                                         class="dropdown-menu">
+                                                        <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                                        <button type="button" disabled tabindex="-1"
+                                                                class="disabled dropdown-item">Action</button>
+                                                        <button type="button" tabindex="0"
+                                                                class="dropdown-item">Another Action</button>
+                                                        <div tabindex="-1" class="dropdown-divider"></div>
+                                                        <button type="button" tabindex="0"
+                                                                class="dropdown-item">Another Action</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-outline-secondary">Split Button</button>
+                                                    <button type="button" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"
+                                                            class="dropdown-toggle dropdown-toggle-split btn btn-outline-secondary">
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <div tabindex="-1" role="menu" aria-hidden="true"
+                                                         class="dropdown-menu">
+                                                        <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                                        <button type="button" disabled tabindex="-1"
+                                                                class="disabled dropdown-item">Action</button>
+                                                        <button type="button" tabindex="0"
+                                                                class="dropdown-item">Another Action</button>
+                                                        <div tabindex="-1" class="dropdown-divider"></div>
+                                                        <button type="button" tabindex="0"
+                                                                class="dropdown-item">Another Action</button>
+                                                    </div>
+                                                </div>
+                                                <input placeholder="and..." type="text" class="form-control">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-secondary">I'm a button</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
+                        <form class>
+                            <div class="row">
+                                <div class="col-md-6">
                                     <div class="main-card mb-3 card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Input Group Button Shorthand</h5>
-                                            <div>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <button class="btn btn-secondary">To the Left!</button>
+                                            <h5 class="card-title">Checkboxes</h5>
+                                            <div class="position-relative form-group">
+                                                <div>
+                                                    <div class="custom-checkbox custom-control">
+                                                        <input type="checkbox" id="exampleCustomCheckbox"
+                                                               class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                               for="exampleCustomCheckbox">Check this custom
+                                                            checkbox</label>
                                                     </div>
-                                                    <input type="text" class="form-control">
+                                                    <div class="custom-checkbox custom-control">
+                                                        <input type="checkbox" id="exampleCustomCheckbox2"
+                                                               class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                               for="exampleCustomCheckbox2">Or this one</label>
+                                                    </div>
+                                                    <div class="custom-checkbox custom-control">
+                                                        <input type="checkbox" id="exampleCustomCheckbox3" disabled
+                                                               class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                               for="exampleCustomCheckbox3">But not this disabled
+                                                            one</label>
+                                                    </div>
                                                 </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control">
-                                                    <div class="input-group-append">
-                                                        <button class="btn btn-secondary">To the Right!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-card mb-3 card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Inline</h5>
+                                            <div class="position-relative form-group">
+                                                <div>
+                                                    <div
+                                                            class="custom-checkbox custom-control custom-control-inline">
+                                                        <input type="checkbox" id="exampleCustomInline"
+                                                               class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                               for="exampleCustomInline">An inline custom input</label>
                                                     </div>
-                                                </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <button class="btn btn-danger">To the Left!</button>
-                                                    </div>
-                                                    <input placeholder="and..." type="text" class="form-control">
-                                                    <div class="input-group-append">
-                                                        <button class="btn btn-success">To the Right!</button>
+                                                    <div
+                                                            class="custom-checkbox custom-control custom-control-inline">
+                                                        <input type="checkbox" id="exampleCustomInline2"
+                                                               class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                               for="exampleCustomInline2">and another one</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1049,56 +1227,28 @@
                                 <div class="col-md-6">
                                     <div class="main-card mb-3 card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Input Group Sizing</h5>
-                                            <div>
-                                                <div class="input-group input-group-lg">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">@lg</span>
+                                            <h5 class="card-title">Radios</h5>
+                                            <div class="position-relative form-group">
+                                                <div>
+                                                    <div class="custom-radio custom-control">
+                                                        <input type="radio" id="exampleCustomRadio"
+                                                               name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                               for="exampleCustomRadio">Select this custom
+                                                            radio</label>
                                                     </div>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">@normal</span>
+                                                    <div class="custom-radio custom-control">
+                                                        <input type="radio" id="exampleCustomRadio2"
+                                                               name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                               for="exampleCustomRadio2">Or this one</label>
                                                     </div>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                                <br>
-                                                <div class="input-group input-group-sm">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">@sm</span>
-                                                    </div>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="main-card mb-3 card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Input Group Addon</h5>
-                                            <div>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">To the Left!</span>
-                                                    </div>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">To the Right!</span>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">To the Left!</span>
-                                                    </div>
-                                                    <input placeholder="and..." type="text" class="form-control">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">To the Right!</span>
+                                                    <div class="custom-radio custom-control">
+                                                        <input type="radio" id="exampleCustomRadio3" disabled
+                                                               class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                               for="exampleCustomRadio3">But not this disabled
+                                                            one</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1106,59 +1256,63 @@
                                     </div>
                                     <div class="main-card mb-3 card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Input Group Button</h5>
-                                            <div>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <button class="btn btn-secondary">I'm a button</button>
+                                            <h5 class="card-title">Form Select</h5>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="position-relative form-group">
+                                                        <label for="exampleCustomSelect" class>Custom Select</label>
+                                                        <select type="select" id="exampleCustomSelect"
+                                                                name="customSelect" class="custom-select">
+                                                            <option value>Select</option>
+                                                            <option>Value 1</option>
+                                                            <option>Value 2</option>
+                                                            <option>Value 3</option>
+                                                            <option>Value 4</option>
+                                                            <option>Value 5</option>
+                                                        </select>
                                                     </div>
-                                                    <input type="text" class="form-control">
+                                                    <div class="position-relative form-group">
+                                                        <label for="exampleCustomMutlipleSelect" class>Custom
+                                                            Multiple Select</label>
+                                                        <select multiple type="select"
+                                                                id="exampleCustomMutlipleSelect" name="customSelect"
+                                                                class="custom-select">
+                                                            <option value>Select</option>
+                                                            <option>Value 1</option>
+                                                            <option>Value 2</option>
+                                                            <option>Value 3</option>
+                                                            <option>Value 4</option>
+                                                            <option>Value 5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control">
-                                                    <div class="input-group-append">
-                                                        <button type="button" data-toggle="dropdown"
-                                                            aria-haspopup="true" aria-expanded="false"
-                                                            class="dropdown-toggle btn btn-secondary">Button Dropdown
-                                                        </button>
-                                                        <div tabindex="-1" role="menu" aria-hidden="true"
-                                                            class="dropdown-menu">
-                                                            <h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                                            <button type="button" disabled tabindex="-1"
-                                                                class="disabled dropdown-item">Action</button>
-                                                            <button type="button" tabindex="0"
-                                                                class="dropdown-item">Another Action</button>
-                                                            <div tabindex="-1" class="dropdown-divider"></div>
-                                                            <button type="button" tabindex="0"
-                                                                class="dropdown-item">Another Action</button>
-                                                        </div>
+                                                <div class="col-md-6">
+                                                    <div class="position-relative form-group">
+                                                        <label for="exampleCustomSelectDisabled" class>Custom Select
+                                                            Disabled</label>
+                                                        <select type="select" id="exampleCustomSelectDisabled"
+                                                                name="customSelect" disabled class="custom-select">
+                                                            <option value>Select</option>
+                                                            <option>Value 1</option>
+                                                            <option>Value 2</option>
+                                                            <option>Value 3</option>
+                                                            <option>Value 4</option>
+                                                            <option>Value 5</option>
+                                                        </select>
                                                     </div>
-                                                </div>
-                                                <br>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <button class="btn btn-outline-secondary">Split Button</button>
-                                                        <button type="button" data-toggle="dropdown"
-                                                            aria-haspopup="true" aria-expanded="false"
-                                                            class="dropdown-toggle dropdown-toggle-split btn btn-outline-secondary">
-                                                            <span class="sr-only">Toggle Dropdown</span>
-                                                        </button>
-                                                        <div tabindex="-1" role="menu" aria-hidden="true"
-                                                            class="dropdown-menu">
-                                                            <h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                                            <button type="button" disabled tabindex="-1"
-                                                                class="disabled dropdown-item">Action</button>
-                                                            <button type="button" tabindex="0"
-                                                                class="dropdown-item">Another Action</button>
-                                                            <div tabindex="-1" class="dropdown-divider"></div>
-                                                            <button type="button" tabindex="0"
-                                                                class="dropdown-item">Another Action</button>
-                                                        </div>
-                                                    </div>
-                                                    <input placeholder="and..." type="text" class="form-control">
-                                                    <div class="input-group-append">
-                                                        <button class="btn btn-secondary">I'm a button</button>
+                                                    <div class="position-relative form-group">
+                                                        <label for="exampleCustomMutlipleSelectDisabled"
+                                                               class>Custom Multiple Select Disabled</label>
+                                                        <select multiple type="select"
+                                                                id="exampleCustomMutlipleSelectDisabled"
+                                                                name="customSelect" disabled class="custom-select">
+                                                            <option value>Select</option>
+                                                            <option>Value 1</option>
+                                                            <option>Value 2</option>
+                                                            <option>Value 3</option>
+                                                            <option>Value 4</option>
+                                                            <option>Value 5</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1166,169 +1320,60 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
-                            <form class>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Checkboxes</h5>
-                                                <div class="position-relative form-group">
-                                                    <div>
-                                                        <div class="custom-checkbox custom-control">
-                                                            <input type="checkbox" id="exampleCustomCheckbox"
-                                                                class="custom-control-input">
-                                                            <label class="custom-control-label"
-                                                                for="exampleCustomCheckbox">Check this custom
-                                                                checkbox</label>
-                                                        </div>
-                                                        <div class="custom-checkbox custom-control">
-                                                            <input type="checkbox" id="exampleCustomCheckbox2"
-                                                                class="custom-control-input">
-                                                            <label class="custom-control-label"
-                                                                for="exampleCustomCheckbox2">Or this one</label>
-                                                        </div>
-                                                        <div class="custom-checkbox custom-control">
-                                                            <input type="checkbox" id="exampleCustomCheckbox3" disabled
-                                                                class="custom-control-input">
-                                                            <label class="custom-control-label"
-                                                                for="exampleCustomCheckbox3">But not this disabled
-                                                                one</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Inline</h5>
-                                                <div class="position-relative form-group">
-                                                    <div>
-                                                        <div
-                                                            class="custom-checkbox custom-control custom-control-inline">
-                                                            <input type="checkbox" id="exampleCustomInline"
-                                                                class="custom-control-input">
-                                                            <label class="custom-control-label"
-                                                                for="exampleCustomInline">An inline custom input</label>
-                                                        </div>
-                                                        <div
-                                                            class="custom-checkbox custom-control custom-control-inline">
-                                                            <input type="checkbox" id="exampleCustomInline2"
-                                                                class="custom-control-input">
-                                                            <label class="custom-control-label"
-                                                                for="exampleCustomInline2">and another one</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Radios</h5>
-                                                <div class="position-relative form-group">
-                                                    <div>
-                                                        <div class="custom-radio custom-control">
-                                                            <input type="radio" id="exampleCustomRadio"
-                                                                name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label"
-                                                                for="exampleCustomRadio">Select this custom
-                                                                radio</label>
-                                                        </div>
-                                                        <div class="custom-radio custom-control">
-                                                            <input type="radio" id="exampleCustomRadio2"
-                                                                name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label"
-                                                                for="exampleCustomRadio2">Or this one</label>
-                                                        </div>
-                                                        <div class="custom-radio custom-control">
-                                                            <input type="radio" id="exampleCustomRadio3" disabled
-                                                                class="custom-control-input">
-                                                            <label class="custom-control-label"
-                                                                for="exampleCustomRadio3">But not this disabled
-                                                                one</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Form Select</h5>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="position-relative form-group">
-                                                            <label for="exampleCustomSelect" class>Custom Select</label>
-                                                            <select type="select" id="exampleCustomSelect"
-                                                                name="customSelect" class="custom-select">
-                                                                <option value>Select</option>
-                                                                <option>Value 1</option>
-                                                                <option>Value 2</option>
-                                                                <option>Value 3</option>
-                                                                <option>Value 4</option>
-                                                                <option>Value 5</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="position-relative form-group">
-                                                            <label for="exampleCustomMutlipleSelect" class>Custom
-                                                                Multiple Select</label>
-                                                            <select multiple type="select"
-                                                                id="exampleCustomMutlipleSelect" name="customSelect"
-                                                                class="custom-select">
-                                                                <option value>Select</option>
-                                                                <option>Value 1</option>
-                                                                <option>Value 2</option>
-                                                                <option>Value 3</option>
-                                                                <option>Value 4</option>
-                                                                <option>Value 5</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="position-relative form-group">
-                                                            <label for="exampleCustomSelectDisabled" class>Custom Select
-                                                                Disabled</label>
-                                                            <select type="select" id="exampleCustomSelectDisabled"
-                                                                name="customSelect" disabled class="custom-select">
-                                                                <option value>Select</option>
-                                                                <option>Value 1</option>
-                                                                <option>Value 2</option>
-                                                                <option>Value 3</option>
-                                                                <option>Value 4</option>
-                                                                <option>Value 5</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="position-relative form-group">
-                                                            <label for="exampleCustomMutlipleSelectDisabled"
-                                                                class>Custom Multiple Select Disabled</label>
-                                                            <select multiple type="select"
-                                                                id="exampleCustomMutlipleSelectDisabled"
-                                                                name="customSelect" disabled class="custom-select">
-                                                                <option value>Select</option>
-                                                                <option>Value 1</option>
-                                                                <option>Value 2</option>
-                                                                <option>Value 3</option>
-                                                                <option>Value 4</option>
-                                                                <option>Value 5</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="app-drawer-overlay d-none animated fadeIn"></div>
-    <script type="text/javascript" src="/js/assets.js"></script>
+</div>
+<div class="app-drawer-overlay d-none animated fadeIn"></div>
+<script type="text/javascript" src="/js/assets.js"></script>
 </body>
+<script>
+    /**
+     * @author Dechun Meng
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+        const signUpButton = document.getElementById('extensionButton');
 
+        signUpButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Block default form submission behavior
+
+            // Obtain the registration information filled in by users.
+            const classId = document.getElementById('classId').value;
+            const studentEmailAddress = document.getElementById('studentEmailAddress').value;
+            const courseworkDeadline = document.getElementById('courseworkDeadline').value;
+
+            // Construct an object containing user information
+            const postData = {
+                classId: classId,
+                studentEmailAddress: studentEmailAddress,
+                courseworkDeadline: courseworkDeadline
+            };
+
+            // Initiate a POST request to send user information to the backend.
+            fetch('/extension', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(postData)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Successful registration, redirected to the index page.
+                        window.location.href = '/index.html';
+                    } else {
+                        // Registration failed, and an error message was displayed.
+                        alert('Registration failed. Please try again.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error registering user:', error);
+                    alert('Registration failed. Please try again.');
+                });
+        });
+    });
+</script>
 </html>

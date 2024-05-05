@@ -12,5 +12,6 @@ import java.util.Date;
  */
 public interface StuClassService extends IService<StuClass> {
 
-    public boolean extension(Date courseworkDeadline, int classId, String studentEmailAddress);
+//    public boolean extension(Date courseworkDeadline, int classId, String studentEmailAddress);
+    public boolean extension(StuClass stuClass);
 }

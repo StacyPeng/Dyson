@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -21,13 +22,13 @@ public class StuClass {
     private Long classId;
     private String studentEmailAddress;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date courseworkDeadline;
+    private Timestamp courseworkDeadline;
 
-
-    public StuClass(Long stuClassId, Long classId, String studentEmailAddress, Date courseworkDeadline) {
-        this.stuClassId = stuClassId;
-        this.classId = classId;
-        this.studentEmailAddress = studentEmailAddress;
-        this.courseworkDeadline = courseworkDeadline;
-    }
+//
+//    public StuClass(Long stuClassId, Long classId, String studentEmailAddress, Date courseworkDeadline) {
+//        this.stuClassId = stuClassId;
+//        this.classId = classId;
+//        this.studentEmailAddress = studentEmailAddress;
+//        this.courseworkDeadline = courseworkDeadline;
+//    }
 }
