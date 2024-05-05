@@ -20,8 +20,8 @@ public class CourseworkServiceImpl implements CourseworkService {
     private CourseworkMapper courseworkMapper;
 
     @Override
-    public Coursework getById(int classId) {
-        return courseworkMapper.getById(classId);
+    public List<Coursework> getByName(String courseworkName) {
+        return courseworkMapper.getByName(courseworkName);
     }
 
     @Override

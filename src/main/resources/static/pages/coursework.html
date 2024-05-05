@@ -13,6 +13,8 @@
 
   <meta name="msapplication-tap-highlight" content="no">
   <link href="/css/main.css" rel="stylesheet">
+  <!--TODO add jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -54,10 +56,13 @@
       <div class="app-header-left">
         <div class="search-wrapper">
           <div class="input-holder">
-            <input type="text" class="search-input" placeholder="Type to search">
-            <button class="search-icon"><span></span></button>
+            <!--TODO add id-->
+            <input type="text" class="search-input" placeholder="Type to search" id="searchInput">
+            <!--TODO add id-->
+            <button class="search-icon" onclick="searchCoursework()"><span></span></button>
           </div>
-          <button class="close"></button>
+          <!--TODO add id-->
+          <button class="close" onclick="clearSearch()"></button>
         </div>
         <!--
         <ul class="header-megamenu nav">
@@ -1544,14 +1549,17 @@
                 <th>Name</th>
                 <th>Deadline</th>
                 <th>Description</th>
+                <th>Belong to module</th>
               </tr>
               </thead>
-              <tbody></tbody>
+              <!--TODO delete static data-->
+              <tbody id="courseworkTableBody"></tbody>
               <tfoot>
               <tr>
                 <th>Name</th>
                 <th>Deadline</th>
                 <th>Description</th>
+                <th>Belong to module</th>
               </tr>
               </tfoot>
             </table>
@@ -2729,5 +2737,124 @@
 <div class="app-drawer-overlay d-none animated fadeIn"></div>
 <script type="text/javascript" src="/js/assets.js"></script>
 </body>
+<script>
+  /**
+   * @author Chengyu Peng
+   * @student ID:230045675
+   */
+  window.onload = function () {
+    $.ajax({
+      url: '/courseworks',
+      type: 'GET',
+      dataType: 'json',
+      success: function (response) {
+        $('#courseworkTableBody').empty();
+        // ensure 'response.data' is a array
+        if (Array.isArray(response.data)) {
+          console.log(response.data)
+          response.data.forEach(function (coursework) {
+            $('#courseworkTableBody').append('<tr>' +
+                    '<td>' + coursework.courseworkName + '</td>' +
+                    '<td>' + coursework.courseworkDeadline + '</td>' +
+                    '<td>' + coursework.courseworkDescription + '</td>' +
+                    '<td>' + coursework.modId + '</td>' +
+                    '</tr>');
+          });
+        } else {
+          console.error('The coursework data format does not match:', response.data);
+        }
+      },
+      error: function (xhr, status, error) {
+        console.error('Failed to fetch coursework data:', error);
+      }
+    })
+  }
 
+  //implement search function
+  function searchCoursework() {
+    var courseworkName = document.getElementById("searchInput").value;
+    if (!courseworkName.trim()) {
+      console.error('Error: Coursework name must not be empty');
+      return; // if input is empty, return directly without response
+    }
+    fetch(`/courseworks/${courseworkName}`)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(data => {
+              console.log(data)
+              if (data.code === 200) {
+                //console.log('Success:', data);
+                updateTableWithCourseworks([data.data]); // update form, assuming return single coursework object
+              } else {
+                //console.error('Full error data:', data);
+                updateTableWithCourseworks([]); // clear form
+              }
+            })
+            .catch(error => {
+              console.error('Network or parsing error:', error);
+              console.error('Error:', error);
+              updateTableWithCourseworks([]); // clear form if wrong occur
+            });
+  }
+
+  function updateTableWithCourseworks(courseworks) {
+    const tbody = document.getElementById('courseworkTableBody');
+    tbody.innerHTML = ''; // clear current form content
+    courseworks.forEach(coursework => {
+      console.log(coursework)
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${coursework.courseworkName}</td>
+                        <td>${coursework.courseworkDeadline}</td>
+                        <td>${coursework.courseworkDescription}</td>
+                        <td>${coursework.modId}</td>`;
+      tbody.appendChild(tr);
+    });
+  }
+
+  function clearSearch() {
+    document.getElementById('searchInput').value = '';
+    // optional: clear search result
+    // document.getElementById('searchResults').innerHTML = '';
+    loadAllCourseworks(); // Reload and display all test data
+  }
+
+  // load all exam data
+  function loadAllCourseworks() {
+    $.ajax({
+      url: '/courseworks',
+      type: 'GET',
+      dataType: 'json',
+      success: function (response) {
+        $('#courseworkTableBody').empty();
+        if (Array.isArray(response.data)) {
+          //console.log(response.data)
+          response.data.forEach(function (coursework) {
+            $('#courseworkTableBody').append('<tr>' +
+                    '<td>' + coursework.courseworkName + '</td>' +
+                    '<td>' + coursework.courseworkDeadline + '</td>' +
+                    '<td>' + coursework.courseworkDescription + '</td>' +
+                    '<td>' + coursework.modId + '</td>' +
+                    '</tr>');
+          });
+        } else {
+          console.error('The coursework data format does not match:', response.data);
+        }
+      },
+      error: function (xhr, status, error) {
+        console.error('Failed to fetch coursework data:', error);
+      }
+    });
+  }
+
+  // load all coursework data when page load
+  window.onload = loadAllCourseworks();
+
+  function logout() {
+    location.href= '/index.html';
+  }
+</script>
 </html>

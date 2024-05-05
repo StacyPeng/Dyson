@@ -10,6 +10,8 @@ import team11.Dyson.service.impl.StudentServiceImpl;
 import java.util.List;
 import java.util.Map;
 
+import static team11.Dyson.service.impl.StudentServiceImpl.log;
+
 /**
  * @author Chengyu Peng
  * @student ID:230045675
@@ -32,6 +34,7 @@ public class StudentController {
 
     @PostMapping("/register")
     public Result register(@RequestBody Student student) {
+        log.info("Received student registration: {}", student);
         String msg = studentService.register(student);
         boolean flag = ("SUCCESS").equals(msg);
         return new Result(flag?Code.REGISTER_OK:Code.REGISTER_ERR,flag);

@@ -14,8 +14,8 @@ import java.util.List;
 @Mapper
 @Repository
 public interface CourseworkMapper {
-    @Select("select * from classes where class_id = #{classId}")
-    public Coursework getById(int classId);
+    @Select("select * from classes where coursework_name = #{courseworkName}")
+    public List<Coursework> getByName(String courseworkName);
 
     @Select("select * from classes")
     public List<Coursework> getAll();
