@@ -22,8 +22,8 @@ public class StuClassServiceImpl extends ServiceImpl<StuClassMapper, StuClass> i
     private StuClassMapper stuClassMapper;
 
     @Override
-    public boolean extension(Date courseworkDeadline, int classId, String studentEmailAddress) {
-        boolean extension = stuClassMapper.extension(courseworkDeadline,classId,studentEmailAddress);
+    public boolean extension(StuClass stuClass) {
+        boolean extension = stuClassMapper.extensionInsert(stuClass);
         return extension;
     }
 }

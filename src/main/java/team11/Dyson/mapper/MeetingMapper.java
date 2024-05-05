@@ -9,6 +9,6 @@ import team11.Dyson.domian.Meeting;
 @Mapper
 public interface MeetingMapper extends BaseMapper<Meeting> {
 
-    @Insert("insert into meetings values (#{meeting_id},#{meeting_name},#{Time},#{student_email_address})")
+    @Insert("insert into meetings (meeting_name, time, student_email_address) values (#{meeting_name},#{Time},#{student_email_address})")
     public boolean book(Meeting meeting);
 }

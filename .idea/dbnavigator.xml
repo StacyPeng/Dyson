@@ -30,6 +30,7 @@
     <connection id="cb2259f3-679f-4783-aec0-adfcaba9e9c3" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="cb2259f3-679f-4783-aec0-adfcaba9e9c3" dataset="management_system.meetings" active-filter-id="" />
     <filter-actions connection-id="cb2259f3-679f-4783-aec0-adfcaba9e9c3" dataset="management_system.student" active-filter-id="">
       <filter id="9eed3c91-9b0c-4199-af84-948478d6abd4" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="student_email_address" operator="=" value="" active="true" />

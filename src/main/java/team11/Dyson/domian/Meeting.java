@@ -23,10 +23,10 @@ public class Meeting {
     private Timestamp Time;
     private String student_email_address;
 
-    public Meeting(Long meeting_id, String meeting_name, Timestamp Time, String student_email_address) {
-        this.meeting_id = meeting_id;
-        this.meeting_name = meeting_name;
-        this.Time = Time;
-        this.student_email_address = student_email_address;
-    }
+//    public Meeting(Long meeting_id, String meeting_name, Timestamp Time, String student_email_address) {
+//        this.meeting_id = meeting_id;
+//        this.meeting_name = meeting_name;
+//        this.Time = Time;
+//        this.student_email_address = student_email_address;
+//    }
 }
