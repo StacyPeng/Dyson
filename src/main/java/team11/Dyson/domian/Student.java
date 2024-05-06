@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 /*
 * author: Hengqian Mao
@@ -32,7 +33,12 @@ public class Student {
     @Column(name = "class_id")
     private Integer classId;
 
-    @ManyToMany(mappedBy = "students")
+    @ManyToMany
+    @JoinTable(
+            name = "stu_class",
+            joinColumns = @JoinColumn(name = "student_email_address", referencedColumnName = "student_email_address"),
+            inverseJoinColumns = @JoinColumn(name = "class_id", referencedColumnName = "class_id")
+    )
     private List<Course> courses;
 
     public Student() {
@@ -99,6 +105,10 @@ public class Student {
     // 获取学生的课程列表
     public List<Course> getCourses() {
         return courses;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
     }
 
     /*public Set<Course> getCoursesEnrolled() {
