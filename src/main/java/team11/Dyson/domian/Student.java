@@ -38,6 +38,14 @@ public class Student {
     public Student() {
     }
 
+    public Student(String studentEmailAddress, String stuName, String password, String gender, Date birthday) {
+        this.studentEmailAddress = studentEmailAddress;
+        this.stuName = stuName;
+        this.password = password;
+        this.gender = gender;
+        this.birthday = birthday;
+    }
+
     public Student(String studentEmailAddress, String stuName, String password, String gender, Date birthday, Integer classId/*, Set<Course> coursesEnrolled*/) {
         this.studentEmailAddress = studentEmailAddress;
         this.stuName = stuName;

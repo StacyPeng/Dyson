@@ -4,8 +4,7 @@ package team11.Dyson.domian;
 
 import jakarta.persistence.*;
 
-
-import java.util.Date;
+import java.sql.Timestamp;
 import java.util.Set;
 
 @Entity
@@ -18,9 +17,7 @@ public class Staff {
     private String staName;
     private String password;
     private String gender;
-    @Column(name = "birthday", columnDefinition = "DATE")
-    private Date birthday;
-
+    private Timestamp birthday;
 
     // 与课程的一对多关系
     @OneToMany(mappedBy = "teacher") // 'teacher' 必须与 Course 类中的 Staff 属性名匹配
@@ -30,7 +27,15 @@ public class Staff {
     public Staff() {
     }
 
-    public Staff(String staffEmailAddress, String staName, String password, String gender, Date birthday, Set<Course> coursesTaught) {
+    public Staff(String staffEmailAddress, String staName, String password, String gender, Timestamp birthday) {
+        this.staffEmailAddress = staffEmailAddress;
+        this.staName = staName;
+        this.password = password;
+        this.gender = gender;
+        this.birthday = birthday;
+    }
+
+    public Staff(String staffEmailAddress, String staName, String password, String gender, Timestamp birthday, Set<Course> coursesTaught) {
         this.staffEmailAddress = staffEmailAddress;
         this.staName = staName;
         this.password = password;
@@ -71,11 +76,11 @@ public class Staff {
         this.gender = gender;
     }
 
-    public Date getBirthday() {
+    public Timestamp getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(Timestamp birthday) {
         this.birthday = birthday;
     }
 
