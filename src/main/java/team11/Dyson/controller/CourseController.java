@@ -11,6 +11,7 @@ import team11.Dyson.dto.StaffDTO;
 import team11.Dyson.service.impl.AuthenticationService;
 import team11.Dyson.service.impl.CourseService;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -25,9 +26,9 @@ public class CourseController {
     private AuthenticationService authenticationService;
 
     @GetMapping("/student")
-    public ResponseEntity<?> getStudentCourses() {
+    public ResponseEntity<?> getStudentCourses(HttpSession session) {
         // 从身份验证服务中获取当前登录学生的邮箱地址
-        String currentStudentEmail = authenticationService.getCurrentStudentEmail();
+        String currentStudentEmail = authenticationService.getCurrentStudentEmail(session);
 
         // 如果当前学生邮箱为空，可能表示用户未登录或未授权
         if (currentStudentEmail == null) {
@@ -37,6 +38,11 @@ public class CourseController {
 
         // 根据学生邮箱检索与该学生相关的课程
         List<Course> studentCourses = courseService.findCoursesByStudentEmail(currentStudentEmail);
+
+        // 如果课程列表为空，返回404错误
+        if (studentCourses.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
 
         // 将课程转换为 DTO 并返回
         List<CourseDTO> courseDTOs = studentCourses.stream()
@@ -58,7 +64,6 @@ public class CourseController {
         if (course.getTeacher() != null) {
             StaffDTO teacherDTO = new StaffDTO();
             teacherDTO.setEmail(course.getTeacher().getStaffEmailAddress());
-            // 设置 Staff 的其他属性
             dto.setTeacher(teacherDTO);
         }
 
