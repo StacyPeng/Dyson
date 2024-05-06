@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5/storage_v2/_src_/schema/management_system.q7UN_A.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5/storage_v2/_src_/schema/management_system.q7UN_A.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5/storage_v2/_src_/schema/management_system.q7UN_A.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5/storage_v2/_src_/schema/management_system.q7UN_A.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Register.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Staff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Student.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.editor.code.editing",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -215,6 +210,9 @@
       <workItem from="1715004525864" duration="338000" />
       <workItem from="1715005067662" duration="158000" />
       <workItem from="1715005436665" duration="1429000" />
+      <workItem from="1715008303562" duration="46000" />
+      <workItem from="1715008370395" duration="40000" />
+      <workItem from="1715008447321" duration="337000" />
     </task>
     <servers />
   </component>
@@ -223,5 +221,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

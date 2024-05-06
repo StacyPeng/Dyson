@@ -41,7 +41,7 @@ class DysonApplicationTests {
 
     @Test
     public void testRegisterStudent(){
-        Student student = new Student("test","test","test","male",null,null);
+        Student student = new Student("test","test","test","male",null);
         String register = studentService.register(student);
         System.out.println(register);
     }

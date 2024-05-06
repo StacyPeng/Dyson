@@ -42,7 +42,12 @@ public class Course {
     @Column(name = "mod_Id")
     private Integer mod_Id;
 
-    @ManyToMany(mappedBy = "courses")
+    @ManyToMany // 学生和课程之间的多对多关系
+    @JoinTable(
+            name = "stu_class", // 指定连接表名
+            joinColumns = @JoinColumn(name = "class_id"), // 指定此方的连接列名
+            inverseJoinColumns = @JoinColumn(name = "student_email_address") // 指定对方的连接列名，匹配 Student 表的主键
+    )
     private Set<Student> students;
 
     //  getters 和 setters ...
