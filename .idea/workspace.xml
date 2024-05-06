@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +54,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DysonApplication (1).executor": "Run",
     "Spring Boot.DysonApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
@@ -66,7 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor.code.editing",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -80,7 +80,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DysonApplication">
+  <component name="RunManager" selected="Spring Boot.DysonApplication (1)">
     <configuration name="DysonApplicationTests.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dyson" />
       <extension name="coverage">
@@ -135,6 +135,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DysonApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Dyson" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="team11.Dyson.DysonApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team11.Dyson.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DysonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="Chengyu" />
@@ -145,6 +159,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DysonApplication (1)" />
         <item itemvalue="JUnit.DysonApplicationTests.testLogin" />
         <item itemvalue="JUnit.DysonApplicationTests.testStaffLogin" />
         <item itemvalue="JUnit.DysonApplicationTests.testRegisterStudent" />
@@ -154,8 +169,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -213,6 +228,8 @@
       <workItem from="1715008303562" duration="46000" />
       <workItem from="1715008370395" duration="40000" />
       <workItem from="1715008447321" duration="337000" />
+      <workItem from="1715009458949" duration="637000" />
+      <workItem from="1715010190028" duration="504000" />
     </task>
     <servers />
   </component>
