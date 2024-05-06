@@ -5,16 +5,21 @@ package team11.Dyson.domian;
  * @Date: 2024/5/5 23:43
  * @student ID:230045675
  */
-public class Login {
+public class User {
     private String emailAddress;
     private String password;
     private String identity;
 
 
-    public Login() {
+    public User() {
     }
 
-    public Login(String emailAddress, String password, String identity) {
+    public User(String emailAddress, String password) {
+        this.emailAddress = emailAddress;
+        this.password = password;
+    }
+
+    public User(String emailAddress, String password, String identity) {
         this.emailAddress = emailAddress;
         this.password = password;
         this.identity = identity;
