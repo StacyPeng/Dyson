@@ -8,14 +8,16 @@ package team11.Dyson.domian;
 public class Login {
     private String emailAddress;
     private String password;
+    private String identity;
 
 
     public Login() {
     }
 
-    public Login(String emailAddress, String password) {
+    public Login(String emailAddress, String password, String identity) {
         this.emailAddress = emailAddress;
         this.password = password;
+        this.identity = identity;
     }
 
     public String getEmailAddress() {
@@ -34,7 +36,15 @@ public class Login {
         this.password = password;
     }
 
+    public String getIdentity() {
+        return identity;
+    }
+
+    public void setIdentity(String identity) {
+        this.identity = identity;
+    }
+
     public String toString() {
-        return "Login{emailAddress = " + emailAddress + ", password = " + password + "}";
+        return "Login{emailAddress = " + emailAddress + ", password = " + password + ", identity = " + identity + "}";
     }
 }
