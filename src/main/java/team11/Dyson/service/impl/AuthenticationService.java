@@ -53,11 +53,11 @@ public class AuthenticationService {
     }
 
     // Helper method to retrieve student email from session
-    private String getSessionStudentEmail() {
-        // Implement the logic to retrieve student email from session
-        // This is just a placeholder, you need to implement this according to your application's session management mechanism
-        return "student@example.com"; // Placeholder email, replace with actual session retrieval logic
-    }
+        private String getSessionStudentEmail() {
+            // Implement the logic to retrieve student email from session
+            // This is just a placeholder, you need to implement this according to your application's session management mechanism
+            return "student1@qq.com"; // Placeholder email, replace with actual session retrieval logic
+        }
 
     // Convert Student entity to DTO
     private StudentDTO convertToStudentDTO(Student student) {
