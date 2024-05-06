@@ -7,7 +7,8 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 import team11.Dyson.domian.Staff;
-import team11.Dyson.domian.Student;
+
+import java.util.Optional;
 
 @Mapper
 @Repository
@@ -22,7 +23,7 @@ public interface StaffMapper extends BaseMapper<Staff> {
     @Insert("insert into staff (staff_email_address, staName, password, gender, birthday)" +
             "values (#{staffEmailAddress},#{staName},#{password},#{gender},#{birthday})")
     //parameter name, not column name
-    public int register(Staff staff);
+    public Staff register(Staff staff);
 
     @Update("update staff set password=#{password} where staff_email_address=#{staffEmailAddress}")
     public boolean modifyPassword(String password,String staffEmailAddress);

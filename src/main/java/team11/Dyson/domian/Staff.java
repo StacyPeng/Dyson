@@ -28,6 +28,14 @@ public class Staff {
     public Staff() {
     }
 
+    public Staff(String staffEmailAddress, String staName, String password, String gender, Date birthday) {
+        this.staffEmailAddress = staffEmailAddress;
+        this.staName = staName;
+        this.password = password;
+        this.gender = gender;
+        this.birthday = birthday;
+    }
+
     public Staff(String staffEmailAddress, String staName, String password, String gender, Date birthday, Set<Course> coursesTaught) {
         this.staffEmailAddress = staffEmailAddress;
         this.staName = staName;
