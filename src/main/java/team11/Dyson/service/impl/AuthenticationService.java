@@ -2,14 +2,11 @@ package team11.Dyson.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.Course;
 import team11.Dyson.domian.Student;
 import team11.Dyson.dto.StudentDTO;
 import team11.Dyson.repository.StudentRepository;
 
 import javax.servlet.http.HttpSession;
-import java.util.Collections;
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -35,20 +32,9 @@ public class AuthenticationService {
         return getSessionStudentEmail(session);
     }
 
-    // 从数据库中检索与给定学生邮箱关联的课程列表
-    public List<Course> findCoursesByStudentEmail(String studentEmail) {
-        if (studentEmail != null) {
-            Optional<Student> studentOptional = studentRepository.findByStudentEmailAddress(studentEmail);
-            if (studentOptional.isPresent()) {
-                return studentOptional.get().getCourses();
-            }
-        }
-        return Collections.emptyList();
-    }
-
     // Helper method to retrieve student email from session
     private String getSessionStudentEmail(HttpSession session) {
-        return (String) session.getAttribute("userEmail"); // 使用会话中存储的用户邮箱
+        return (String) session.getAttribute("email"); // 确保使用与 preset 相同的键名
     }
 
     // Convert Student entity to DTO

@@ -8,6 +8,7 @@ import team11.Dyson.service.StaffService;
 import team11.Dyson.service.StudentService;
 import team11.Dyson.service.impl.UserService;
 
+import javax.servlet.http.HttpSession;
 import java.util.Optional;
 
 
@@ -26,6 +27,20 @@ public class UserController {
 
     @Autowired
     private StaffService staffService;
+
+    @PostMapping("/preset")
+    public ResponseEntity<?> presetUserSession(@RequestParam String email, HttpSession session) {
+        if (email.endsWith("@student.example.com")) {
+            session.setAttribute("userType", "student");
+            session.setAttribute("email", email);
+        } else if (email.endsWith("@staff.example.com")) {
+            session.setAttribute("userType", "staff");
+            session.setAttribute("email", email);
+        } else {
+            return ResponseEntity.badRequest().body("Invalid email domain");
+        }
+        return ResponseEntity.ok("Session preset successfully");
+    }
 
     @PostMapping("/login")
     public UserResult login(@RequestBody User request){
