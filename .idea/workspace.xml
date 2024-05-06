@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dfe98e28-79fd-406a-b2e9-dd09cea01a05.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5/storage_v2/_src_/schema/management_system.q7UN_A.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5/storage_v2/_src_/schema/management_system.q7UN_A.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/forgotpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/forgotpassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/forgotpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/forgotpassword.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +48,8 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;JUnit.DysonApplicationTests.testLogin.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testModifyPassword.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testModifyPassword2.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.DysonApplicationTests.testRegisterStudent.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.DysonApplicationTests.testStaffLogin.executor&quot;: &quot;Run&quot;,
     &quot;Maven.Chengyu [clean].executor&quot;: &quot;Run&quot;,
@@ -106,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DysonApplicationTests.testRegisterStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DysonApplicationTests.testModifyPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dyson" />
       <extension name="coverage">
         <pattern>
@@ -116,7 +115,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="team11.Dyson" />
       <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplicationTests" />
-      <option name="METHOD_NAME" value="testRegisterStudent" />
+      <option name="METHOD_NAME" value="testModifyPassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DysonApplicationTests.testModifyPassword2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Dyson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team11.Dyson.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="team11.Dyson" />
+      <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplicationTests" />
+      <option name="METHOD_NAME" value="testModifyPassword2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,7 +161,7 @@
     </configuration>
     <configuration name="DysonApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="Chengyu" />
+      <module name="Dyson" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="team11.Dyson.DysonApplication" />
       <extension name="coverage">
         <pattern>
@@ -169,9 +184,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.DysonApplication (1)" />
+        <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword2" />
+        <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword" />
         <item itemvalue="JUnit.DysonApplicationTests.testLogin" />
         <item itemvalue="JUnit.DysonApplicationTests.testStaffLogin" />
-        <item itemvalue="JUnit.DysonApplicationTests.testRegisterStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -240,6 +256,8 @@
       <workItem from="1715009458949" duration="637000" />
       <workItem from="1715010190028" duration="504000" />
       <workItem from="1715011035029" duration="5301000" />
+      <workItem from="1715022822537" duration="7409000" />
+      <workItem from="1715031306273" duration="1292000" />
     </task>
     <servers />
   </component>

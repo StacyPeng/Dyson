@@ -5,17 +5,22 @@ package team11.Dyson.domian;
  * @Date: 2024/5/6 下午2:33
  * @student ID:230045675
  */
-public class LoginResult {
+public class UserResult {
     private Object data;
     private Integer code;
     private String message;
     private String identity;
 
 
-    public LoginResult() {
+    public UserResult() {
     }
 
-    public LoginResult(Integer code,Object data,String message, String identity) {
+    public UserResult(Integer code,Object data) {
+        this.data = data;
+        this.code = code;
+    }
+
+    public UserResult(Integer code, Object data, String message, String identity) {
         this.data = data;
         this.code = code;
         this.message = message;
@@ -55,6 +60,6 @@ public class LoginResult {
     }
 
     public String toString() {
-        return "LoginResult{data = " + data + ", code = " + code + ", message = " + message + ", identity = " + identity + "}";
+        return "UserResult{data = " + data + ", code = " + code + ", message = " + message + ", identity = " + identity + "}";
     }
 }
