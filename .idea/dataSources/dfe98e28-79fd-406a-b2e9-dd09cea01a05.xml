@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="management_system@10.147.20.20">
+<dataSource name="@10.147.20.20">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
@@ -1132,8 +1132,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
     <schema id="289" parent="1" name="management_system">
-      <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-06.15:53:47</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-06.16:01:23</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="290" parent="1" name="mysql">
@@ -1771,21 +1770,17 @@ student_email_address</ColNames>
       <DasType>date|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="432" parent="313" name="class_id">
-      <DasType>int|0s</DasType>
-      <Position>6</Position>
-    </column>
-    <index id="433" parent="313" name="PRIMARY">
+    <index id="432" parent="313" name="PRIMARY">
       <ColNames>student_email_address</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="434" parent="313" name="PRIMARY">
+    <key id="433" parent="313" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <trigger id="435" parent="313" name="update_stu_class_student">
+    <trigger id="434" parent="313" name="update_stu_class_student">
       <Definer>Hengqian@%</Definer>
       <Events>U</Events>
       <SourceTextLength>149</SourceTextLength>
