@@ -16,6 +16,8 @@
     <title>Spike Bootstrap Admin</title>
     <!-- jvectormap  -->
     <link rel="stylesheet" href="/css/jquery.css">
+    <!--TODO add jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -478,7 +480,7 @@
                         <div class="col-lg-6 d-flex align-items-stretch">
                             <div class="card w-100">
                                 <div class="card-body border-bottom position-relative">
-                                    <h4 class="card-title mb-1">Hi, Staff Name here!</h4>
+                                    <h4 class="card-title mb-1" id="sayHi">Hi, Staff Name here!</h4>
                                     <p class="card-subtitle mb-0">Designation</p>
                                     <div class="mt-6">
                                         <ul class="list-unstyled mb-0">
@@ -739,5 +741,28 @@
     <script src="/js/staff-jvectormap.js"></script>
     <script src="/js/staff-dashboard.js"></script>
 </body>
+<script>
+    /**
+     * @author Chengyu Peng
+     * @student ID:230045675
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+        let staffName = new URLSearchParams(window.location.search).get('name');
+        if (!staffName) {
+            staffName = localStorage.getItem('staffName'); // try to get staff name from local storage
+        } else {
+            localStorage.setItem('staffName', staffName); // store new staff name to local storage
+        }
 
+        if (staffName) {
+            document.querySelectorAll('#sayHi').forEach(function(header) {
+                header.textContent = 'Hello, ' + staffName + '!';
+            });
+        }
+    });
+
+    function logout() {
+        location.href= '/index.html';
+    }
+</script>
 </html>

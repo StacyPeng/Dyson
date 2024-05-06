@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
 
 /*
 * author: Hengqian Mao
@@ -33,12 +32,7 @@ public class Student {
     @Column(name = "class_id")
     private Integer classId;
 
-    @ManyToMany
-    @JoinTable(
-            name = "stu_class",
-            joinColumns = @JoinColumn(name = "student_email_address", referencedColumnName = "student_email_address"),
-            inverseJoinColumns = @JoinColumn(name = "class_id", referencedColumnName = "class_id")
-    )
+    @ManyToMany(mappedBy = "students")
     private List<Course> courses;
 
     public Student() {
@@ -107,8 +101,17 @@ public class Student {
         return courses;
     }
 
-    public void setCourses(List<Course> courses) {
-        this.courses = courses;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentEmailAddress='" + studentEmailAddress + '\'' +
+                ", stuName='" + stuName + '\'' +
+                ", password='" + password + '\'' +
+                ", gender='" + gender + '\'' +
+                ", birthday=" + birthday +
+                ", classId=" + classId +
+                ", courses=" + courses +
+                '}';
     }
 
     /*public Set<Course> getCoursesEnrolled() {
@@ -117,10 +120,6 @@ public class Student {
 
     /*public void setCoursesEnrolled(Set<Course> coursesEnrolled) {
         this.coursesEnrolled = coursesEnrolled;
-    }*/
-
-    /*public String toString() {
-        return "Student{studentEmailAddress = " + studentEmailAddress + ", stuName = " + stuName + ", password = " + password + ", gender = " + gender + ", birthday = " + birthday + ", classId = " + classId + ", coursesEnrolled = " + coursesEnrolled + "}";
     }*/
 
     // 构造函数、getter和setter
