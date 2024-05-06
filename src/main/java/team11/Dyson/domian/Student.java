@@ -29,8 +29,7 @@ public class Student {
     @Temporal(TemporalType.DATE)
     private Date birthday;
 
-    @Column(name = "class_id")
-    private Integer classId;
+
 
     @ManyToMany(mappedBy = "students")
     private List<Course> courses;
@@ -52,7 +51,7 @@ public class Student {
         this.password = password;
         this.gender = gender;
         this.birthday = birthday;
-        this.classId = classId;
+
         /*this.coursesEnrolled = coursesEnrolled;*/
     }
 
@@ -96,13 +95,7 @@ public class Student {
         this.birthday = birthday;
     }
 
-    public Integer getClassId() {
-        return classId;
-    }
 
-    public void setClassId(Integer classId) {
-        this.classId = classId;
-    }
 
     // 获取学生的课程列表
     public List<Course> getCourses() {
@@ -117,7 +110,6 @@ public class Student {
                 ", password='" + password + '\'' +
                 ", gender='" + gender + '\'' +
                 ", birthday=" + birthday +
-                ", classId=" + classId +
                 ", courses=" + courses +
                 '}';
     }
