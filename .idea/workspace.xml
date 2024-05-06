@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dfe98e28-79fd-406a-b2e9-dd09cea01a05.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dfe98e28-79fd-406a-b2e9-dd09cea01a05.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/ModifyPasswordController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/LoginResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/UserResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StudentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/forgotpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/forgotpassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/DysonApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/DysonApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/forgotpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/forgotpassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ModifyPasswordController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/LoginResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team11/Dyson/DysonApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,44 +42,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JUnit.DysonApplicationTests.testLogin.executor": "Run",
-    "JUnit.DysonApplicationTests.testModifyPassword.executor": "Run",
-    "JUnit.DysonApplicationTests.testModifyPassword2.executor": "Run",
-    "JUnit.DysonApplicationTests.testRegisterStudent.executor": "Run",
-    "JUnit.DysonApplicationTests.testStaffLogin.executor": "Run",
-    "Maven.Chengyu [clean].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DysonApplication (1).executor": "Run",
-    "Spring Boot.DysonApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JUnit.DysonApplicationTests.testLogin.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testModifyPassword.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testModifyPassword2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testRegisterStudent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testStaffLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Chengyu [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DysonApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DysonApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/pages" />
@@ -104,7 +88,7 @@
       <recent name="team11.Dyson.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DysonApplicationTests.testModifyPassword2">
+  <component name="RunManager" selected="Spring Boot.DysonApplication (1)">
     <configuration name="DysonApplicationTests.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dyson" />
       <extension name="coverage">
@@ -199,9 +183,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DysonApplication (1)" />
         <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword2" />
         <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword" />
-        <item itemvalue="Spring Boot.DysonApplication (1)" />
         <item itemvalue="JUnit.DysonApplicationTests.testLogin" />
         <item itemvalue="JUnit.DysonApplicationTests.testStaffLogin" />
       </list>
@@ -273,6 +257,7 @@
       <workItem from="1715010190028" duration="504000" />
       <workItem from="1715011035029" duration="5301000" />
       <workItem from="1715022822537" duration="7409000" />
+      <workItem from="1715031306273" duration="1292000" />
     </task>
     <servers />
   </component>

@@ -22,17 +22,6 @@ public class StudentServiceImpl implements StudentService {
     private StudentMapper studentMapper;
 
     @Override
-    /*public Student login(String student_email_address, String password) {
-        Student student = studentMapper.login(student_email_address, password);
-        if (student != null) {
-            if (password.equals(student.getPassword())) {
-                return student;
-            } else {
-                return null;
-            }
-        }
-        return null;
-    }*/
     public Student login(String studentEmailAddress, String password) {
         Student student = studentMapper.login(studentEmailAddress, password);
         if (student != null) {
