@@ -101,16 +101,25 @@ public class Student {
         return courses;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentEmailAddress='" + studentEmailAddress + '\'' +
+                ", stuName='" + stuName + '\'' +
+                ", password='" + password + '\'' +
+                ", gender='" + gender + '\'' +
+                ", birthday=" + birthday +
+                ", classId=" + classId +
+                ", courses=" + courses +
+                '}';
+    }
+
     /*public Set<Course> getCoursesEnrolled() {
         return coursesEnrolled;
     }*/
 
     /*public void setCoursesEnrolled(Set<Course> coursesEnrolled) {
         this.coursesEnrolled = coursesEnrolled;
-    }*/
-
-    /*public String toString() {
-        return "Student{studentEmailAddress = " + studentEmailAddress + ", stuName = " + stuName + ", password = " + password + ", gender = " + gender + ", birthday = " + birthday + ", classId = " + classId + ", coursesEnrolled = " + coursesEnrolled + "}";
     }*/
 
     // 构造函数、getter和setter

@@ -6,8 +6,8 @@ package team11.Dyson.controller;
  * @student ID:230045675
  */
 public class Code {
-    public static final Integer LOG_OK = 10011;
-    public static final Integer LOG_ERR = 10010;
+    public static final Integer LOG_OK = 200;
+    public static final Integer LOG_ERR = 201;
     public static final Integer REGISTER_OK = 200;
     public static final Integer REGISTER_ERR = 201;
 
