@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="management_system@10.147.20.20">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.49">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -12,8 +12,7 @@
     </schema>
     <schema id="3" parent="1" name="management_system">
       <Current>1</Current>
-      <IntrospectionTimestamp>2024-05-07.00:05:58</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-05-06.22:05:58</LocalIntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-06.22:05:58</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="4" parent="1" name="mysql">
@@ -197,7 +196,6 @@ modId</ColNames>
       <Definer>Hengqian@%</Definer>
       <Events>U</Events>
       <SourceTextLength>97</SourceTextLength>
-      <Turn>after-row</Turn>
     </trigger>
     <column id="47" parent="9" name="examId">
       <DasType>int|0s</DasType>
@@ -404,7 +402,6 @@ modId</ColNames>
       <Definer>root@localhost</Definer>
       <Events>U</Events>
       <SourceTextLength>76</SourceTextLength>
-      <Turn>after-row</Turn>
     </trigger>
     <column id="91" parent="15" name="proId">
       <DasType>int|0s</DasType>
@@ -648,7 +645,6 @@ student_email_address</ColNames>
       <Definer>Hengqian@%</Definer>
       <Events>U</Events>
       <SourceTextLength>149</SourceTextLength>
-      <Turn>after-row</Turn>
     </trigger>
   </database-model>
 </dataSource>
