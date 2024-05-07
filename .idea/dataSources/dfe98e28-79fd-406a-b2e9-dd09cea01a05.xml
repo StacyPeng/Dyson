@@ -1,81 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="management_system@10.147.20.20">
+<dataSource name="@10.147.20.20">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
-    <root id="1"/>
-    <schema id="2" parent="1" name="mysql">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="3" parent="1" name="information_schema">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <ServerVersion>8.0.34</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="information_schema">
       <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
-    <schema id="4" parent="1" name="performance_schema">
+    <schema id="3" parent="1" name="management_system">
+      <LastIntrospectionLocalTimestamp>2024-05-07.14:04:38</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="5" parent="1" name="sys">
+    <schema id="4" parent="1" name="mysql">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="6" parent="1" name="management_system">
-      <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-07.01:19:53</LastIntrospectionLocalTimestamp>
+    <schema id="5" parent="1" name="performance_schema">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <table id="7" parent="6" name="cla_mod">
+    <schema id="6" parent="1" name="sys">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <table id="7" parent="3" name="cla_mod">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="8" parent="6" name="classes">
+    <table id="8" parent="3" name="classes">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="9" parent="6" name="exames">
+    <table id="9" parent="3" name="exames">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="10" parent="6" name="feedback">
+    <table id="10" parent="3" name="feedback">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="11" parent="6" name="meet_stu">
+    <table id="11" parent="3" name="meet_stu">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="12" parent="6" name="meetings">
+    <table id="12" parent="3" name="meetings">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="13" parent="6" name="mod_pro">
+    <table id="13" parent="3" name="mod_pro">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="14" parent="6" name="modules">
+    <table id="14" parent="3" name="modules">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="15" parent="6" name="programme">
+    <table id="15" parent="3" name="programme">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="16" parent="6" name="registeredmodules">
+    <table id="16" parent="3" name="registeredmodules">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="17" parent="6" name="sign_in">
+    <table id="17" parent="3" name="sign_in">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="18" parent="6" name="staff">
+    <table id="18" parent="3" name="staff">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="19" parent="6" name="staff_student">
+    <table id="19" parent="3" name="staff_student">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="20" parent="6" name="stu_class">
+    <table id="20" parent="3" name="stu_class">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="21" parent="6" name="student">
+    <table id="21" parent="3" name="student">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
@@ -282,7 +286,7 @@ meeting_id</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="66" parent="12" name="meeting_id">
-      <AutoIncrement>7</AutoIncrement>
+      <AutoIncrement>8</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -469,7 +473,7 @@ modId</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="106" parent="17" name="id">
-      <AutoIncrement>11</AutoIncrement>
+      <AutoIncrement>12</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -551,7 +555,7 @@ modId</ColNames>
       <Position>2</Position>
     </column>
     <column id="124" parent="20" name="stu_class_id">
-      <AutoIncrement>8</AutoIncrement>
+      <AutoIncrement>16</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>

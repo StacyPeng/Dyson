@@ -1362,8 +1362,9 @@
             })
                 .then(response => {
                     if (response.ok) {
+                        console.log(response)
                         // Successful registration, redirected to the index page.
-                        window.location.href = '/index.html';
+                        // window.location.href = '/index.html';
                     } else {
                         // Registration failed, and an error message was displayed.
                         alert('Registration failed. Please try again.');

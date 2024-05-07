@@ -257,6 +257,49 @@
                 }).catch(error => console.error('Error:', error));
         });
 
+        getModalUpdateBtnEl.addEventListener("click", function () {
+            var eventId = this.getAttribute('data-fc-event-public-id'); // 获取事件ID
+            var event = {
+                title: getModalTitleEl.value,
+                startTime: getModalStartDateEl.value + "T00:00:00",
+                endTime: getModalEndDateEl.value + "T23:59:59",
+                // 其他必要的字段
+            };
+
+            fetch(`/api/courses/${eventId}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(event)
+            }).then(response => {
+                if (response.ok) {
+                    // 更新日历视图上的事件信息
+                    var calendarEvent = calendar.getEventById(eventId);
+                    calendarEvent.setProp('title', event.title);
+                    calendarEvent.setStart(event.startTime);
+                    calendarEvent.setEnd(event.endTime);
+                    // 更新其他属性
+                    myModal.hide();  // 隐藏模态框
+                }
+            }).catch(error => console.error('Error:', error));
+        });
+
+        // 假设您有一个删除按钮和监听器
+        getModalDeleteBtnEl.addEventListener("click", function () {
+            var eventId = getModalUpdateBtnEl.getAttribute('data-fc-event-public-id'); // 获取事件ID
+
+            fetch(`/api/courses/${eventId}`, {
+                method: 'DELETE'
+            }).then(response => {
+                if (response.ok) {
+                    // 从日历视图移除事件
+                    var calendarEvent = calendar.getEventById(eventId);
+                    calendarEvent.remove();
+                    myModal.hide();  // 隐藏模态框
+                }
+            }).catch(error => console.error('Error:', error));
+        });
+
+
         /*=====================*/
         // Calendar Init
         /*=====================*/
