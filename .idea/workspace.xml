@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/repository/StaffRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/Authentication2Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/Timetable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/Timetable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/dto/StaffDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/dto/StaffDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/repository/CourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/staff-calendar2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/staff-calendar2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/staff-calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/staff-calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-calendar2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/staff-calendar2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Timetable.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/Timetable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/staff-calendar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/AuthenticationService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -270,6 +277,7 @@
       <workItem from="1715042974908" duration="966000" />
       <workItem from="1715044120646" duration="1374000" />
       <workItem from="1715045535679" duration="16000" />
+      <workItem from="1715091142038" duration="16573000" />
     </task>
     <servers />
   </component>

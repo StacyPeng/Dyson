@@ -9,6 +9,7 @@ import team11.Dyson.domian.Course;
 import team11.Dyson.domian.Staff;
 import team11.Dyson.dto.CourseDTO;
 import team11.Dyson.dto.StaffDTO;
+import team11.Dyson.service.impl.Authentication2Service;
 import team11.Dyson.service.impl.AuthenticationService;
 import team11.Dyson.service.impl.CourseService;
 
@@ -33,6 +34,7 @@ public class CourseController {
 
     @Autowired
     private AuthenticationService authenticationService;
+    private Authentication2Service authentication2Service;
 
     @GetMapping("/student")
     public ResponseEntity<?> getStudentCourses(HttpSession session) {
@@ -56,13 +58,31 @@ public class CourseController {
         return ResponseEntity.ok(courseDTOs);
     }
 
+    // CourseController.java
+
+    @GetMapping("/staff/courses")
+    public ResponseEntity<?> getStaffCourses(HttpSession session) {
+        String staffEmail = (String) session.getAttribute("staffEmail");
+        if (staffEmail == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized access.");
+        }
+
+        List<Course> staffCourses = courseService.findCoursesByTeacherEmail(staffEmail);
+        List<CourseDTO> courseDTOs = staffCourses.stream()
+                .map(this::convertToCourseDTO)
+                .collect(Collectors.toList());
+
+        return ResponseEntity.ok(courseDTOs);
+    }
+
+
     @PutMapping("/{id}")
     public ResponseEntity<?> updateCourse(@PathVariable Integer id, @RequestBody CourseDTO courseDTO) {
         Course existingCourse = courseService.findById(id);
         if (existingCourse == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Course not found.");
         }
-        // 更新课程逻辑，假设已经在CourseService中实现了updateCourse方法
+        // 更新课程逻辑
         Course updatedCourse = courseService.updateCourse(existingCourse, courseDTO);
         return ResponseEntity.ok(convertToCourseDTO(updatedCourse));
     }
@@ -94,6 +114,15 @@ public class CourseController {
         }
         session.setAttribute("studentEmail", email);
         return ResponseEntity.ok("Email stored in session successfully.");
+    }
+
+    @GetMapping("/staffEmail")
+    public ResponseEntity<?> storeStaffEmailInSession(HttpSession session, @RequestParam String email) {
+        if (email == null || email.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body("Email parameter is missing or empty.");
+        }
+        session.setAttribute("staffEmail", email);
+        return ResponseEntity.ok("Staff email stored in session successfully.");
     }
 
 

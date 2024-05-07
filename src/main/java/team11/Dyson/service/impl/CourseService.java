@@ -71,6 +71,14 @@ public class CourseService {
         }
     }
 
+    // CourseService.java
+
+    public List<Course> findCoursesByTeacherEmail(String email) {
+        // 从数据库中获取与教师邮箱关联的课程
+        return courseRepository.findByTeacher_StaffEmailAddress(email);
+    }
+
+
     public Course updateCourse(Course existingCourse, CourseDTO courseDTO) {
         existingCourse.setTitle(courseDTO.getTitle());
         existingCourse.setStartTime(courseDTO.getStartTime());

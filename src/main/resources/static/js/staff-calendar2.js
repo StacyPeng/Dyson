@@ -30,6 +30,63 @@
             Warning: "warning",
         };
         /*=====================*/
+        // Calendar load fn.
+        /*=====================*/
+        function splitDateTime(datetimeStr) {
+            const date = new Date(datetimeStr);
+            const datePart = date.toISOString().split('T')[0]; // 获取日期部分
+            const timePart = date.toTimeString().split(' ')[0].slice(0, 5); // 获取时间部分
+            return { datePart, timePart };
+        }
+
+        var calendarEventClick = function (info) {
+            var eventObj = info.event;
+            var startDate = new Date(eventObj.start);
+            var endDate = new Date(eventObj.end || eventObj.start); // 有的事件可能没有结束时间
+
+            var formatDate = (date) => date.toISOString().split('T')[0];
+            var formatTime = (date) => date.toTimeString().substring(0, 5);
+
+            document.getElementById('event-title').value = eventObj.title;
+            document.getElementById('event-start-date').value = formatDate(startDate);
+            document.getElementById('event-start-time').value = formatTime(startDate);
+            document.getElementById('event-end-date').value = formatDate(endDate);
+            document.getElementById('event-end-time').value = formatTime(endDate);
+
+            // 更新表单的颜色选择器
+            var eventColor = eventObj.extendedProps.calendar;
+            if (eventColor) {
+                document.querySelector(`input[name="event-level"][value="${eventColor}"]`).checked = true;
+            }
+
+            myModal.show(); // 显示模态窗口
+        };
+
+
+
+        function loadStaffCourses() {
+            fetch('/api/courses/staff/courses')
+                .then(response => response.json())
+                .then(courses => {
+                    console.log("Loaded courses:", courses);
+                    courses.forEach(course => {
+                        calendar.addEvent({
+                            id: course.id,
+                            title: course.title,
+                            start: course.startTime,
+                            end: course.endTime,
+                            extendedProps: {
+                                calendar: "Success"  // 如 "Danger", "Success" 等
+                            }
+                        });
+                    });
+                })
+                .catch(error => console.error('Error loading courses:', error));
+        }
+
+
+
+        /*=====================*/
         // Calendar Elements and options
         /*=====================*/
         var calendarEl = document.querySelector("#calendar");
@@ -177,7 +234,31 @@
             initialView: checkWidowWidth() ? "listWeek" : "dayGridMonth",
             initialDate: `${newDate.getFullYear()}-${getDynamicMonth()}-07`,
             headerToolbar: calendarHeaderToolbar,
-            events: calendarEventsList,
+            events: function(fetchInfo, successCallback, failureCallback) {
+                fetch('/api/courses/staff/courses')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(events => {
+                        console.log("Loaded courses:", events);// 在控制台输出获取的课程数据
+                        successCallback(events.map(event => ({
+                            id: event.id,
+                            title: event.title,
+                            start: event.startTime,
+                            end: event.endTime,
+                            extendedProps: {
+                                calendar: "Success"  // 如 "Danger", "Success" 等
+                            }
+                        })));
+                    })
+                    .catch(error => {
+                        console.error('Error loading courses:', error);
+                        failureCallback(error);
+                    });
+            },
             select: calendarSelect,
             unselect: function () {
                 console.log("unselected");
@@ -263,7 +344,7 @@
                 title: getModalTitleEl.value,
                 startTime: getModalStartDateEl.value + "T00:00:00",
                 endTime: getModalEndDateEl.value + "T23:59:59",
-                // 其他必要的字段
+
             };
 
             fetch(`/api/courses/${eventId}`, {
@@ -283,21 +364,21 @@
             }).catch(error => console.error('Error:', error));
         });
 
-        // 假设您有一个删除按钮和监听器
-        getModalDeleteBtnEl.addEventListener("click", function () {
-            var eventId = getModalUpdateBtnEl.getAttribute('data-fc-event-public-id'); // 获取事件ID
-
-            fetch(`/api/courses/${eventId}`, {
-                method: 'DELETE'
-            }).then(response => {
-                if (response.ok) {
-                    // 从日历视图移除事件
-                    var calendarEvent = calendar.getEventById(eventId);
-                    calendarEvent.remove();
-                    myModal.hide();  // 隐藏模态框
-                }
-            }).catch(error => console.error('Error:', error));
-        });
+        // // 假设您有一个删除按钮和监听器
+        // getModalDeleteBtnEl.addEventListener("click", function () {
+        //     var eventId = getModalUpdateBtnEl.getAttribute('data-fc-event-public-id'); // 获取事件ID
+        //
+        //     fetch(`/api/courses/${eventId}`, {
+        //         method: 'DELETE'
+        //     }).then(response => {
+        //         if (response.ok) {
+        //             // 从日历视图移除事件
+        //             var calendarEvent = calendar.getEventById(eventId);
+        //             calendarEvent.remove();
+        //             myModal.hide();  // 隐藏模态框
+        //         }
+        //     }).catch(error => console.error('Error:', error));
+        // });
 
 
         /*=====================*/

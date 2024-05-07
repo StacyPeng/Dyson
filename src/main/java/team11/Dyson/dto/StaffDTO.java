@@ -1,20 +1,58 @@
-// StaffDTO.java
 package team11.Dyson.dto;
+
+import java.util.Date;
+import java.util.Set;
 
 public class StaffDTO {
 
     private String email;
-    // 可以包含其他需要的Staff信息，但不包含教授的课程列表
+    private String name;
+    private String gender;
+    private Date birthday;
+    // 可以选择添加课程 ID 列表等
+    private Set<Integer> coursesTaughtIds;
 
-    // 这里是 email 属性的 getter 方法
+    // Constructors, getters and setters
+    public StaffDTO() {
+    }
+
     public String getEmail() {
         return email;
     }
 
-    // 这里是 email 属性的 setter 方法
     public void setEmail(String email) {
         this.email = email;
     }
 
-    // Constructor, getters, and setters ...
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public Set<Integer> getCoursesTaughtIds() {
+        return coursesTaughtIds;
+    }
+
+    public void setCoursesTaughtIds(Set<Integer> coursesTaughtIds) {
+        this.coursesTaughtIds = coursesTaughtIds;
+    }
 }
