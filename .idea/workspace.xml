@@ -7,8 +7,12 @@
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/Timetable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/Timetable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/staff-calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/staff-calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Timetable.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/Timetable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/staff-calendar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,6 +269,8 @@
       <workItem from="1715034311931" duration="3894000" />
       <workItem from="1715038243567" duration="3170000" />
       <workItem from="1715042974908" duration="966000" />
+      <workItem from="1715044120646" duration="1374000" />
+      <workItem from="1715045535679" duration="16000" />
     </task>
     <servers />
   </component>

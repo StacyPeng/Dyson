@@ -13,6 +13,8 @@
 
     <meta name="msapplication-tap-highlight" content="no">
     <link href="/css/main.css" rel="stylesheet">
+    <!--TODO add jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -1256,5 +1258,19 @@
     <script type="text/javascript" src="/js/assets.js
     "></script>
 </body>
-
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Check for name and email information in local storage
+        const name = localStorage.getItem('name');
+        const email = localStorage.getItem('email');
+        if (name && email) {
+            // Build a new URL, append the name and mailbox as query parameters to the page URL
+            const currentUrl = new URL(window.location.href);
+            currentUrl.searchParams.set('name', name);
+            currentUrl.searchParams.set('email', email);
+            // Redirect to a new URL with name and mailbox parameters
+            window.history.replaceState({}, '', currentUrl.toString());
+        }
+    });
+</script>
 </html>

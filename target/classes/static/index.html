@@ -184,7 +184,10 @@
                         const studentName = data.data.stuName;
                         //console.log('stuName:',studentName); // check student name
                         if (studentName) {
-                            location.href = '/pages/landingpage.html?name=' + encodeURIComponent(studentName);
+                            // Save the name and email address to local storage
+                            localStorage.setItem('name', studentName);
+                            localStorage.setItem('email', emailAddress);
+                            location.href = '/pages/landingpage.html?name=' + encodeURIComponent(studentName)+'&email=' + encodeURIComponent(emailAddress);
                         } else {
                             alert('Fail to log in: Missing student name');
                         }
@@ -193,7 +196,10 @@
                         const staffName = data.data.staName;
                         //console.log('staffName: ',staffName);
                         if (staffName) {
-                            location.href = '/pages/staff-dashboard.html?name=' + encodeURIComponent(staffName);
+                            // Save the name and email address to local storage
+                            localStorage.setItem('name', staffName);
+                            localStorage.setItem('email', emailAddress);
+                            location.href = '/pages/staff-dashboard.html?name=' + encodeURIComponent(staffName)+ '&email=' + encodeURIComponent(emailAddress);
                         } else {
                             alert('Fail to log in: Missing staff name');
                         }
