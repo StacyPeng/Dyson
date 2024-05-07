@@ -23,7 +23,7 @@ public interface StaffMapper extends BaseMapper<Staff> {
     @Insert("insert into staff (staff_email_address, staName, password, gender, birthday)" +
             "values (#{staffEmailAddress},#{staName},#{password},#{gender},#{birthday})")
     //parameter name, not column name
-    public Staff register(Staff staff);
+    public int register(Staff staff);
 
     @Update("update staff set password=#{password} where staff_email_address=#{staffEmailAddress}")
     public boolean modifyPassword(String password,String staffEmailAddress);
