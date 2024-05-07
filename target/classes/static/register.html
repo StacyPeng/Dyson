@@ -359,13 +359,13 @@
         } else if (identity === 'staff') {
             formData = {
                 staffEmailAddress: email,
-                staffName: name,
+                staName: name,
                 password: password,
                 gender: gender,
                 birthday: birthday
             };
+            apiEndpoint = '/staffs/register';
         }
-        apiEndpoint = '/staffs/register';
 
         // send post request to corresponding api endpoint
         fetch(apiEndpoint, {
@@ -377,6 +377,7 @@
         })
             .then(response => response.json())
             .then(data => {
+                console.log("data is: ",data)
                 if (data.code === 200) {
                     alert(identity.charAt(0).toUpperCase() + identity.slice(1) + ' registration successful!');
                     window.location.href = 'index.html';

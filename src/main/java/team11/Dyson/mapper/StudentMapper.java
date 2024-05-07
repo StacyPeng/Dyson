@@ -23,9 +23,9 @@
         @Select("select * from student where student_email_address =#{studentEmailAddress}")
         public Student getByEmail(String emailAddress);
 
-        @Insert("insert into student values (#{studentEmailAddress},#{stuName},#{password},#{gender},#{birthday},#{classId})")
+        @Insert("insert into student values (#{studentEmailAddress},#{stuName},#{password},#{gender},#{birthday})")
         //parameter name, not column name
-        public Student register(Student student);
+        public int register(Student student);
 
         @Update("update student set password=#{password} where student_email_address=#{studentEmailAddress}")
         public boolean modifyPassword(String password,String studentEmailAddress);

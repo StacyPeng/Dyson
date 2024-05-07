@@ -41,7 +41,7 @@ public class StudentController {
     }
 
     @PutMapping("/modifypassword")
-    public Result modifyPasswor(@RequestBody Map<String, String> requestBody) {
+    public Result modifyPassword(@RequestBody Map<String, String> requestBody) {
         String password = requestBody.get("password");
         String student_email_address = requestBody.get("student_email_address");
         boolean flag = studentService.modifyPassword(password,student_email_address);
