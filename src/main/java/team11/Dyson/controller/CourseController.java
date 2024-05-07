@@ -1,5 +1,6 @@
 package team11.Dyson.controller;
 
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +18,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import javax.servlet.http.HttpServletRequest;
+
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -32,9 +35,9 @@ public class CourseController {
     private AuthenticationService authenticationService;
 
     @GetMapping("/student")
-    public ResponseEntity<?> getStudentCourses() {
+    public ResponseEntity<?> getStudentCourses(HttpSession session) {
         // 从身份验证服务中获取当前登录学生的邮箱地址
-        String currentStudentEmail = authenticationService.getCurrentStudentEmail();
+        String currentStudentEmail = authenticationService.getCurrentStudentEmail(session);
 
         // 如果当前学生邮箱为空，可能表示用户未登录或未授权
         if (currentStudentEmail == null) {
@@ -84,6 +87,18 @@ public class CourseController {
         return ResponseEntity.ok(convertToCourseDTO(savedCourse));
     }
 
+    @GetMapping("/studentEmail")
+    public ResponseEntity<?> storeEmailInSession(HttpSession session, @RequestParam String email) {
+        if (email == null || email.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body("Email parameter is missing or empty.");
+        }
+        session.setAttribute("studentEmail", email);
+        return ResponseEntity.ok("Email stored in session successfully.");
+    }
+
+
+
+
     private Course convertToCourseEntity(CourseDTO courseDTO) {
         Course course = new Course();
         course.setTitle(courseDTO.getTitle());
@@ -107,7 +122,7 @@ public class CourseController {
         dto.setTitle(course.getTitle());
         dto.setStartTime(course.getStartTime());
         dto.setEndTime(course.getEndTime());
-        // 设置其他属性...
+
 
         // 如果 Course 中的 teacher 不为 null，转换为 StaffDTO
         if (course.getTeacher() != null) {

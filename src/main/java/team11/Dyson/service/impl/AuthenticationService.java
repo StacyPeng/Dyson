@@ -1,5 +1,6 @@
 package team11.Dyson.service.impl;
 
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import team11.Dyson.domian.Course;
@@ -7,6 +8,7 @@ import team11.Dyson.domian.Student;
 import team11.Dyson.dto.StudentDTO;
 import team11.Dyson.repository.StudentRepository;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
@@ -17,11 +19,11 @@ public class AuthenticationService {
     @Autowired
     private StudentRepository studentRepository; // 假设有一个用于学生操作的 repository
 
-    public StudentDTO getCurrentStudent() {
+    public StudentDTO getCurrentStudent(HttpSession session) {
         // 这里实现获取当前登录的学生信息的逻辑，可能涉及从会话中提取信息等
         // 这是一个示例实现，您需要根据您的身份验证机制进行调整
         // 假设您从会话中获取了学生邮箱
-        String studentEmail = getSessionStudentEmail();
+        String studentEmail = getSessionStudentEmail(session);
 
         // 使用学生邮箱查询学生
         if (studentEmail != null) {
@@ -33,10 +35,10 @@ public class AuthenticationService {
         return null; // 如果找不到与会话相关联的学生，则返回 null
     }
 
-    public String getCurrentStudentEmail() {
+    public String getCurrentStudentEmail(HttpSession session) {
         // 获取当前登录学生的邮箱
-        // 这是一个示例实现，您需要根据您的身份验证机制进行调整
-        return getSessionStudentEmail();
+
+        return getSessionStudentEmail(session);
     }
 
     public List<Course> findCoursesByStudentEmail(String studentEmail) {
@@ -53,11 +55,11 @@ public class AuthenticationService {
     }
 
     // Helper method to retrieve student email from session
-    private String getSessionStudentEmail() {
-        // Implement the logic to retrieve student email from session
-        // This is just a placeholder, you need to implement this according to your application's session management mechanism
-        return "student1@qq.com"; // Placeholder email, replace with actual session retrieval logic
+    private String getSessionStudentEmail(HttpSession session) {
+        // 从 HTTP 会话中获取学生电子邮件
+        return (String) session.getAttribute("studentEmail");
     }
+
 
     // Convert Student entity to DTO
     private StudentDTO convertToStudentDTO(Student student) {
