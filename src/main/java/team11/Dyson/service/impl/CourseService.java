@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import team11.Dyson.domian.Course;
 import team11.Dyson.domian.Student;
+import team11.Dyson.dto.CourseDTO;
 import team11.Dyson.repository.CourseRepository;
 import team11.Dyson.repository.StudentRepository;
 
@@ -68,5 +69,25 @@ public class CourseService {
             // 如果找不到学生，则返回一个空列表或者抛出异常，取决于您的需求
             return Collections.emptyList(); // 返回空列表表示找不到相关课程
         }
+    }
+
+    public Course updateCourse(Course existingCourse, CourseDTO courseDTO) {
+        existingCourse.setTitle(courseDTO.getTitle());
+        existingCourse.setStartTime(courseDTO.getStartTime());
+        existingCourse.setEndTime(courseDTO.getEndTime());
+        // 根据需要更新其他字段
+        return courseRepository.save(existingCourse);
+    }
+
+    public boolean deleteCourse(Integer id) {
+        if (courseRepository.existsById(id)) {
+            courseRepository.deleteById(id);
+            return true;
+        }
+        return false;
+    }
+
+    public Course findById(Integer id) {
+        return courseRepository.findById(id).orElse(null);
     }
 }

@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import team11.Dyson.domian.Course;
 
 @Repository
-public interface CourseRepository extends JpaRepository<Course, Long> {
+public interface CourseRepository extends JpaRepository<Course, Integer> {
 }
 
