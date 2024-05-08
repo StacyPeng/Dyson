@@ -1,5 +1,5 @@
-
 //Auther：Hengqian Mao
+//c3008838
 package team11.Dyson.domian;
 
 import jakarta.persistence.*;
@@ -20,8 +20,8 @@ public class Staff {
     private String gender;
     private Date birthday;
 
-    // 与课程的一对多关系
-    @OneToMany(mappedBy = "teacher") // 'teacher' 必须与 Course 类中的 Staff 属性名匹配
+
+    @OneToMany(mappedBy = "teacher")
     private Set<Course> coursesTaught;
 
 

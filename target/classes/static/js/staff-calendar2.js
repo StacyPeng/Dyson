@@ -202,6 +202,9 @@
 
             document.getElementById('event-id').value = eventObj.id; // 存储 id 到隐藏的输入框
 
+            var modId = eventObj.extendedProps.modId; // 确保你的事件对象中已经包含了modId
+            document.getElementById('event-ModId').value = modId || ''; // 如果modId不存在则设置为空字符串
+
             if (eventObj.url) {
                 window.open(eventObj.url);
 
@@ -252,7 +255,8 @@
                             start: event.startTime,
                             end: event.endTime,
                             extendedProps: {
-                                calendar: "Success"  // 如 "Danger", "Success" 等
+                                calendar: "Success", // 如 "Danger", "Success" 等
+                                modId: event.modId
                             }
                         })));
                     })
@@ -321,6 +325,7 @@
             const endTime = document.getElementById('event-end-time').value; // "HH:MM" format
             const startDate = document.getElementById('event-start-date').value; // "YYYY-MM-DD" format
             const endDate = document.getElementById('event-end-date').value; // "YYYY-MM-DD" format
+            const modId = document.getElementById('event-ModId').value;
 
 
             const fullStartTime = `${startDate}T${startTime}`;
@@ -334,6 +339,7 @@
                 title: title,
                 startTime: fullStartTime,
                 endTime: fullEndTime,
+                modId: modId
 
             };
 

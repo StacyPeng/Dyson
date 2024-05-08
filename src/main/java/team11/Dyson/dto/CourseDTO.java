@@ -10,7 +10,7 @@ public class CourseDTO {
 
     private Integer id;
     private String title;
-    private StaffDTO teacher; // 使用 StaffDTO 替代 Staff 实体
+    private StaffDTO teacher;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
     private String room;

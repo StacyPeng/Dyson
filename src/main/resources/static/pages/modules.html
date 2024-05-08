@@ -1200,7 +1200,7 @@
 
     function fetchClassesForModule(modId, tabPane) {
         $.ajax({
-            url: '/classes/' + modId, // 假设这是API路径
+            url: '/classes/' + modId,
             type: 'GET',
             success: function (response) {
                 var classes = response.data;
@@ -1236,11 +1236,11 @@
                 $('<td>').text(cls.endTime),
                 $('<td>').text(cls.room),
                 $('<td>').append(
-                    $('<button>').addClass('btn btn-success').text('Subscribe').on('click', function() {
-                        subscribeClass(cls.id);
+                    $('<button>').addClass('btn btn-success').text('Subscribe').attr('data-id', cls.classId).on('click', function() {
+                        subscribeClass($(this).attr('data-id'));
                     }),
-                    $('<button>').addClass('btn btn-danger').text('Unsubscribe').on('click', function() {
-                        unsubscribeClass(cls.id);
+                    $('<button>').addClass('btn btn-danger').text('Unsubscribe').attr('data-id', cls.classId).on('click', function() {
+                        unsubscribeClass($(this).attr('data-id'));
                     })
                 )
             );
@@ -1301,5 +1301,81 @@
                 console.error('Network or parsing error:', error);
             });
     }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get the storage name and email address
+        const name = localStorage.getItem('name');
+        const email = localStorage.getItem('email');
+        if (name && email) {
+            // If a name and email address exist, initiate a request for course information
+            fetch(`/api/courses/studentEmail?email=${encodeURIComponent(email)}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Data: ", data);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    });
+    function subscribeClass(classId) {
+        const email = localStorage.getItem('email');
+        console.log('Fetched data:', email);
+        console.log('Attempting to subscribe:', { classId, email });
+        fetch(`/api/courses/subscribe`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ courseId: classId, email: email })
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Subscription Success:', data);
+                alert('You have subscribed successfully!');
+            })
+            .catch(error => {
+                console.error('Subscription Error:', error);
+            });
+    }
+
+    function unsubscribeClass(classId) {
+        const email = localStorage.getItem('email');
+        fetch(`/api/courses/unsubscribe`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ courseId: classId, email: email })
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Unsubscription Success:', data);
+                alert('You have unsubscribed successfully!');
+            })
+            .catch(error => {
+                console.error('Unsubscription Error:', error);
+            });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+        document.body.addEventListener('click', function(event) {
+            const target = event.target;
+            if (target.classList.contains('subscribe')) {
+                const classId = target.getAttribute('data-id');
+
+                subscribeClass(classId);
+            } else if (target.classList.contains('unsubscribe')) {
+                const classId = target.getAttribute('data-id');
+                unsubscribeClass(classId);
+            }
+        });
+    });
+
+
 </script>
 </html>

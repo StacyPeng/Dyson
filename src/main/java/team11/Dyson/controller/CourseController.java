@@ -1,5 +1,7 @@
 package team11.Dyson.controller;
 
+//Auther：Hengqian Mao
+//c3008838
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,6 +11,7 @@ import team11.Dyson.domian.Course;
 import team11.Dyson.domian.Staff;
 import team11.Dyson.dto.CourseDTO;
 import team11.Dyson.dto.StaffDTO;
+import team11.Dyson.dto.SubscriptionRequest;
 import team11.Dyson.service.impl.Authentication2Service;
 import team11.Dyson.service.impl.AuthenticationService;
 import team11.Dyson.service.impl.CourseService;
@@ -29,19 +32,19 @@ public class CourseController {
 
     @GetMapping("/student")
     public ResponseEntity<?> getStudentCourses(HttpSession session) {
-        // 从身份验证服务中获取当前登录学生的邮箱地址
+        // Get the email address of the currently logged in student from the authentication service
         String currentStudentEmail = authenticationService.getCurrentStudentEmail(session);
 
-        // 如果当前学生邮箱为空，可能表示用户未登录或未授权
+        // If the current student mailbox is empty, it may indicate that the user is not logged in or authorized
         if (currentStudentEmail == null) {
-            // 返回适当的错误响应，例如 401 未授权
+            // Return an appropriate error response, such as 401 not authorized
             return ResponseEntity.status(401).body("Unauthorized access.");
         }
 
-        // 根据学生邮箱检索与该学生相关的课程
+        // Retrieve the courses related to the student according to the student's email address
         List<Course> studentCourses = courseService.findCoursesByStudentEmail(currentStudentEmail);
 
-        // 将课程转换为 DTO 并返回
+        // Convert the course to DTO and back
         List<CourseDTO> courseDTOs = studentCourses.stream()
                 .map(this::convertToCourseDTO)
                 .collect(Collectors.toList());
@@ -73,7 +76,7 @@ public class CourseController {
         if (existingCourse == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Course not found.");
         }
-        // 更新课程逻辑
+        // Update the course logic
         Course updatedCourse = courseService.updateCourse(existingCourse, courseDTO);
         return ResponseEntity.ok(convertToCourseDTO(updatedCourse));
     }
@@ -91,27 +94,27 @@ public class CourseController {
 
     @PostMapping
     public ResponseEntity<CourseDTO> addCourse(@RequestBody CourseDTO courseDTO, HttpSession session) {
-        // 从会话中获取当前登录教职员工的邮箱地址
+        // Get the email address of the currently logged faculty member from the session
         String staffEmail = (String) session.getAttribute("staffEmail");
         if (staffEmail == null) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
 
-        // 创建课程实体，并从DTO中设置必要的信息
+        // Create the course entity and set the necessary information from the DTO
         Course course = convertToCourseEntity(courseDTO);
 
-        // 设置教职工信息
+        // Set the staff information
         Staff teacher = new Staff();
-        teacher.setStaffEmailAddress(staffEmail);  // 确保有一个构造器或者setter来设置邮箱地址
+        teacher.setStaffEmailAddress(staffEmail);  // Make sure there is a constructor or setter to set the email address
         course.setTeacher(teacher);
 
-        // 将课程保存到数据库
+        // Save the course to the database
         Course savedCourse = courseService.addCourse(course);
         if (savedCourse == null) {
             return ResponseEntity.status(HttpStatus.CONFLICT).build();
         }
 
-        // 将保存的课程转换回DTO
+        // Convert saved courses back to DTO
         CourseDTO savedCourseDTO = convertToCourseDTO(savedCourse);
         return ResponseEntity.ok(savedCourseDTO);
     }
@@ -135,6 +138,45 @@ public class CourseController {
         return ResponseEntity.ok("Staff email stored in session successfully.");
     }
 
+    @PostMapping("/subscribe")
+    public ResponseEntity<?> subscribeCourse(@RequestBody SubscriptionRequest request, HttpSession session) {
+        String currentStudentEmail = request.getEmail(); // Get the email address from the request body
+
+        if (currentStudentEmail == null || currentStudentEmail.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized access.");
+        }
+
+        Integer courseId = request.getCourseId(); // Get the course ID from the request body
+        if (courseId == null) {
+            return ResponseEntity.badRequest().body("Course ID is required.");
+        }
+
+        boolean success = courseService.addCourseForStudent(courseId, currentStudentEmail);
+        if (success) {
+            return ResponseEntity.ok("Subscribed successfully.");
+        } else {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error subscribing to course.");
+        }
+    }
+
+
+    @DeleteMapping("/unsubscribe/{courseId}")
+    public ResponseEntity<?> unsubscribeCourse(@PathVariable Integer courseId, HttpSession session) {
+        String currentStudentEmail = authenticationService.getCurrentStudentEmail(session);
+        if (currentStudentEmail == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized access.");
+        }
+
+        boolean success = courseService.removeCourseForStudent(courseId, currentStudentEmail);
+        if (success) {
+            return ResponseEntity.ok("Unsubscribed successfully.");
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Course not found or not subscribed.");
+        }
+    }
+
+
+
     private Course convertToCourseEntity(CourseDTO courseDTO) {
         if (courseDTO.getEndTime() == null) {
             System.out.println("Received null endTime for course: " + courseDTO.getTitle());
@@ -144,7 +186,8 @@ public class CourseController {
         course.setTitle(courseDTO.getTitle());
         course.setStartTime(courseDTO.getStartTime());
         course.setEndTime(courseDTO.getEndTime());
-        System.out.println("Converted endTime: " + course.getEndTime());
+        course.setModId(courseDTO.getModId());
+
         return course;
     }
 
@@ -154,13 +197,14 @@ public class CourseController {
         dto.setTitle(course.getTitle());
         dto.setStartTime(course.getStartTime());
         dto.setEndTime(course.getEndTime());
+        dto.setModId(course.getModId());
 
 
-        // 如果 Course 中的 teacher 不为 null，转换为 StaffDTO
+        // If the teacher in the Course is not null, convert to StaffDTO
         if (course.getTeacher() != null) {
             StaffDTO teacherDTO = new StaffDTO();
             teacherDTO.setEmail(course.getTeacher().getStaffEmailAddress());
-            // 设置 Staff 的其他属性
+            // Set other properties of Staff
             dto.setTeacher(teacherDTO);
         }
 

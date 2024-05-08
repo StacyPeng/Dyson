@@ -1,4 +1,5 @@
 //Auther：Hengqian Mao
+//c3008838
 package team11.Dyson.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,14 +19,14 @@ import java.util.Optional;
 public class CourseService {
 
     private final CourseRepository courseRepository;
-    private final StudentRepository studentRepository; // 注入 StudentRepository
+    private final StudentRepository studentRepository;
     @Autowired
     private ClassesMapper classesMapper;
 
     @Autowired
     public CourseService(CourseRepository courseRepository, StudentRepository studentRepository) {
         this.courseRepository = courseRepository;
-        this.studentRepository = studentRepository; // 初始化 StudentRepository
+        this.studentRepository = studentRepository;
     }
 
     public boolean checkForConflicts(Course newCourse) {
@@ -59,25 +60,22 @@ public class CourseService {
     }
 
     public List<Course> findCoursesByStudentEmail(String studentEmail) {
-        // 在此方法中实现根据学生邮箱检索与该学生相关的课程的逻辑
-        // 以下是一个示例，您需要根据实际需求进行调整
 
-        // 使用 StudentRepository 根据学生邮箱查找学生
         Optional<Student> studentOptional = studentRepository.findByStudentEmailAddress(studentEmail);
-        Student student = studentOptional.orElse(null); // 获取 Student 对象或者返回 null
+        Student student = studentOptional.orElse(null);
         if (student != null) {
-            // 返回学生的课程列表
+
             return student.getCourses();
         } else {
-            // 如果找不到学生，则返回一个空列表或者抛出异常，取决于您的需求
-            return Collections.emptyList(); // 返回空列表表示找不到相关课程
+
+            return Collections.emptyList();
         }
     }
 
     // CourseService.java
 
     public List<Course> findCoursesByTeacherEmail(String email) {
-        // 从数据库中获取与教师邮箱关联的课程
+        // Get the course associated with the teacher email from the database
         return courseRepository.findByTeacher_StaffEmailAddress(email);
     }
 
@@ -86,7 +84,7 @@ public class CourseService {
         existingCourse.setTitle(courseDTO.getTitle());
         existingCourse.setStartTime(courseDTO.getStartTime());
         existingCourse.setEndTime(courseDTO.getEndTime());
-        // 根据需要更新其他字段
+
         return courseRepository.save(existingCourse);
     }
 
@@ -94,6 +92,34 @@ public class CourseService {
         if (courseRepository.existsById(id)) {
             courseRepository.deleteById(id);
             return true;
+        }
+        return false;
+    }
+
+    public boolean addCourseForStudent(Integer courseId, String email) {
+        // First make sure the students and course exist
+        if (studentRepository.existsByStudentEmailAddress(email) && courseRepository.existsById(courseId)) {
+            Student student = studentRepository.findByStudentEmailAddress(email).orElse(null);
+            Course course = courseRepository.findById(courseId).orElse(null);
+            if (course != null && student != null) {
+                course.getStudents().add(student); // Add students to the course association
+                courseRepository.save(course); // Save the changes
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean removeCourseForStudent(Integer courseId, String email) {
+        // Confirm that students and courses exist
+        if (studentRepository.existsByStudentEmailAddress(email) && courseRepository.existsById(courseId)) {
+            Student student = studentRepository.findByStudentEmailAddress(email).orElse(null);
+            Course course = courseRepository.findById(courseId).orElse(null);
+            if (course != null && student != null && course.getStudents().contains(student)) {
+                course.getStudents().remove(student); // Remove students from the course
+                courseRepository.save(course); // Save the changes
+                return true;
+            }
         }
         return false;
     }

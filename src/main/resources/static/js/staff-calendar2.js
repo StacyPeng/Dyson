@@ -1,3 +1,5 @@
+    //Auther：Hengqian Mao
+    //c3008838
     /*========Calender Js=========*/
     /*==========================*/
 
@@ -34,15 +36,15 @@
         /*=====================*/
         function splitDateTime(datetimeStr) {
             const date = new Date(datetimeStr);
-            const datePart = date.toISOString().split('T')[0]; // 获取日期部分
-            const timePart = date.toTimeString().split(' ')[0].slice(0, 5); // 获取时间部分
+            const datePart = date.toISOString().split('T')[0];
+            const timePart = date.toTimeString().split(' ')[0].slice(0, 5);
             return { datePart, timePart };
         }
 
         var calendarEventClick = function (info) {
             var eventObj = info.event;
             var startDate = new Date(eventObj.start);
-            var endDate = new Date(eventObj.end || eventObj.start); // 有的事件可能没有结束时间
+            var endDate = new Date(eventObj.end || eventObj.start);
 
             var formatDate = (date) => date.toISOString().split('T')[0];
             var formatTime = (date) => date.toTimeString().substring(0, 5);
@@ -53,13 +55,13 @@
             document.getElementById('event-end-date').value = formatDate(endDate);
             document.getElementById('event-end-time').value = formatTime(endDate);
 
-            // 更新表单的颜色选择器
+
             var eventColor = eventObj.extendedProps.calendar;
             if (eventColor) {
                 document.querySelector(`input[name="event-level"][value="${eventColor}"]`).checked = true;
             }
 
-            myModal.show(); // 显示模态窗口
+            myModal.show();
         };
 
 
@@ -76,7 +78,7 @@
                             start: course.startTime,
                             end: course.endTime,
                             extendedProps: {
-                                calendar: "Success"  // 如 "Danger", "Success" 等
+                                calendar: "Success"
                             }
                         });
                     });
@@ -200,7 +202,10 @@
         var calendarEventClick = function (info) {
             var eventObj = info.event;
 
-            document.getElementById('event-id').value = eventObj.id; // 存储 id 到隐藏的输入框
+            document.getElementById('event-id').value = eventObj.id; // Store the id in the hidden input box
+
+            var modId = eventObj.extendedProps.modId; // 确保你的事件对象中已经包含了modId
+            document.getElementById('event-ModId').value = modId || ''; // Make sure your event object contains modId
 
             if (eventObj.url) {
                 window.open(eventObj.url);
@@ -245,14 +250,15 @@
                         return response.json();
                     })
                     .then(events => {
-                        console.log("Loaded courses:", events);// 在控制台输出获取的课程数据
+                        console.log("Loaded courses:", events);// Output the obtained course data in the console
                         successCallback(events.map(event => ({
                             id: event.id,
                             title: event.title,
                             start: event.startTime,
                             end: event.endTime,
                             extendedProps: {
-                                calendar: "Success"  // 如 "Danger", "Success" 等
+                                calendar: "Success",
+                                modId: event.modId
                             }
                         })));
                     })
@@ -321,6 +327,7 @@
             const endTime = document.getElementById('event-end-time').value; // "HH:MM" format
             const startDate = document.getElementById('event-start-date').value; // "YYYY-MM-DD" format
             const endDate = document.getElementById('event-end-date').value; // "YYYY-MM-DD" format
+            const modId = document.getElementById('event-ModId').value;
 
 
             const fullStartTime = `${startDate}T${startTime}`;
@@ -334,11 +341,12 @@
                 title: title,
                 startTime: fullStartTime,
                 endTime: fullEndTime,
+                modId: modId
 
             };
 
             fetch('/api/courses', {
-                method: 'POST', // 或者 'PUT' 如果是更新现有事件
+                method: 'POST', // or 'PUT' if updating an existing event
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -356,12 +364,12 @@
         }
 
         document.getElementById('addEventButton').addEventListener('click', function(event) {
-            event.preventDefault(); // 阻止按钮默认的表单提交行为（如果按钮在表单中）
-            addEvent(); // 调用你的函数处理事件
+            event.preventDefault(); // Block the button's default form submission behavior (if the button is in the form)
+            addEvent(); // Call your function to handle the event
         });
 
         function updateEvent() {
-            const eventId = document.getElementById('event-id').value; // 从隐藏的输入框获取 id
+            const eventId = document.getElementById('event-id').value; // Get the id from the hidden input box
 
             const title = document.getElementById('event-title').value;
             const startTime = document.getElementById('event-start-time').value;
@@ -399,7 +407,7 @@
 
 
         document.getElementById('updateEventButton').addEventListener('click', function() {
-            const eventId = document.getElementById('event-id').value; // 确保你有途径获取正在编辑的事件ID
+            const eventId = document.getElementById('event-id').value; // Make sure you have a way to get the ID of the event you are editing
             updateEvent(eventId);
         });
 
@@ -417,7 +425,7 @@
                 .then(data => {
                     console.log('Delete Success:', data);
                     alert('Event deleted successfully!');
-                    // 可能需要更新页面或移除某些元素
+                    // You may need to update the page or remove some elements
                 })
                 .catch((error) => {
                     console.error('Delete Error:', error);
@@ -426,8 +434,8 @@
         }
 
         document.getElementById('deleteButton').addEventListener('click', function() {
-            const eventId = document.getElementById('event-id').value; // 确保你有途径获取正在编辑的事件ID
-            if (eventId && confirm("Are you sure you want to delete this event?")) { // 确认删除操作
+            const eventId = document.getElementById('event-id').value; // Make sure you have a way to get the ID of the event you are editing
+            if (eventId && confirm("Are you sure you want to delete this event?")) { // Confirm the deletion operation
                 deleteEvent(eventId);
             }
         });

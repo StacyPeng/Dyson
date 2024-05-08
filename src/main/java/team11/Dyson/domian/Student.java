@@ -5,9 +5,8 @@ import jakarta.persistence.*;
 import java.util.Date;
 import java.util.List;
 
-/*
-* author: Hengqian Mao
-* */
+//Auther：Hengqian Mao
+//c3008838
 @Entity
 @Table(name = "student")
 public class Student {
@@ -88,7 +87,7 @@ public class Student {
 
 
 
-    // 获取学生的课程列表
+    // Get the student's course list
     public List<Course> getCourses() {
         return courses;
     }
@@ -113,8 +112,7 @@ public class Student {
         this.coursesEnrolled = coursesEnrolled;
     }*/
 
-    // 构造函数、getter和setter
-    // ...
+
 
 
 }

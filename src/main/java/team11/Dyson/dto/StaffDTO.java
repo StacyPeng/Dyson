@@ -9,7 +9,7 @@ public class StaffDTO {
     private String name;
     private String gender;
     private Date birthday;
-    // 可以选择添加课程 ID 列表等
+
     private Set<Integer> coursesTaughtIds;
 
     // Constructors, getters and setters
