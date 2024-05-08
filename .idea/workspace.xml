@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes" />
+    <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/modules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/modules.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -32,6 +35,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="jdkForImporter" value="openjdk-21" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -46,48 +50,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JUnit.DysonApplicationTests.testLogin.executor": "Run",
-    "JUnit.DysonApplicationTests.testModifyPassword.executor": "Run",
-    "JUnit.DysonApplicationTests.testModifyPassword2.executor": "Run",
-    "JUnit.DysonApplicationTests.testRegister.executor": "Run",
-    "JUnit.DysonApplicationTests.testRegisterStudent.executor": "Run",
-    "JUnit.DysonApplicationTests.testStaffLogin.executor": "Run",
-    "Maven.Chengyu [clean].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DysonApplication (1).executor": "Run",
-    "Spring Boot.DysonApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/new/apache-tomcat-9.0.88/lib/servlet-api.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "库",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JUnit.DysonApplicationTests.testLogin.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testModifyPassword.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testModifyPassword2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testRegister.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testRegisterStudent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DysonApplicationTests.testStaffLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Chengyu [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DysonApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DysonApplication.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/new/apache-tomcat-9.0.88/lib/servlet-api.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/pages" />
@@ -96,7 +101,7 @@
       <recent name="team11.Dyson.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DysonApplication">
+  <component name="RunManager" selected="Spring Boot.DysonApplication (1)">
     <configuration name="DysonApplicationTests.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dyson" />
       <extension name="coverage">
@@ -191,8 +196,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DysonApplicationTests.testRegister" />
         <item itemvalue="Spring Boot.DysonApplication (1)" />
+        <item itemvalue="JUnit.DysonApplicationTests.testRegister" />
         <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword2" />
         <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword" />
         <item itemvalue="JUnit.DysonApplicationTests.testLogin" />
@@ -275,6 +280,9 @@
       <workItem from="1715056183863" duration="1833000" />
       <workItem from="1715089568182" duration="106000" />
       <workItem from="1715089691407" duration="3015000" />
+      <workItem from="1715174690975" duration="8787000" />
+      <workItem from="1715183547422" duration="88000" />
+      <workItem from="1715183675808" duration="115000" />
     </task>
     <servers />
   </component>

@@ -18,8 +18,15 @@ public class Classes {
     private String className;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date classTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date endTime;
     private String room;
     private String courseworkName;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date courseworkDeadline;
+    private String courseDescription;
+    private String achievement;
+    private String staff_email_address;
+    private Integer mod_Id;
+
 }

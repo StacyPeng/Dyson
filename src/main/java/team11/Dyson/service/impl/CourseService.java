@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import team11.Dyson.domian.Course;
 import team11.Dyson.domian.Student;
 import team11.Dyson.dto.CourseDTO;
+import team11.Dyson.mapper.ClassesMapper;
 import team11.Dyson.repository.CourseRepository;
 import team11.Dyson.repository.StudentRepository;
 
@@ -18,6 +19,8 @@ public class CourseService {
 
     private final CourseRepository courseRepository;
     private final StudentRepository studentRepository; // 注入 StudentRepository
+    @Autowired
+    private ClassesMapper classesMapper;
 
     @Autowired
     public CourseService(CourseRepository courseRepository, StudentRepository studentRepository) {
