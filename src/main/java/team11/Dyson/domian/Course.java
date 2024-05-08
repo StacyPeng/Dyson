@@ -3,6 +3,7 @@
 package team11.Dyson.domian;
 
 import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 import java.util.Set;
 
@@ -41,7 +42,7 @@ public class Course {
     private String courseworkDescription;
 
     @Column(name = "mod_Id")
-    private Integer mod_Id;
+    private Integer modId;
 
     @ManyToMany // 学生和课程之间的多对多关系
     @JoinTable(
@@ -118,11 +119,11 @@ public class Course {
     }
 
     public Integer getModId() {
-        return mod_Id;
+        return modId;
     }
 
     public void setModId(Integer modId) {
-        this.mod_Id = modId;
+        this.modId = modId;
     }
 
     public String getCourseworkDescription() {

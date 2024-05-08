@@ -5,25 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/ClassesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/ClassesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/ClassesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/pages/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dfe98e28-79fd-406a-b2e9-dd09cea01a05.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5/storage_v2/_src_/schema/management_system.q7UN_A.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5/storage_v2/_src_/schema/management_system.q7UN_A.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Classes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/dto/CourseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/dto/CourseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/staff-calendar2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/staff-calendar2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/staff-calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/staff-calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-calendar2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/staff-calendar2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/staff-calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/staff-calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/book-meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/book-meeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/modules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/book-meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/book-meeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/modules.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Classes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Classes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/CourseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/CourseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/StaffDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/StaffDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/CourseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/CourseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/StaffRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/StaffRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/Authentication2Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/Authentication2Service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/CourseService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,9 +39,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -53,6 +55,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="jdkForImporter" value="openjdk-21" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -89,6 +92,7 @@
     "Spring Boot.DysonApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "ignore.preview.features.used": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "F:/new/apache-tomcat-9.0.88/lib/servlet-api.jar",
@@ -117,7 +121,7 @@
       <recent name="team11.Dyson.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DysonApplication">
+  <component name="RunManager" selected="Spring Boot.DysonApplication (1)">
     <configuration name="DysonApplicationTests.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dyson" />
       <extension name="coverage">
@@ -212,8 +216,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DysonApplicationTests.testRegister" />
         <item itemvalue="Spring Boot.DysonApplication (1)" />
+        <item itemvalue="JUnit.DysonApplicationTests.testRegister" />
         <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword2" />
         <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword" />
         <item itemvalue="JUnit.DysonApplicationTests.testLogin" />
@@ -296,6 +300,7 @@
       <workItem from="1715056183863" duration="1833000" />
       <workItem from="1715089568182" duration="106000" />
       <workItem from="1715089691407" duration="3015000" />
+      <workItem from="1715174690975" duration="8787000" />
     </task>
     <servers />
   </component>

@@ -117,7 +117,6 @@ public class CourseController {
     }
 
 
-
     @GetMapping("/studentEmail")
     public ResponseEntity<?> storeEmailInSession(HttpSession session, @RequestParam String email) {
         if (email == null || email.trim().isEmpty()) {
@@ -136,9 +135,6 @@ public class CourseController {
         return ResponseEntity.ok("Staff email stored in session successfully.");
     }
 
-
-
-
     private Course convertToCourseEntity(CourseDTO courseDTO) {
         if (courseDTO.getEndTime() == null) {
             System.out.println("Received null endTime for course: " + courseDTO.getTitle());
@@ -151,10 +147,6 @@ public class CourseController {
         System.out.println("Converted endTime: " + course.getEndTime());
         return course;
     }
-
-
-
-
 
     private CourseDTO convertToCourseDTO(Course course) {
         CourseDTO dto = new CourseDTO();

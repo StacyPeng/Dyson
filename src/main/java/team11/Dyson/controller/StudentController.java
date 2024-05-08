@@ -66,7 +66,7 @@ public class StudentController {
     public Result getAll() {
         List<Student> studentList = studentService.getAll();
         Integer code = studentList !=null?Code.GET_OK:Code.GET_ERR;
-        String massage = studentList != null?"":"fail to search, please input again";
+        String massage = studentList != null?"successful to search":"fail to search, please input again";
         return new Result(code,studentList,massage);
     }
 }
