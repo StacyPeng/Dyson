@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dfe98e28-79fd-406a-b2e9-dd09cea01a05.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dfe98e28-79fd-406a-b2e9-dd09cea01a05.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/modules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/test.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/pages/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/modules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,6 +282,7 @@
       <workItem from="1715089691407" duration="3015000" />
       <workItem from="1715174690975" duration="8787000" />
       <workItem from="1715183547422" duration="88000" />
+      <workItem from="1715183675808" duration="115000" />
     </task>
     <servers />
   </component>
