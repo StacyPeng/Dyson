@@ -13,13 +13,6 @@ import team11.Dyson.service.impl.Authentication2Service;
 import team11.Dyson.service.impl.AuthenticationService;
 import team11.Dyson.service.impl.CourseService;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -95,15 +88,35 @@ public class CourseController {
         }
     }
 
+
     @PostMapping
-    public ResponseEntity<CourseDTO> addCourse(@RequestBody CourseDTO courseDTO) {
+    public ResponseEntity<CourseDTO> addCourse(@RequestBody CourseDTO courseDTO, HttpSession session) {
+        // 从会话中获取当前登录教职员工的邮箱地址
+        String staffEmail = (String) session.getAttribute("staffEmail");
+        if (staffEmail == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        }
+
+        // 创建课程实体，并从DTO中设置必要的信息
         Course course = convertToCourseEntity(courseDTO);
+
+        // 设置教职工信息
+        Staff teacher = new Staff();
+        teacher.setStaffEmailAddress(staffEmail);  // 确保有一个构造器或者setter来设置邮箱地址
+        course.setTeacher(teacher);
+
+        // 将课程保存到数据库
         Course savedCourse = courseService.addCourse(course);
         if (savedCourse == null) {
-            return ResponseEntity.status(HttpStatus.CONFLICT).build(); // 处理冲突，例如时间冲突
+            return ResponseEntity.status(HttpStatus.CONFLICT).build();
         }
-        return ResponseEntity.ok(convertToCourseDTO(savedCourse));
+
+        // 将保存的课程转换回DTO
+        CourseDTO savedCourseDTO = convertToCourseDTO(savedCourse);
+        return ResponseEntity.ok(savedCourseDTO);
     }
+
+
 
     @GetMapping("/studentEmail")
     public ResponseEntity<?> storeEmailInSession(HttpSession session, @RequestParam String email) {
@@ -127,19 +140,19 @@ public class CourseController {
 
 
     private Course convertToCourseEntity(CourseDTO courseDTO) {
+        if (courseDTO.getEndTime() == null) {
+            System.out.println("Received null endTime for course: " + courseDTO.getTitle());
+        }
+
         Course course = new Course();
         course.setTitle(courseDTO.getTitle());
         course.setStartTime(courseDTO.getStartTime());
         course.setEndTime(courseDTO.getEndTime());
-        // 根据需要设置其他字段，比如教师信息等
-        if (courseDTO.getTeacher() != null) {
-            Staff teacher = new Staff();
-            teacher.setStaffEmailAddress(courseDTO.getTeacher().getEmail());
-            // 可能还需要设置教师的其他信息
-            course.setTeacher(teacher);
-        }
+        System.out.println("Converted endTime: " + course.getEndTime());
         return course;
     }
+
+
 
 
 

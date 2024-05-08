@@ -542,16 +542,17 @@
                   </div>
                 </div>
                 <div class="modal-footer">
+                    <input type="hidden" id="event-id">
                   <button type="button" class="btn bg-danger-subtle text-danger" data-bs-dismiss="modal">
                     Close
                   </button>
-                  <button type="button" class="btn btn-success btn-update-event" data-fc-event-public-id="">
+                  <button type="button" class="btn btn-success btn-update-event" id="updateEventButton" data-fc-event-public-id="">
                     Update changes
                   </button>
-                  <button type="button" class="btn btn-success btn-update-event" data-fc-event-public-id="">
+                  <button type="button" class="btn btn-success btn-update-event" id="deleteButton" data-fc-event-public-id="actual-event-id">
                     Delete
                   </button>
-                  <button type="button" class="btn btn-primary btn-add-event">
+                  <button type="button" class="btn btn-primary btn-add-event" id="addEventButton">
                     Add Event
                   </button>
                 </div>

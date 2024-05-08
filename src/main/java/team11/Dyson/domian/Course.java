@@ -11,6 +11,7 @@ import java.util.Set;
 public class Course {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "class_id") // 确保字段名与数据库列名一致
     private Integer id;
 

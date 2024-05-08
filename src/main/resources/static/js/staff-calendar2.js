@@ -200,6 +200,8 @@
         var calendarEventClick = function (info) {
             var eventObj = info.event;
 
+            document.getElementById('event-id').value = eventObj.id; // 存储 id 到隐藏的输入框
+
             if (eventObj.url) {
                 window.open(eventObj.url);
 
@@ -313,72 +315,124 @@
         /*=====================*/
         // Add Calender Event
         /*=====================*/
-        getModalAddBtnEl.addEventListener("click", function () {
-            var event = {
-                title: getModalTitleEl.value,
-                startTime: getModalStartDateEl.value + "T00:00:00",  // 假设所有事件从午夜开始
-                endTime: getModalEndDateEl.value + "T23:59:59",  // 假设事件持续到午夜前一刻
-                // 添加其他必要的字段，比如 teacher, room 等
+        function addEvent() {
+            const title = document.getElementById('event-title').value;
+            const startTime = document.getElementById('event-start-time').value; // "HH:MM" format
+            const endTime = document.getElementById('event-end-time').value; // "HH:MM" format
+            const startDate = document.getElementById('event-start-date').value; // "YYYY-MM-DD" format
+            const endDate = document.getElementById('event-end-date').value; // "YYYY-MM-DD" format
+
+
+            const fullStartTime = `${startDate}T${startTime}`;
+            const fullEndTime = `${endDate}T${endTime}`;
+
+            console.log('Fetched data:', fullStartTime);
+            console.log('Fetched data:', fullEndTime);
+
+
+            const eventData = {
+                title: title,
+                startTime: fullStartTime,
+                endTime: fullEndTime,
+
             };
 
             fetch('/api/courses', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(event)
-            }).then(response => response.json())
+                method: 'POST', // 或者 'PUT' 如果是更新现有事件
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(eventData)
+            })
+                .then(response => response.json())
                 .then(data => {
-                    calendar.addEvent({
-                        id: data.id,  // 确保后端返回新创建的事件ID
-                        title: data.title,
-                        start: data.startTime,
-                        end: data.endTime,
-                        // 其他属性
-                    });
-                    myModal.hide();  // 隐藏模态框
-                }).catch(error => console.error('Error:', error));
+
+                    console.log('Success:', data);
+
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        }
+
+        document.getElementById('addEventButton').addEventListener('click', function(event) {
+            event.preventDefault(); // 阻止按钮默认的表单提交行为（如果按钮在表单中）
+            addEvent(); // 调用你的函数处理事件
         });
 
-        getModalUpdateBtnEl.addEventListener("click", function () {
-            var eventId = this.getAttribute('data-fc-event-public-id'); // 获取事件ID
-            var event = {
-                title: getModalTitleEl.value,
-                startTime: getModalStartDateEl.value + "T00:00:00",
-                endTime: getModalEndDateEl.value + "T23:59:59",
+        function updateEvent() {
+            const eventId = document.getElementById('event-id').value; // 从隐藏的输入框获取 id
 
+            const title = document.getElementById('event-title').value;
+            const startTime = document.getElementById('event-start-time').value;
+            const endTime = document.getElementById('event-end-time').value;
+            const startDate = document.getElementById('event-start-date').value;
+            const endDate = document.getElementById('event-end-date').value;
+
+            const fullStartTime = `${startDate}T${startTime}`;
+            const fullEndTime = `${endDate}T${endTime}`;
+
+            const eventData = {
+                title: title,
+                startTime: fullStartTime,
+                endTime: fullEndTime,
             };
 
             fetch(`/api/courses/${eventId}`, {
                 method: 'PUT',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(event)
-            }).then(response => {
-                if (response.ok) {
-                    // 更新日历视图上的事件信息
-                    var calendarEvent = calendar.getEventById(eventId);
-                    calendarEvent.setProp('title', event.title);
-                    calendarEvent.setStart(event.startTime);
-                    calendarEvent.setEnd(event.endTime);
-                    // 更新其他属性
-                    myModal.hide();  // 隐藏模态框
-                }
-            }).catch(error => console.error('Error:', error));
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(eventData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Update Success:', data);
+                    alert('Event updated successfully!');
+                })
+                .catch((error) => {
+                    console.error('Update Error:', error);
+                    alert('Failed to update event: ' + error.message);
+                });
+        }
+
+
+
+        document.getElementById('updateEventButton').addEventListener('click', function() {
+            const eventId = document.getElementById('event-id').value; // 确保你有途径获取正在编辑的事件ID
+            updateEvent(eventId);
         });
 
-        // // 假设您有一个删除按钮和监听器
-        // getModalDeleteBtnEl.addEventListener("click", function () {
-        //     var eventId = getModalUpdateBtnEl.getAttribute('data-fc-event-public-id'); // 获取事件ID
-        //
-        //     fetch(`/api/courses/${eventId}`, {
-        //         method: 'DELETE'
-        //     }).then(response => {
-        //         if (response.ok) {
-        //             // 从日历视图移除事件
-        //             var calendarEvent = calendar.getEventById(eventId);
-        //             calendarEvent.remove();
-        //             myModal.hide();  // 隐藏模态框
-        //         }
-        //     }).catch(error => console.error('Error:', error));
-        // });
+
+        function deleteEvent(eventId) {
+            fetch(`/api/courses/${eventId}`, {
+                method: 'DELETE'
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to delete the event.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Delete Success:', data);
+                    alert('Event deleted successfully!');
+                    // 可能需要更新页面或移除某些元素
+                })
+                .catch((error) => {
+                    console.error('Delete Error:', error);
+                    alert('Event deleted successfully!');
+                });
+        }
+
+        document.getElementById('deleteButton').addEventListener('click', function() {
+            const eventId = document.getElementById('event-id').value; // 确保你有途径获取正在编辑的事件ID
+            if (eventId && confirm("Are you sure you want to delete this event?")) { // 确认删除操作
+                deleteEvent(eventId);
+            }
+        });
+
+
 
 
         /*=====================*/
