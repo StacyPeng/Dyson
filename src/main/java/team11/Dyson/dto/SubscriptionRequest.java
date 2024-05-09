@@ -1,5 +1,6 @@
 package team11.Dyson.dto;
-
+//Auther：Hengqian Mao
+//c3008838
 public class SubscriptionRequest {
     private Integer courseId;
     private String email;

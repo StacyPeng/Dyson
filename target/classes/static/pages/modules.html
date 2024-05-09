@@ -1200,7 +1200,7 @@
 
     function fetchClassesForModule(modId, tabPane) {
         $.ajax({
-            url: '/classes/' + modId, // 假设这是API路径
+            url: '/classes/' + modId,
             type: 'GET',
             success: function (response) {
                 var classes = response.data;
@@ -1303,11 +1303,11 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-        // 获取存储的名字和邮箱
+        // Get the storage name and email address
         const name = localStorage.getItem('name');
         const email = localStorage.getItem('email');
         if (name && email) {
-            // 如果存在名字和邮箱，发起请求获取课程信息
+            // If a name and email address exist, initiate a request for course information
             fetch(`/api/courses/studentEmail?email=${encodeURIComponent(email)}`, {
                 method: 'GET',
                 headers: {
@@ -1362,7 +1362,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-        // 使用事件委托来处理动态元素的点击事件
+
         document.body.addEventListener('click', function(event) {
             const target = event.target;
             if (target.classList.contains('subscribe')) {
