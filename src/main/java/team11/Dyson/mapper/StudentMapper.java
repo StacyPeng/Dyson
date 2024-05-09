@@ -2,11 +2,11 @@
 
     import com.baomidou.mybatisplus.core.mapper.BaseMapper;
     import org.apache.ibatis.annotations.*;
+    import org.apache.ibatis.annotations.Result;
     import org.springframework.stereotype.Repository;
-    import team11.Dyson.domian.Student;
+    import team11.Dyson.domian.*;
 
     import java.util.List;
-    import java.util.Optional;
 
 
     /**
@@ -36,6 +36,20 @@
         @Results(id = "studentResultMap", value = {
                 @Result(property = "student_email_address", column = "student_email_address"),
         })
-        @Select("select * from student")
+        @Select("select student_email_address,* from student")
         public List<Student> getAll();
+
+        @Select("SELECT * FROM classes classes LEFT JOIN stu_class stuclass ON " +
+                "stuclass.class_id = classes.class_id WHERE stuclass.student_email_address = #{student_email_address}")
+        public List<Classes> getClassesInfo(String emailAddress);
+
+        @Select("SELECT * FROM modules where mod_Id= #{modId}")
+        public Modules getModulesInfo(String modId);
+
+        @Select("SELECT * FROM exames where modId= #{modId}")
+        public Exam getExamInfo(String modId);
+
+        @Select("SELECT a.*,b.modName FROM registeredmodules a left join modules b on b.mod_Id = a.modId  where a.student_email_address= #{student_email_address}")
+        public List<Registeredmodules> getRegisteredmodulesInfo(String emailAddress);
+
     }

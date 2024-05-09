@@ -2,11 +2,12 @@ package team11.Dyson.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import team11.Dyson.domian.Result;
-import team11.Dyson.domian.Student;
-import team11.Dyson.domian.StudentLogin;
+import org.thymeleaf.util.StringUtils;
+import team11.Dyson.domian.*;
 import team11.Dyson.service.impl.StudentServiceImpl;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -69,4 +70,39 @@ public class StudentController {
         String massage = studentList != null?"successful to search":"fail to search, please input again";
         return new Result(code,studentList,massage);
     }
+
+    //llh 查询课程考试成绩+学术历史
+    @GetMapping("/getStudentInfo/{student_email_address}")
+    public Result getStudentInfo(@PathVariable String student_email_address) {
+        //获取课程作业
+        List<Classes> classesInfo = studentService.getClassesInfo(student_email_address);
+
+        List<Modules> modules = new ArrayList<>();
+        for (Classes item : classesInfo) {
+//            //科目信息
+//            Modules modulesInfo = studentService.getModulesInfo(item.getModId());
+//            modules.add(modulesInfo);
+
+            //考试信息
+            Exam examInfo = studentService.getExamInfo(item.getModId().toString());
+            if (examInfo != null && examInfo.getExamId() != null && !StringUtils.isEmpty(examInfo.getExamId() + "")) {
+                String achievement = examInfo.getAchievement();
+                Double add = Double.parseDouble(achievement) + Double.parseDouble(item.getAchievement());
+                //科目练习成绩+考试成绩
+                item.setAchievement(add + "");
+            }
+        }
+        HashMap<String, Object> map = new HashMap<>();
+        //学术历史
+        List<Registeredmodules> registeredmodules = studentService.getRegisteredmodulesInfo(student_email_address);
+        map.put("classesInfo", classesInfo);
+        map.put("registeredmodules", registeredmodules);
+
+//        List<Student> studentList = studentService.getAll();
+        Integer code = map !=null?Code.GET_OK:Code.GET_ERR;
+        String massage = map != null?"":"fail to search, please input again";
+        return new Result(code,map,massage);
+    }
+
+
 }

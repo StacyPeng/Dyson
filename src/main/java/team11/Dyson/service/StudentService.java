@@ -2,7 +2,7 @@ package team11.Dyson.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import team11.Dyson.domian.Student;
+import team11.Dyson.domian.*;
 
 import java.util.List;
 
@@ -26,4 +26,11 @@ public interface StudentService {
     public Student getByEmail(String studentEmailAddress);
 
     public List<Student> getAll();
+
+    public List<Classes> getClassesInfo(String student_email_address);
+    public Modules getModulesInfo(String modId);
+    public Exam getExamInfo(String modId);
+
+    public List<Registeredmodules>  getRegisteredmodulesInfo(String student_email_address);
+
 }

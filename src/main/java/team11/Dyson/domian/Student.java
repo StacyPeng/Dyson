@@ -49,8 +49,8 @@ public class Student {
         return studentEmailAddress;
     }
 
-    public void setStudentEmailAddress(String emailAddress) {
-        this.studentEmailAddress = emailAddress;
+    public void setStudentEmailAddress(String studentEmailAddress) {
+        this.studentEmailAddress = studentEmailAddress;
     }
 
     public String getStuName() {

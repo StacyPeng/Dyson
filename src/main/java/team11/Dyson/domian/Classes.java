@@ -27,6 +27,8 @@ public class Classes {
     private String courseDescription;
     private String achievement;
     private String staff_email_address;
-    private Integer mod_Id;
+    private Integer modId;
+
+
 
 }
