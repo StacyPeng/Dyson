@@ -4,8 +4,8 @@ import ch.qos.logback.classic.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import team11.Dyson.domian.*;
 import team11.Dyson.mapper.StudentMapper;
-import team11.Dyson.domian.Student;
 import team11.Dyson.service.StudentService;
 
 import java.util.List;
@@ -70,5 +70,25 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public List<Student> getAll() {
         return studentMapper.getAll();
+    }
+
+    @Override
+    public List<Classes> getClassesInfo(String student_email_address) {
+        return studentMapper.getClassesInfo(student_email_address);
+    }
+
+    @Override
+    public Modules getModulesInfo(String modId) {
+        return studentMapper.getModulesInfo(modId);
+    }
+
+    @Override
+    public Exam getExamInfo(String modId) {
+        return studentMapper.getExamInfo(modId);
+    }
+
+    @Override
+    public List<Registeredmodules> getRegisteredmodulesInfo(String student_email_address) {
+        return studentMapper.getRegisteredmodulesInfo(student_email_address);
     }
 }

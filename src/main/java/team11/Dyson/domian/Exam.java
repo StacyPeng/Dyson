@@ -13,17 +13,29 @@ public class Exam {
     private Timestamp examTime;
     private String place;
     private Integer modId;
+    //考试成绩 llh
+    private String achievement;
+
 
 
     public Exam() {
     }
 
-    public Exam(Integer examId, String examName, Timestamp examTime, String place, Integer modId) {
+    public Exam(Integer examId, String examName, Timestamp examTime, String place, Integer modId,String achievement) {
         this.examId = examId;
         this.examName = examName;
         this.examTime = examTime;
         this.place = place;
         this.modId = modId;
+        this.achievement = achievement;
+    }
+
+    public String getAchievement() {
+        return achievement;
+    }
+
+    public void setAchievement(String achievement) {
+        this.achievement = achievement;
     }
 
     public Integer getExamId() {
