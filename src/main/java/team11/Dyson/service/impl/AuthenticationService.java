@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import team11.Dyson.domian.Course;
 import team11.Dyson.domian.Student;
 import team11.Dyson.dto.StudentDTO;
+import team11.Dyson.pojo.Staff;
 import team11.Dyson.repository.StudentRepository;
 
 import java.util.Collections;
@@ -64,5 +65,23 @@ public class AuthenticationService {
         // Implement the conversion logic from Student entity to StudentDTO
         // This is just a placeholder, you need to implement this conversion according to your application's requirements
         return new StudentDTO();
+    }
+
+    /**
+     * ClassName: LoginService
+     * Package: team11.Dyson.service
+     * Description:
+     *
+     * @Author Alina Hu
+     * @Create 2024/5/7 3:35
+     * @Version 1.0
+     */
+    public static interface LoginService {
+
+        //学生登录的接口
+        team11.Dyson.pojo.Student login1(team11.Dyson.pojo.Student student);
+
+        //教师登录的接口
+        Staff login2(Staff staff);
     }
 }
