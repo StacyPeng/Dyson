@@ -9,7 +9,8 @@ public class StaffDTO {
     private String name;
     private String gender;
     private Date birthday;
-
+    //Auther：Hengqian Mao
+    //c3008838
     private Set<Integer> coursesTaughtIds;
 
     // Constructors, getters and setters
