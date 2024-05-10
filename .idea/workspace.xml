@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface document.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/filter/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/filter/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +36,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="jdkForImporter" value="openjdk-21" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -70,7 +67,6 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.DysonApplication (1).executor": "Run",
@@ -80,7 +76,7 @@
     "ignore.preview.features.used": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/workspace/student-management-system/src/main/java/team11/Dyson",
+    "last_opened_file_path": "/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,7 +85,7 @@
     "project.structure.last.edited": "库",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.itangcent.idea.plugin.configurable.AccountConfigurable.apifox",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "spring.configuration.checksum": "ec5cd8c2798dc759d1d91445a20d23d7",
     "vue.rearranger.settings.migration": "true"
   },
@@ -104,6 +100,8 @@
       <recent name="team11.Dyson.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/java/team11/Dyson" />
       <recent name="D:\workspace\student-management-system\src\main\java\team11\Dyson" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -129,43 +127,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CourseServiceTest">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="student-management-system" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Authentication2ServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Chengyu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team11.Dyson.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team11.Dyson.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="team11.Dyson.service.impl.Authentication2ServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CourseServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Chengyu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team11.Dyson.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team11.Dyson.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="team11.Dyson.service.impl.CourseServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.DysonApplication">
     <configuration name="DysonApplicationTests.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dyson" />
       <extension name="coverage">
@@ -214,38 +176,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DysonApplicationTests.testModifyPassword2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dyson" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team11.Dyson.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team11.Dyson" />
-      <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplicationTests" />
-      <option name="METHOD_NAME" value="testModifyPassword2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DysonApplicationTests.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dyson" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team11.Dyson.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team11.Dyson" />
-      <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplicationTests" />
-      <option name="METHOD_NAME" value="testRegister" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DysonApplicationTests.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dyson" />
       <extension name="coverage">
@@ -282,28 +212,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DysonApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="Dyson" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="team11.Dyson.DysonApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team11.Dyson.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DysonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="Chengyu" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="team11.Dyson.DysonApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DysonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="Chengyu" />
@@ -314,11 +222,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CourseServiceTest" />
-        <item itemvalue="JUnit.Authentication2ServiceTest" />
         <item itemvalue="Spring Boot.DysonApplication (1)" />
         <item itemvalue="JUnit.DysonApplicationTests.testRegister" />
         <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword2" />
+        <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword" />
+        <item itemvalue="JUnit.DysonApplicationTests.testLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -405,10 +313,7 @@
       <workItem from="1715276326881" duration="672000" />
       <workItem from="1715288814573" duration="345000" />
       <workItem from="1715289188168" duration="14633000" />
-      <workItem from="1715317981876" duration="1163000" />
-      <workItem from="1715319163055" duration="266000" />
-      <workItem from="1715319532706" duration="734000" />
-      <workItem from="1715320281601" duration="1032000" />
+      <workItem from="1715325985349" duration="244000" />
     </task>
     <servers />
   </component>

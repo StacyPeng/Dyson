@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="management_system@10.147.20.20">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.49">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
     <root id="1"/>
     <schema id="2" parent="1" name="mysql">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
