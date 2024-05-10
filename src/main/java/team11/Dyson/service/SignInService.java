@@ -1,7 +1,7 @@
 package team11.Dyson.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import team11.Dyson.domian.SignIn;
+import team11.Dyson.domain.SignIn;
 
 /**
  * @author: Dechun Meng

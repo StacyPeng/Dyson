@@ -6,9 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
-import team11.Dyson.domian.Staff;
-
-import java.util.Optional;
+import team11.Dyson.domain.Staff;
 
 @Mapper
 @Repository

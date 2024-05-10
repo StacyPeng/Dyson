@@ -3,11 +3,9 @@ package team11.Dyson.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.StuClass;
+import team11.Dyson.domain.StuClass;
 import team11.Dyson.mapper.StuClassMapper;
 import team11.Dyson.service.StuClassService;
-
-import java.util.Date;
 
 /**
  * @ClassName: MeetingServiceImpl

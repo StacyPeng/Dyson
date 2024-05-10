@@ -2,7 +2,7 @@ package team11.Dyson.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.StaffStudent;
+import team11.Dyson.domain.StaffStudent;
 import team11.Dyson.mapper.StaffStudentMapper;
 import team11.Dyson.service.StaffStudentService;
 

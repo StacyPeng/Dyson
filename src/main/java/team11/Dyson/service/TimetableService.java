@@ -1,7 +1,7 @@
 package team11.Dyson.service;
 
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.Timetable;
+import team11.Dyson.domain.Timetable;
 
 import java.util.List;
 

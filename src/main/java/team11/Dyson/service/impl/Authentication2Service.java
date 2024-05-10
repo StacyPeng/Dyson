@@ -4,7 +4,7 @@ package team11.Dyson.service.impl;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.Staff;
+import team11.Dyson.domain.Staff;
 import team11.Dyson.dto.StaffDTO;
 import team11.Dyson.repository.StaffRepository;
 

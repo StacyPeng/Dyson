@@ -3,7 +3,7 @@ package team11.Dyson.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import team11.Dyson.domian.Coursework;
+import team11.Dyson.domain.Coursework;
 
 import java.util.List;
 

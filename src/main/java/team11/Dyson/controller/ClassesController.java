@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import team11.Dyson.domian.Classes;
-import team11.Dyson.domian.Result;
+import team11.Dyson.domain.Classes;
+import team11.Dyson.domain.Result;
 import team11.Dyson.service.impl.ClassesService;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package team11.Dyson.service;
 
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.Programme;
+import team11.Dyson.domain.Programme;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package team11.Dyson.utils;
 
-import team11.Dyson.domian.ResultVo;
+import team11.Dyson.domain.ResultVo;
 import team11.Dyson.utils.status.StatusCode;
 
 public class ResultUtils {

@@ -3,7 +3,7 @@ package team11.Dyson.repository;
 //c3008838
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import team11.Dyson.domian.Student;
+import team11.Dyson.domain.Student;
 
 import java.util.Optional;
 

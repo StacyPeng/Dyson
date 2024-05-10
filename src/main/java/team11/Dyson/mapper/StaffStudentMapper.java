@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
-import team11.Dyson.domian.StaffStudent;
+import team11.Dyson.domain.StaffStudent;
 
 import java.util.List;
 

@@ -2,7 +2,7 @@ package team11.Dyson.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.Programme;
+import team11.Dyson.domain.Programme;
 import team11.Dyson.mapper.ProgrammeMapper;
 import team11.Dyson.service.ProgrammeService;
 

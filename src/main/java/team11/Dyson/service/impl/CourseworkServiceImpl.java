@@ -3,7 +3,7 @@ package team11.Dyson.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.Coursework;
+import team11.Dyson.domain.Coursework;
 import team11.Dyson.mapper.CourseworkMapper;
 import team11.Dyson.service.CourseworkService;
 

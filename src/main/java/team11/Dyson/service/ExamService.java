@@ -2,7 +2,7 @@ package team11.Dyson.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import team11.Dyson.domian.Exam;
+import team11.Dyson.domain.Exam;
 
 import java.util.List;
 

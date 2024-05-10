@@ -3,7 +3,7 @@ package team11.Dyson.mapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
-import team11.Dyson.domian.Modules;
+import team11.Dyson.domain.Modules;
 
 import java.util.List;
 

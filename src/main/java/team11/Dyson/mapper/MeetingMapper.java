@@ -3,7 +3,7 @@ package team11.Dyson.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
-import team11.Dyson.domian.Meeting;
+import team11.Dyson.domain.Meeting;
 
 /*@author: Dechun Meng*/
 @Mapper

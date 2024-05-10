@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import team11.Dyson.domian.ResultVo;
-import team11.Dyson.domian.SignIn;
+import team11.Dyson.domain.ResultVo;
+import team11.Dyson.domain.SignIn;
 import team11.Dyson.service.SignInService;
 import team11.Dyson.utils.ResultUtils;
 

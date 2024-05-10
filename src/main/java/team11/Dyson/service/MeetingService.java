@@ -1,7 +1,7 @@
 package team11.Dyson.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import team11.Dyson.domian.Meeting;
+import team11.Dyson.domain.Meeting;
 
 /**
  * @author: Dechun Meng

@@ -3,8 +3,8 @@ package team11.Dyson.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import team11.Dyson.domian.Result;
-import team11.Dyson.domian.StaffStudent;
+import team11.Dyson.domain.Result;
+import team11.Dyson.domain.StaffStudent;
 import team11.Dyson.service.StaffStudentService;
 
 import java.util.List;
