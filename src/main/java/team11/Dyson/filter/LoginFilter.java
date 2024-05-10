@@ -2,7 +2,6 @@ package team11.Dyson.filter;
 
 import com.alibaba.fastjson.JSON;
 import jakarta.servlet.*;
-import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import team11.Dyson.pojo.Result;
@@ -26,7 +25,7 @@ WebFilter方法：定义拦截资源的范围
       @WebFilter("/findEmp")  只拦截指定请求findEmp
 过滤器链：一个web应用中，可以配置多个过滤器，形成过滤器链，优先级按照过滤器类名的自然排序（包名下的文件名顺序）
 */
-@WebFilter("/*")
+//@WebFilter("/*")
 public class LoginFilter implements Filter {
 
     //过滤拦截方法
