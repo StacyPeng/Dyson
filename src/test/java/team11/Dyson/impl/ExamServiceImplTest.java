@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import team11.Dyson.domian.Exam;
+import team11.Dyson.domain.Exam;
 import team11.Dyson.mapper.ExamMapper;
 import team11.Dyson.service.impl.ExamServiceImpl;
 

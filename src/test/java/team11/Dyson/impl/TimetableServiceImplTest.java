@@ -5,7 +5,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import team11.Dyson.domian.Timetable;
+import team11.Dyson.domain.Timetable;
 import team11.Dyson.mapper.TimetableMapper;
 import team11.Dyson.service.impl.TimetableServiceImpl;
 

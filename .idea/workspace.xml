@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/CourseworkServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ExamServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/FeedbackServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ModulesServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ProgrammeServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/StaffServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/StudentServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/TimetableServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/service/impl/MeetingServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/service/impl/SignInServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/service/impl/StaffStudentServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/service/impl/StuClassServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/CourseworkServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/CourseworkServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ExamServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ExamServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/FeedbackServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/FeedbackServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ModulesServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ModulesServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ProgrammeServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ProgrammeServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/StaffServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/StaffServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/StudentServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/StudentServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/TimetableServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/TimetableServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +87,7 @@
     "ignore.preview.features.used": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system/src/test/java/team11/Dyson",
+    "last_opened_file_path": "D:/Documents/GitHub/student-management-system",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -132,87 +137,85 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DysonApplication">
-    <configuration name="DysonApplicationTests.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dyson" />
+  <component name="RunManager" selected="JUnit.StaffStudentServiceImplTest">
+    <configuration name="FeedbackServiceImplTest.testUpload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chengyu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="team11.Dyson.*" />
+          <option name="PATTERN" value="team11.Dyson.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="team11.Dyson" />
-      <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplicationTests" />
-      <option name="METHOD_NAME" value="testLogin" />
+      <option name="PACKAGE_NAME" value="team11.Dyson.impl" />
+      <option name="MAIN_CLASS_NAME" value="team11.Dyson.impl.FeedbackServiceImplTest" />
+      <option name="METHOD_NAME" value="testUpload" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DysonApplicationTests.testModifyPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dyson" />
+    <configuration name="MeetingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chengyu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="team11.Dyson.*" />
+          <option name="PATTERN" value="team11.Dyson.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="team11.Dyson" />
-      <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplicationTests" />
-      <option name="METHOD_NAME" value="testModifyPassword" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="team11.Dyson.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="team11.Dyson.service.impl.MeetingServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DysonApplicationTests.testModifyPassword2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dyson" />
+    <configuration name="SignInServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chengyu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="team11.Dyson.*" />
+          <option name="PATTERN" value="team11.Dyson.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="team11.Dyson" />
-      <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplicationTests" />
-      <option name="METHOD_NAME" value="testModifyPassword2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="team11.Dyson.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="team11.Dyson.service.impl.SignInServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DysonApplicationTests.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dyson" />
+    <configuration name="StaffStudentServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chengyu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="team11.Dyson.*" />
+          <option name="PATTERN" value="team11.Dyson.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="team11.Dyson" />
-      <option name="MAIN_CLASS_NAME" value="team11.Dyson.DysonApplicationTests" />
-      <option name="METHOD_NAME" value="testRegister" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="team11.Dyson.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="team11.Dyson.service.impl.StaffStudentServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StuClassServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chengyu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team11.Dyson.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="team11.Dyson.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="team11.Dyson.service.impl.StuClassServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="student-management-system" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DysonApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="Dyson" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="team11.Dyson.DysonApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team11.Dyson.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -227,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DysonApplication (1)" />
-        <item itemvalue="JUnit.DysonApplicationTests.testRegister" />
-        <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword2" />
-        <item itemvalue="JUnit.DysonApplicationTests.testModifyPassword" />
-        <item itemvalue="JUnit.DysonApplicationTests.testLogin" />
+        <item itemvalue="JUnit.StaffStudentServiceImplTest" />
+        <item itemvalue="JUnit.StuClassServiceImplTest" />
+        <item itemvalue="JUnit.SignInServiceImplTest" />
+        <item itemvalue="JUnit.MeetingServiceImplTest" />
+        <item itemvalue="JUnit.FeedbackServiceImplTest.testUpload" />
       </list>
     </recent_temporary>
   </component>
