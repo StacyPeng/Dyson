@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import team11.Dyson.domian.Timetable;
+import team11.Dyson.domain.Timetable;
 import team11.Dyson.service.TimetableService;
 
 import java.util.List;

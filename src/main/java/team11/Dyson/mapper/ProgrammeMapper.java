@@ -3,7 +3,7 @@ package team11.Dyson.mapper;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-import team11.Dyson.domian.Programme;
+import team11.Dyson.domain.Programme;
 
 import java.util.List;
 

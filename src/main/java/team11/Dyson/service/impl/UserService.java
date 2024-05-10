@@ -1,10 +1,9 @@
 package team11.Dyson.service.impl;
 
-import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.Staff;
-import team11.Dyson.domian.Student;
+import team11.Dyson.domain.Staff;
+import team11.Dyson.domain.Student;
 import team11.Dyson.mapper.StaffMapper;
 import team11.Dyson.mapper.StudentMapper;
 

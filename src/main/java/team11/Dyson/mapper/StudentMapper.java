@@ -4,7 +4,7 @@
     import org.apache.ibatis.annotations.*;
     import org.apache.ibatis.annotations.Result;
     import org.springframework.stereotype.Repository;
-    import team11.Dyson.domian.*;
+    import team11.Dyson.domain.*;
 
     import java.util.List;
 

@@ -2,7 +2,7 @@ package team11.Dyson.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import team11.Dyson.domian.Modules;
+import team11.Dyson.domain.Modules;
 
 import java.util.List;
 

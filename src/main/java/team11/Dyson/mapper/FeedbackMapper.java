@@ -3,7 +3,7 @@ package team11.Dyson.mapper;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
-import team11.Dyson.domian.Feedback;
+import team11.Dyson.domain.Feedback;
 
 /**
  * @author Chengyu Peng

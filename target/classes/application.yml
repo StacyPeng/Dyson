@@ -25,7 +25,7 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
   mapper-locations: classpath:/mappers/*
-#  type-aliases-package: team11.dyson.chengyu.domian
+#  type-aliases-package: team11.dyson.chengyu.domain
 
 logging:
   level:

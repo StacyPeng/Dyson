@@ -3,7 +3,7 @@ package team11.Dyson.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.SignIn;
+import team11.Dyson.domain.SignIn;
 import team11.Dyson.mapper.SignInMapper;
 import team11.Dyson.service.SignInService;
 

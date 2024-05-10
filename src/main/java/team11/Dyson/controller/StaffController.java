@@ -3,9 +3,9 @@ package team11.Dyson.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import team11.Dyson.domian.Result;
-import team11.Dyson.domian.Staff;
-import team11.Dyson.domian.StaffLogin;
+import team11.Dyson.domain.Result;
+import team11.Dyson.domain.Staff;
+import team11.Dyson.domain.StaffLogin;
 import team11.Dyson.service.StaffService;
 
 import java.util.Map;

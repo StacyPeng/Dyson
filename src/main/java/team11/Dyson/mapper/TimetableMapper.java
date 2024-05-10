@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
-import team11.Dyson.domian.Timetable;
+import team11.Dyson.domain.Timetable;
 
 import java.util.List;
 

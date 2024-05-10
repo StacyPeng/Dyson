@@ -4,7 +4,7 @@ package team11.Dyson.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import team11.Dyson.domian.Course;
+import team11.Dyson.domain.Course;
 
 import java.util.List;
 

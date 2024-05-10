@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import team11.Dyson.domian.Feedback;
+import team11.Dyson.domain.Feedback;
 import team11.Dyson.service.FeedbackService;
 
 /**

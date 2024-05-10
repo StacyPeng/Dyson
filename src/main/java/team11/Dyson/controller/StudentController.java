@@ -3,7 +3,7 @@ package team11.Dyson.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.thymeleaf.util.StringUtils;
-import team11.Dyson.domian.*;
+import team11.Dyson.domain.*;
 import team11.Dyson.service.impl.StudentServiceImpl;
 
 import java.util.ArrayList;

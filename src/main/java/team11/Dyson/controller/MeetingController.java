@@ -3,8 +3,8 @@ package team11.Dyson.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import team11.Dyson.domian.Meeting;
-import team11.Dyson.domian.ResultVo;
+import team11.Dyson.domain.Meeting;
+import team11.Dyson.domain.ResultVo;
 import team11.Dyson.service.MeetingService;
 import team11.Dyson.utils.ResultUtils;
 

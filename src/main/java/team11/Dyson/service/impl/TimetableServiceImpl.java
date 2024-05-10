@@ -2,7 +2,7 @@ package team11.Dyson.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import team11.Dyson.domian.Timetable;
+import team11.Dyson.domain.Timetable;
 import team11.Dyson.mapper.TimetableMapper;
 import team11.Dyson.service.TimetableService;
 

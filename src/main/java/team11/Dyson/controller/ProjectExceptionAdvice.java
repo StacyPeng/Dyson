@@ -2,7 +2,7 @@ package team11.Dyson.controller;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import team11.Dyson.domian.Result;
+import team11.Dyson.domain.Result;
 import team11.Dyson.exception.BussinessException;
 import team11.Dyson.exception.SystemException;
 
