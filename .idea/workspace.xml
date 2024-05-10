@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/CourseworkServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ExamServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/FeedbackServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ModulesServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/ProgrammeServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/StaffServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/StudentServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/TimetableServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team11/Dyson/impl/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface document.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +36,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="jdkForImporter" value="openjdk-21" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -82,7 +76,7 @@
     "ignore.preview.features.used": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system/src/test/java/team11/Dyson",
+    "last_opened_file_path": "/Users/stacy/Desktop/study/4.computer science/CSC8019/student management system/back-end/student-management-system",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,6 +100,7 @@
       <recent name="team11.Dyson.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/java/team11/Dyson" />
       <recent name="D:\workspace\student-management-system\src\main\java\team11\Dyson" />
     </key>
@@ -318,6 +313,7 @@
       <workItem from="1715276326881" duration="672000" />
       <workItem from="1715288814573" duration="345000" />
       <workItem from="1715289188168" duration="14633000" />
+      <workItem from="1715325985349" duration="244000" />
     </task>
     <servers />
   </component>
