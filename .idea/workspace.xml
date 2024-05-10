@@ -5,119 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06df43d8-cb13-4a0e-997c-cd8ed5f839b9" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/StaffStudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Registeredmodules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/StaffStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/StaffStudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/StaffStudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StaffStudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f63a7dd9-2fbd-40e0-b50b-6f7f1615b5e5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chengyu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chengyu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Classes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Exam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/domian/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/mapper/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team11/Dyson/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages/Staff-all-students.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/pages/Staff-all-students.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/assets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/staff-calendar2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/staff-calendar2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/Staff-all-students.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/Staff-all-students.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/pages/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/pages/modules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/DysonApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/DysonApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/GlobalCorsConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/config/GlobalCorsConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/GlobalCorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/config/GlobalCorsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/SpringMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/config/SpringMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/config/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ClassesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ClassesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/Code.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/Code.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseworkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/CourseworkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ExamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ExamController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ExtensionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ExtensionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/FeedbackController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/FeedbackController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/MeetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/MeetingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ModulesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ModulesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ProgrammeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ProgrammeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ProjectExceptionAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/ProjectExceptionAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/SigninController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/SigninController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/StaffController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/StaffStudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/StaffStudentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/TimetableController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/TimetableController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Classes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Classes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Coursework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Coursework.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Exam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Feedback.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Feedback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Meeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Meeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Modules.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Modules.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Programme.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Programme.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/ResultVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/ResultVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/SignIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Staff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/StaffLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/StaffLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/StuClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/StuClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Registeredmodules.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Registeredmodules.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/StaffStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/StaffStudent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/StudentLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/StudentLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Timetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/Timetable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/UserResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/domian/UserResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/CourseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/CourseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/StaffDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/StaffDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/StudentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/StudentDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/SubscriptionRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/dto/SubscriptionRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/exception/BussinessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/exception/BussinessException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/exception/SystemException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/exception/SystemException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ClassesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ClassesMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/CourseworkMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/CourseworkMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ExamMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ExamMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/FeedbackMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/FeedbackMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/MeetingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/MeetingMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ModulesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ModulesMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ProgrammeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/ProgrammeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/SignInMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/SignInMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StaffMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StaffMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StuClassMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StuClassMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StaffStudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StaffStudentMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/StudentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/TimetableMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/mapper/TimetableMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/CourseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/CourseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/StaffRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/StaffRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/repository/StudentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/CourseworkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/CourseworkService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/ExamService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/ExamService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/FeedbackService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/FeedbackService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/MeetingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/MeetingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/ModulesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/ModulesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/ProgrammeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/ProgrammeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/SignInService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/SignInService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StuClassService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StuClassService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StaffStudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StaffStudentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/TimetableService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/TimetableService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/Authentication2Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/Authentication2Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/AuthenticationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ClassesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ClassesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/CourseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/CourseworkServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/CourseworkServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ExamServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ExamServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/FeedbackServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/FeedbackServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/MeetingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/MeetingServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ModulesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ModulesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ProgrammeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/ProgrammeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/SignInServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/SignInServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StaffServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StuClassServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StuClassServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StaffStudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StaffStudentServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/TimetableServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/TimetableServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/service/impl/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/utils/ResultUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/utils/ResultUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team11/Dyson/utils/status/StatusCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team11/Dyson/utils/status/StatusCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team11/Dyson/DysonApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team11/Dyson/DysonApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,49 +61,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JUnit.DysonApplicationTests.testLogin.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DysonApplicationTests.testModifyPassword.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DysonApplicationTests.testModifyPassword2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DysonApplicationTests.testRegister.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DysonApplicationTests.testRegisterStudent.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DysonApplicationTests.testStaffLogin.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Chengyu [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DysonApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DysonApplication.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lileh/Documents/GitHub/student-management-system&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.DysonApplicationTests.testLogin.executor": "Run",
+    "JUnit.DysonApplicationTests.testModifyPassword.executor": "Run",
+    "JUnit.DysonApplicationTests.testModifyPassword2.executor": "Run",
+    "JUnit.DysonApplicationTests.testRegister.executor": "Run",
+    "JUnit.DysonApplicationTests.testRegisterStudent.executor": "Run",
+    "JUnit.DysonApplicationTests.testStaffLogin.executor": "Run",
+    "Maven.Chengyu [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DysonApplication (1).executor": "Run",
+    "Spring Boot.DysonApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.preview.features.used": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/lileh/Documents/GitHub/student-management-system",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/pages" />
